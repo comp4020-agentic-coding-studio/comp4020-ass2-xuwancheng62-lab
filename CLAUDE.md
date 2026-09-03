@@ -1,8 +1,18 @@
 # Your harness
 
-This file is yours, and it arrives with no rules in it on purpose --- this note
-is all there is, and it goes when you write your own. The rules you hold the
-agent to are part of what gets marked, so they should be rules you decided on.
+## Curriculum review
+
+`.claude/agents/curriculum-reviewer.md` is a read-only subagent that checks
+the 12-week curriculum for coherence and constructive alignment (lecture ↔
+activity ↔ assessment, learning outcomes actually taught and assessed). It
+never edits anything — it only returns a report. Invoke it once a full
+12-week skeleton exists, after any structural edit, or before shipping; not
+against a half-built skeleton.
+
+**Any curriculum change proposed on the back of its report must be presented
+to me before it's applied.** The subagent can point at a gap; deciding how
+to close it (add a week's practice, cut a learning outcome, reweight an
+assessment) is mine to approve.
 
 Nothing about the starter is recorded here. The platform under you is fixed and
 documented in `README.md`, and the
