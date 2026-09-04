@@ -229,12 +229,6 @@ disciplinary knowledge from tool mechanics:
   the curriculum content is committed (currently 28+ files uncommitted).
 - Whether to revisit either of the two open judgement calls above before
   shipping.
-- Weeks 2–12 lecture decks still need writing — week 1's real deck is done;
-  the other 11 are not (see "Content and data architecture").
-- Home's hero image/alt text and the other three starter images
-  (`card.png`, both people portraits) are still the starter assets —
-  deliberately deferred to the "Visual direction" phase below, since imagery
-  style is an open design decision, not something to default ahead of it.
 - The full curriculum-reviewer pass described under "Process" above is
   pending until the decks and the real operational demonstrations exist;
   running it earlier would only re-check the same text graph the completed
@@ -692,36 +686,40 @@ inventing a Lighthouse target that isn't asked for anywhere.
 
 0. **Done** — 12-week curriculum skeleton drafted; curriculum-reviewer pass
    run against it; week 12 restructured per "Process" above.
-1. **Starter-content removal — text done, images pending.**
-   `course-config.ts`, Home's body copy, both people bios, and the policies
-   page are real content now. Home's hero artwork and the four tracked
-   starter images (`card.png`, `hero-home.avif`, both people portraits) are
-   intentionally still the starter versions — that swap depends on the
-   imagery-style decision in the next phase, so `pnpm check:evidence` stays
-   red on those until then. This is the literal floor `check:evidence`
-   enforces — ships first because nothing else matters if this gate fails.
-2. **Visual direction** — global typography/spacing/motion decisions, per
-   the section above, registered via the theme's `brandCss` integration
-   option (`astro.config.ts`), not `PageLayout.astro` as first assumed:
-   `PageLayout.astro` is only the layout for standalone `.mdx`/`.astro`
-   pages (Home, the index pages, policies) — collection detail pages
-   (lectures, sessions, assessments, people) render through the theme's
-   `ContentLayout` directly and never see it. `brandCss` is the mechanism
-   that already reaches every page (it's how `astro-theme-slop/slop.css`
-   gets there), confirmed by checking `ContentLayout.astro`/`BaseLayout.astro`
-   and by finding the new rules missing from rendered lecture/session/
-   assessment pages before the fix.
-3. **Media component family** — build the reusable text/image/audio/video/
-   comparison/director's-note/rationale component family (per "Component
-   strategy"), sized for empty/placeholder/real states from day one. This
-   gates everything after it: building the display system before real
-   assets exist is the whole point. No new collection or page — this
-   renders directly on Lecture pages.
-4. **Home rewrite** — replace the starter hero + body with the concise
-   thesis-plus-progression explanation and links to Lectures.
-5. **All-12 decks** — write real content for all 12 lecture decks, each
-   distilling objectives/concepts/visual examples/demonstration context/
-   session task/expected output. Week 1's is done; weeks 2–12 remain.
+1. **Starter-content removal — done.** `course-config.ts`, Home's body copy,
+   both people bios, and the policies page are real content. Home's hero
+   artwork, `card.png`, and both people portraits have all been regenerated
+   under the abstract graphic system (see "Visual direction" above) — none
+   of the four tracked starter images remain, and `pnpm check:evidence`
+   passes on this row.
+2. **Visual direction — done.** Global typography/spacing/motion rules live
+   in `src/styles/visual-direction.css`, registered via the theme's
+   `brandCss` integration option (`astro.config.ts`) rather than
+   `PageLayout.astro` as first assumed: `PageLayout.astro` is only the
+   layout for standalone `.mdx`/`.astro` pages (Home, the index pages,
+   policies) — collection detail pages (lectures, sessions, assessments,
+   people) render through the theme's `ContentLayout` directly and never see
+   it. `brandCss` is the mechanism that already reaches every page (it's how
+   `astro-theme-slop/slop.css` gets there).
+3. **Media component family — not yet built.** The reusable text/image/
+   audio/video/comparison/director's-note/rationale component family (per
+   "Component strategy") remains open, deferred until real per-week
+   production assets exist to size it against (see Phase 6) — nothing in
+   the checklist below has a real asset yet, so there is nothing concrete to
+   render through it today.
+4. **Home rewrite — done.** Home carries the thesis-plus-progression
+   explanation and links through to Lectures.
+5. **All-12 decks — done.** Real content written for all 12 lecture decks
+   (week 1's pre-dates this phase; weeks 2–12 written against this phase),
+   each distilling that week's objectives, directing concepts, the
+   demonstration context, the session's task, and the expected output —
+   text-only, matching week 1's structural pattern (impact / content /
+   quote / task / impact) but without new decorative background imagery,
+   which week 1 alone was approved for (see "Visual direction" revision
+   history above). Every lecture's `slides:` frontmatter now points at its
+   deck. Verified with `pnpm check`: typecheck, build (axe + link checks
+   across all 47 pages, astromotion's structural check across all 12
+   decks), and the `spec/` suite all green.
 6. **Progressive integration, ongoing** — as the owner supplies each week's
    real asset (per the checklist above), attach it to that week's Lecture
    page via the media component family and update that row's status. Not a

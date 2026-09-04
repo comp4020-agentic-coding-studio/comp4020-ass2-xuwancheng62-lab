@@ -7,6 +7,7 @@ week: 10
 date: 2027-05-03
 teachers:
   - idris-fenn
+slides: /decks/week-10/
 related:
   - sessions/10-recut-lab
   - assessments/final-project

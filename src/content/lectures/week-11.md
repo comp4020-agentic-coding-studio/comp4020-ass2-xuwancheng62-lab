@@ -7,6 +7,7 @@ week: 11
 date: 2027-05-10
 teachers:
   - marisol-quaye
+slides: /decks/week-11/
 related:
   - sessions/11-sound-pass
   - assessments/final-project

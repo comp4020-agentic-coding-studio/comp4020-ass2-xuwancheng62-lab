@@ -7,6 +7,7 @@ week: 9
 date: 2027-04-26
 teachers:
   - marisol-quaye
+slides: /decks/week-09/
 related:
   - sessions/09-continuity-assembly
   - assessments/final-project
