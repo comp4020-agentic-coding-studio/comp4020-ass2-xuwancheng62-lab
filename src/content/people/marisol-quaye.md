@@ -6,16 +6,20 @@ description:
 affiliation: Slop University School of Invented Disciplines
 role: convenor
 email: marisol.quaye@slop.university
-contact: Email for course-level questions; use the weekly session for feedback on work.
+contact: Email for course-level questions; use the weekly workshop for feedback on work.
 photo: ./marisol-quaye.avif
-photoAlt: A stylised portrait of a person in three-quarter view, flat gold and black shapes on warm cream, in a two-ink risograph print
+photoAlt: "An abstract geometric composition on warm cream: a single large black circle at center, a warm-gold trapezoid emerging from behind its lower edge, a small muted dark-green square isolated at upper left, joined by a thin baseline"
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
+Marisol designed this course around a single question: what does directing
+still mean once a model can generate the shot itself? Twelve years directing
+for stage and short-form video preceded the move into teaching, and the
+course's insistence on judging every generated take against a stated
+intention — never against how good it happens to look — comes directly out
+of that practice.
 
-Replace this entry. A people page carries a short bio and whatever a student
-needs in order to contact the right person for the right thing --- and nothing
-that will be stale by week 3.
-
-Consultation hours, contact preferences and the escalation path (who to ask
-first, who to ask when that does not work) are the parts students actually read.
+Marisol sets the semester's overall shape and marks the two major
+submissions. For anything about a specific week's exercise, ask in that
+week's workshop first; email is for course-level questions that can't wait —
+an assessment query, an extension request, or anything that needs a decision
+before the next class.

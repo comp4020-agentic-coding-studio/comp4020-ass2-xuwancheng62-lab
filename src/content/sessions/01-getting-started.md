@@ -1,36 +1,35 @@
 ---
-title: Getting started
+title: First direction
 description:
-  The first session of the semester — what to have working before you arrive,
-  and what happens once you do
+  Your first pass at giving a director's note to an AI performer, and seeing
+  whether it landed
 week: 1
 date: 2027-02-22
 teachers:
   - marisol-quaye
 spec:
-  - your development environment runs the course's toolchain
-  - you can build and preview the site locally
-  - you have something, however rough, to show the class
+  - you have generated two versions of one small moment — an image, a line
+    reading, or a short clip — from two different director's notes, not two
+    different descriptions of content
+  - you can say exactly what changed between the two notes, and why the
+    second result is closer to what you meant
 ---
 
-<!-- STARTER_CONTENT: replace this session, then remove this comment. -->
+## Before the workshop
 
-Replace this page. A session brief tells a student three things: what to bring,
-what will happen, and how to tell afterwards whether it went well.
+Bring nothing but an idea small enough to redirect in one sitting: a single
+gesture, a single line, a single expression. Anything bigger and you won't get
+past one round of notes today.
 
-## Before the session
+## In the workshop
 
-The `spec` above is the contract. Write each line so a reader can tell whether
-it has been met without asking you --- that is the difference between a spec and
-a wish.
-
-## In the session
-
-Say how the time is actually spent, in the order it happens. If the session runs
-to a repeating shape --- a demo, then feedback, then work time --- name the
-parts and say roughly how long each takes. Students plan against it.
+Generate one version of your moment. Then write a director's note — one
+sentence, aimed at one specific thing — and generate again from that note
+alone, not from a rewritten description of the scene. Compare the two. If
+nothing changed, the note wasn't specific enough; try again.
 
 ## Afterwards
 
-Say what leaves the session: a mark, a piece of feedback, a decision about the
-next week's work.
+You leave with a pair of takes and a sentence explaining the gap between
+them. That pair is the first entry in a habit this course keeps all semester:
+never judge a generation in isolation, only against the note that produced it.

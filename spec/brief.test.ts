@@ -44,6 +44,14 @@ describe("assignment 2 brief", () => {
     );
     expect(total).toBe(100);
   });
+
+  it("still ships the fixed Slop brand palette (never mine to touch)", () => {
+    // The theme injects brandCss as an unlayered inline <style> in <head>, so
+    // it overrides the theme's own @layer'd defaults regardless of the
+    // external stylesheet's load order — check the page, not the bundled CSS.
+    const home = readFileSync(resolve("dist/index.html"), "utf8");
+    expect(home, "brand token --at-primary missing from the page").toContain("--at-primary:#b97d1c");
+  });
 });
 
 function existsDeckPage(path: string): boolean {

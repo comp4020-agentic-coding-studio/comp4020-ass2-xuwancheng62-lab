@@ -1,38 +1,54 @@
 ---
-title: Final project
+title: Final project — The completed short
 description:
-  The capstone — a placeholder brief for the larger piece of work the semester
-  builds towards
+  The finished two-to-four-minute AI dramatic short, screened and defended as a
+  directorial statement, not a generation lucky enough to work
 week: 12
 due: 2027-05-28T12:00:00+10:00
 weight: 60
 marking:
   mode: holistic
   description:
-    The final project is judged as a whole against the brief, with particular
-    attention to whether the result stands alone and whether its scope fits the
-    semester that produced it.
+    Judged as a directed film, not a demo reel. The question throughout is
+    whether visible choices in story, shot design, performance direction,
+    continuity repair, editing rhythm and sound serve one intent — not whether
+    any single shot looks impressive in isolation. A student who can name why
+    a take was rejected is judged more strongly than one who can only say a
+    take was kept.
 spec:
   - submitted by the deadline, in the format named below
-  - it stands on its own, without you there to explain it
-  - it answers the brief rather than restating it
+  - it stands on its own as a two-to-four-minute film, without you there to
+    explain it
+  - a short director's statement accompanies it, naming three directorial
+    decisions and one thing that went wrong and how you handled it
+  - the statement names one specific change made during the revision
+    period, in response to a note from week 12's critique screening
+related:
+  - assignment-1
 ---
-
-<!-- STARTER_CONTENT: replace this assessment brief, then remove this comment. -->
-
-Replace this brief. The final project is where a course's weights usually
-concentrate, so it is worth being explicit about how the earlier work feeds it.
 
 ## The brief
 
-> One sentence, again as a blockquote.
+> Finish the film Assignment 1 planned, and be able to defend every choice in it.
 
-Say what scope is realistic in the time available. A brief that quietly assumes
-twice the available hours is the most common way a capstone goes wrong.
+Weeks 7 through 12 turned the pre-production package into footage: anchor
+frames, directed takes, an assembled sequence, a cut, a sound pass. This
+project is that pipeline's output, taken all the way to a finished film —
+plus the reflection that makes the directing visible rather than incidental.
+
+The near-final cut you screen in week 12's workshop is not this submission.
+The eleven days between that screening and this deadline are the revision
+period, and the critique you get at the screening is what it's for.
 
 ## What you submit
 
-The artefact, and whatever a marker needs to run or read it.
-
-This one demonstrates the alternative marking mode: a holistic explanation
-rather than weighted criteria. The site renders either mode from frontmatter.
+- the finished **film**, 2–4 minutes, matching the world and story locked in
+  Assignment 1 (deliberate departures are fine — undocumented ones read as
+  drift, not choice)
+- a **director's statement** naming three decisions you made on purpose
+  (a shot choice, a take you rejected and why, an edit or sound choice that
+  changed the meaning of a scene) and one continuity or generation failure you
+  hit and how you repaired it
+- a brief reflection on authorship and the limits of the tools: what part of
+  this film is a directorial choice, what part is a limitation you worked
+  around, and where you'd draw that line differently next time

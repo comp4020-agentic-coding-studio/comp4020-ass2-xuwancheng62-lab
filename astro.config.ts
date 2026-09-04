@@ -22,7 +22,11 @@ export default defineConfig({
       defaultLayout: "src/layouts/PageLayout.astro",
       // The whole brand choice: three colour tokens and a set of lockups. Keep
       // institutional brand packages and assets out of this fictional site.
-      brandCss: "astro-theme-slop/slop.css",
+      // The site's own global typography/motion decisions (PLAN.md "Visual
+      // direction") ride the same mechanism, for the same reason: it's the
+      // only thing that reaches every page, including collection detail
+      // pages that render through ContentLayout and never see PageLayout.astro.
+      brandCss: ["astro-theme-slop/slop.css", "/src/styles/visual-direction.css"],
       imageFormat: "avif",
       llmsTxt: true,
       // The theme owns the markdown plugin chain, so astromotion's slide

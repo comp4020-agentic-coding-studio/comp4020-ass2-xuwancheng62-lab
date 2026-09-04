@@ -5,39 +5,44 @@ import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import heroImage from "../assets/images/hero-home.avif";
 import { courseMeta } from "../course-config";
 import { sessionLabels, siteConfig } from "../site-config";
-
-// STARTER_CONTENT: replace the hero artwork and its alt text below, then
-// remove this comment.
 ---
 
 <ContentLayout
   title={`${courseMeta.code}: ${courseMeta.title}`}
   description={courseMeta.description}
   heroImage={heroImage}
-  heroImageAlt="A lecture theatre reduced to flat gold and black shapes, rows of seats sweeping past the frame, in a two-ink risograph print"
+  heroImageAlt="An abstract geometric composition on warm cream: a large warm-gold form and a black circle overlapping at right, a small muted dark-green square isolated at lower left, joined by a thin baseline"
   {...siteConfig}
 >
   <ul class="course-tags" aria-label="Course tags">
     {courseMeta.tags.map((tag) => <li>{tag}</li>)}
   </ul>
 
-  <!-- STARTER_CONTENT: replace the authored page below, then remove this comment. -->
   <h2>What you will do</h2>
   <p>
-    Say what a student spends their time on — the making, reading, arguing or
-    measuring that fills the weeks. Name the artefact they walk out with.
+    Direct one recurring short film — "Table for One" — across the whole
+    semester, week by week: story, shot design, performance, editing rhythm
+    and sound. Each week you give a director's note, generate against it,
+    judge the result, and redirect — the same loop whether the performer on
+    the other end is a human actor or a model. You walk out with a finished
+    2–4 minute film and the habit of directing generative tools with the same
+    precision you'd bring to a human cast and crew.
   </p>
 
   <h2>Who it is for</h2>
   <p>
-    Say who this is aimed at and what they need to already know. Be specific
-    enough that someone can rule themselves in or out without emailing you.
+    Anyone who wants to practice directing — not prompting — and is willing
+    to treat a generated take the way a director treats a human one: judged
+    against an intention, not against how good it happens to look. No prior
+    filmmaking or AI-tooling experience is assumed; what matters is a
+    willingness to keep giving notes until a take actually matches what you
+    meant.
   </p>
 
   <h2>Where to go next</h2>
   <CardGrid columns={2}>
     <Card title={sessionLabels.plural} href="/sessions/">
-      <p>The weekly schedule and what happens in each teaching session.</p>
+      <p>The weekly schedule and what happens in each teaching workshop.</p>
     </Card>
     <Card title="Assessment" href="/assessments/">
       <p>What is marked, what it is worth, and when it is due.</p>

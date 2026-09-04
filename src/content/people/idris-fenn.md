@@ -6,12 +6,17 @@ description:
 affiliation: Slop University School of Invented Disciplines
 role: tutor
 email: idris.fenn@slop.university
-contact: Ask during sessions, or email when a question cannot wait until the next one.
+contact: Ask during workshops, or email when a question cannot wait until the next one.
 photo: ./idris-fenn.avif
-photoAlt: A stylised portrait of a person facing the viewer, flat gold and black shapes on warm cream, in a two-ink risograph print
+photoAlt: "An abstract geometric composition on warm cream: a tall black rectangle at the left edge, a warm-gold circle overlapping its top right corner, a small muted dark-green rectangle isolated at lower right"
 ---
 
-<!-- STARTER_CONTENT: replace this person entry, then remove this comment. -->
+Idris runs the course's first-review sessions — the workshops where a
+student's earliest generated takes get their first outside notes — and stays
+attached to whatever comes out of them for the rest of that week's practical
+work. Before teaching, Idris worked as a script supervisor on independent
+shorts, which shows up here as a low tolerance for continuity that doesn't
+hold from one generated take to the next.
 
-Replace this entry. A second person makes the listing, role ordering and
-teacher-reference fields visible before you replace the cast with your own.
+Bring work in progress to a workshop rather than emailing it ahead; a note
+lands better against something you can both look at together.

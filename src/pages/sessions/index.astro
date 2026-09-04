@@ -1,12 +1,15 @@
 ---
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import SessionsGrid from "../../components/SessionsGrid.astro";
+import heroImage from "../../assets/images/hero-sessions.avif";
 import { sessionLabels, siteConfig } from "../../site-config";
 ---
 
 <ContentLayout
   title={sessionLabels.plural}
   description={`The twelve-week teaching schedule: what happens in each ${sessionLabels.singular.toLowerCase()}, what to prepare, and what leaves the room.`}
+  heroImage={heroImage}
+  heroImageAlt="An abstract geometric composition on warm cream: two large overlapping warm-gold and black circles at center-left crossed by a thin black frame, a small muted dark-green square isolated at upper right"
   {...siteConfig}
 >
   <p>

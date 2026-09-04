@@ -1,36 +1,35 @@
 ---
-title: First review
+title: Pitch and premise review
 description:
-  The second session, where work made in week 1 meets an audience for the first
-  time
+  Your own short film's logline meets the class for the first time, and gets
+  tested against a dramatic question
 week: 2
 date: 2027-03-01
 teachers:
   - idris-fenn
 spec:
-  - work from week 1 is running and can be shown in under two minutes
-  - you can name the one decision you are least sure about
+  - you have written a one-sentence logline naming your protagonist, their
+    want, and what's in the way
+  - your premise is filmable inside a two-to-four-minute runtime with one or
+    two characters and a single location, and you can say why
 related:
   - assessments/assignment-1
 ---
 
-<!-- STARTER_CONTENT: replace this session, then remove this comment. -->
+## Before the workshop
 
-Replace this page. It is here so the sessions listing sorts by week, the detail
-route renders a second spec, and the related block has an edge into the
-assessment collection.
+Bring a logline for your own short — not "Table for One", your own — and a
+one-paragraph premise underneath it.
 
-## Before the session
+## In the workshop
 
-Bring the work from week 1 and the one decision you are least sure about.
-
-## In the session
-
-Short demos, then feedback aimed at the decision rather than the polish. What
-makes a review worth attending is that the feedback changes what someone does
-next, so build in the time to act on it.
+Read loglines aloud, one at a time. The class asks the one question a logline
+has to survive: *so what happens if they don't get it?* If nobody can answer
+that in a sentence, the premise isn't finished yet, no matter how much of it
+is on the page.
 
 ## Afterwards
 
-If attendance or participation is worth marks, say so here and link the rule to
-the [assessment page](/assessments/) rather than restating it.
+Your logline is the fixed point every later week's work gets checked against.
+If it changes later, that's expected — but it changes on purpose, not by
+drift.

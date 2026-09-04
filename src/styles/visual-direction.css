@@ -1,0 +1,81 @@
+/* "Director's Notebook" visual direction — see PLAN.md "Visual direction".
+   Global typography/spacing/motion decisions only. The annotation-layout
+   and take-comparison markup these primitives will be used by belongs to
+   the media component family (PLAN.md, Implementation phases step 3),
+   built alongside the real content it displays.
+
+   Registered via the theme's `brandCss` option (astro.config.ts), not
+   imported from a layout: `PageLayout.astro` is only used for standalone
+   `.mdx`/`.astro` pages (Home, index pages, policies) — collection detail
+   pages (lectures, sessions, assessments, people) render through the
+   theme's `ContentLayout` directly and never see it. `brandCss` is the
+   mechanism the theme itself uses to reach every page, same as
+   `astro-theme-slop/slop.css`. */
+
+:root {
+  --at-transition-note: 0.25s ease;
+}
+
+/* Director's Notes / selection rationale read in a distinct, quieter
+   register from the primary content they annotate. The theme's own
+   blockquote treatment (accent-dash rule, muted colour, light weight,
+   in astro-theme-university/styles/base.css) already carries most of
+   that; italic marks the further shift into a director's own voice,
+   as opposed to quoted source text. */
+blockquote {
+  font-style: italic;
+}
+
+blockquote strong,
+blockquote b {
+  font-style: normal;
+}
+
+/* Production labels (WEEK, SCENE, SHOT, TAKE, SELECTED, REJECTED, ...):
+   small, restrained monospace tags for wherever a label carries real
+   semantic meaning — never decorative, never the dominant typographic
+   voice. */
+.at-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  font-family: var(--at-font-mono);
+  font-size: var(--at-font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.15em 0.5em;
+  border-radius: var(--at-border-radius);
+  background: var(--at-accent-soft);
+  color: var(--at-text-secondary);
+}
+
+.at-tag--selected {
+  background: var(--at-success-soft);
+  color: light-dark(#166534, var(--at-success));
+}
+
+.at-tag--rejected {
+  background: var(--at-error-soft);
+  color: light-dark(#991b1b, var(--at-error));
+}
+
+/* Functional motion only — a reveal for a note or comparison entering
+   view, nothing purely atmospheric. The theme's own reduced-motion
+   override (base.css) already collapses every transition/animation
+   duration to near zero site-wide, so nothing here repeats that query. */
+.at-reveal {
+  animation: at-reveal-in var(--at-transition-note);
+}
+
+@keyframes at-reveal-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.25rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
