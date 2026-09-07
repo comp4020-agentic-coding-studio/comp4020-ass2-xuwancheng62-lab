@@ -225,14 +225,14 @@ disciplinary knowledge from tool mechanics:
 
 ## Open questions / not yet done
 
-- `PROCESS.md` — still the unfilled template; needs the actual account once
-  the curriculum content is committed (currently 28+ files uncommitted).
 - Whether to revisit either of the two open judgement calls above before
   shipping.
 - The full curriculum-reviewer pass described under "Process" above is
-  pending until the decks and the real operational demonstrations exist;
-  running it earlier would only re-check the same text graph the completed
-  pass already covered.
+  pending until the real operational demonstrations exist (lectures,
+  sessions, assessments and all 12 decks are now written and committed);
+  running it earlier would only re-check the same text-plus-decks graph a
+  pass could already walk today, before the real assets that pass is
+  actually meant to catch problems against exist.
 
 ## Site architecture and information architecture
 
@@ -672,9 +672,15 @@ the `spec/` suite. This is a real floor, not aspirational.
 **Not automated, needs a manual pass:** README names "the two marking
 viewports" for decks specifically ("nothing checks whether a slide fits or
 stays legible; that only shows up in a browser, at the two marking
-viewports") — the actual viewports haven't been pinned down yet. Need to
-find that in the brief/spec before claiming deck legibility is covered,
-rather than assuming desktop+mobile and being wrong.
+viewports") without stating the numbers — deliberately, since restating a
+fact the assessment page already owns is how the two start to disagree.
+The course site's assessment page (`#marking-environment`) pins them down:
+**1920×1080 (desktop)** and **390×844 (phone, the iPhone preset in Chrome
+DevTools' device toolbar)** — both are full marking environments, not a
+primary/secondary pair. README doesn't need editing for this; it already
+points at the assessment page rather than hardcoding the numbers. Spot-check
+against these two exact sizes is Phase 9's job once the deck content exists
+(it now does — see phase 5).
 
 **Performance:** `sharp` is a build dependency and the hero already ships as
 `.avif`, so the image pipeline is already doing real optimisation work.
@@ -734,8 +740,22 @@ inventing a Lighthouse target that isn't asked for anywhere.
    lectures, sessions, assessments, all 12 decks, and the real operational
    demonstrations together. Report-only, as always; any change it prompts
    comes back for approval before being applied.
-9. **Final check pass** — `pnpm check`, `pnpm check:evidence`, and a manual
-   spot-check at the actual marking viewports once identified.
+9. **Final check pass — spot-check done.** `pnpm check` and
+   `pnpm check:evidence` green (see "Definition of done"). Manual spot-check
+   against both marking viewports (1920×1080 desktop, 390×844 phone) run
+   across all 12 decks' title/impact/quote slides and every table-bearing
+   slide (weeks 1, 4, 6, 8, 9, 12): all render fully within bounds at both
+   sizes, nothing clipped or overflowing. One methodology pitfall worth
+   recording since it produced a false positive first: emulating the phone
+   viewport by launching Chrome headless with `--window-size=390,844` is
+   **not** equivalent to DevTools' device toolbar — Chrome enforces a
+   real-window minimum width well above 390px, so content gets laid out
+   against that wider enforced width and then the screenshot is cropped to
+   390px, making correctly-fitting slides look clipped. Driving
+   `Emulation.setDeviceMetricsOverride` directly over CDP (what DevTools'
+   device toolbar itself uses) gives the true 390×844 layout and shows no
+   defect. Re-run any future viewport spot-check with real device-metrics
+   emulation (CDP or DevTools itself), not a resized browser window.
 
 ## Definition of done
 
