@@ -54,28 +54,36 @@ skill; each week's session is the smallest exercise that practices it that
 week, not a preview of a later week's skill.
 
 **One running example threads every week** rather than a fresh clip each
-time: *"Table for One"* — a daughter's one last meal with the estranged
-father whose diner is closing that night. Reasoning: the course should feel
-like one continuous production building toward the final crit, not twelve
-disconnected topic weeks. A single scene also keeps the storyboard, shot
-list, and character work from week 4 onward legible as the *same* project a
-student can point to in their director's statement.
+time: *"Before It Stops"* — on the final night before her late mother's
+apartment is cleared, a woman receives a call from the brother she hasn't
+spoken to in years, and must decide whether to answer before the ringing
+stops. Reasoning: the course should feel like one continuous production
+building toward the final crit, not twelve disconnected topic weeks. A
+single scene also keeps the storyboard, shot list, and character work from
+week 4 onward legible as the *same* project a student can point to in their
+director's statement.
 
-**"Table for One" is a placeholder subject, not a creative decision.** The
-site owner has not chosen the real video's subject yet; "Table for One" may
-be retained or replaced when that decision is made. Until a subject is
-chosen, "Table for One" exists only inside the curriculum's teaching prose
-(lecture/session text, used to illustrate what a logline, a bible entry, a
-shot list *look like*) and does not count as completed production work. The
+**"Before It Stops" is this course's fixed teaching example — a lecture
+device, not the owner's film and not a required student project.** It
+replaces the earlier placeholder, *"Table for One"* (a daughter's one last
+meal with the estranged father whose diner is closing that night), by
+owner-approved global substitution on 2026-09-11 — see "Revision history".
+The substitution changed only the story's flavour text: every learning
+outcome, weekly sequence, assessment requirement, duration, and template
+this plan already settled stays exactly as approved. "Before It Stops"
+exists inside the curriculum's teaching prose (lecture/session text, used to
+illustrate what a logline, a bible entry, a shot list *look like*) and, for
+week 1 only, as a genuinely produced demonstration pair (see "Week 1
+status" below) — it is never a stand-in for the owner's own required
+production evidence, which the week-by-week asset checklist tracks
+separately and which this teaching example must never be presented as. The
 lectures' operational demonstrations are a separate matter: the site owner
 must actually perform those workflows and produce real video/image/audio/
-production-process material from them — invented, simulated, or merely
-plausible-looking stand-ins must never be presented as real demonstrations.
-The placeholder stays useful anyway, because it's small and already fully
-worked out in text, making it the cheapest way to test the site's structure
-before the real subject and its assets exist. Real assets, once they exist,
-attach directly to the Lecture page for the week they demonstrate — see
-"Content and data architecture" below.
+production-process material from their own project — invented, simulated,
+or merely plausible-looking stand-ins must never be presented as real
+demonstrations. Real owner assets, once they exist, attach directly to the
+Lecture page for the week they demonstrate — see "Content and data
+architecture" below.
 
 ## Process: how coherence is checked
 
@@ -393,9 +401,11 @@ only, per "Motion" above.
 
 ## Multimedia strategy
 
-**This is a real production, not a static demo site.** The video's subject
-is still undecided; it is not automatically "Table for One." Regardless of
-the chosen subject, the site's owner will genuinely carry out the operations
+**This is a real production, not a static demo site.** The owner's own
+video subject is still undecided; it is not "Before It Stops," which is a
+fixed lecture teaching example and stays one regardless of what the owner
+eventually chooses to direct. Regardless of the owner's chosen subject, the
+site's owner will genuinely carry out the operations
 demonstrated in the lectures and produce the resulting images, video takes,
 voice reads, ambience, Foley, music and finished video. The job on the
 website side is **not** to generate a plausible-looking set of finished
@@ -429,10 +439,8 @@ not the source of the real production's images, video or audio — those come
 from whatever the course's own workflow directs the owner to use, outside
 this repo, and arrive here as files to embed. The only thing this repo's
 image generator is for is the site's own presentation assets (hero, social
-card, portraits) and — kept deliberately minimal, see below — the "Table for
-One" placeholder used to test the display system before real material
-exists. Image budget is confirmed sufficient for that limited use; this is
-not tracked as an open risk.
+card, portraits, decorative deck backgrounds). Image budget is confirmed
+sufficient for that limited use; this is not tracked as an open risk.
 
 **Still open, needs checking before the display-system build (see
 "Implementation phases" below):** the theme ships a `YouTubeEmbed`
@@ -442,30 +450,326 @@ as files the site serves directly (different component, different
 build-size implications). Not deciding this now; flagging it as the first
 thing to resolve once real footage exists.
 
-## "Table for One" asset plan
+## "Before It Stops" asset plan
 
-**No asset generation for "Table for One" while it is only the
-placeholder.** It is currently a placeholder used only to prove the site's
-structure and asset-display components work, not a small production
-heading toward a finished result of its own. Generating a large
-"final-looking" asset set for it now would prematurely turn a placeholder
-into the real video's subject. If the owner later deliberately selects this
-story, its status changes and the lecture demonstrations must still be
-genuinely produced rather than filled with placeholder assets.
+**Teaching-example demonstrations for "Before It Stops" are tracked in
+`MANIFEST.md`, not in this file.** That manifest is the single source of
+truth for every asset's producer, status, dependencies, and acceptance
+criteria, following the Claude Code / Codex / owner division of
+responsibility below. This section states the policy that manifest has to
+honour; it doesn't duplicate the manifest's rows.
 
-What "Table for One" gets, and no more:
-- it stays inside lecture/session **prose only** — no new images, audio or
-  video generated for it beyond what the site's own presentation needs
-  (hero image, social card — see "Visual direction" above, unrelated to the
-  film's story).
-- if a placeholder is genuinely needed to test one specific display
-  component (e.g. confirming an anchor-frame image slot renders correctly
-  before real footage exists), generate the single minimum image needed for
-  that test, labelled visibly as a placeholder, and delete it once real
-  material replaces it. Not a batch, not up front.
-- the site's information architecture makes swapping it out a content
-  change, not a structural one: real assets attach directly to the Lecture
-  page they demonstrate, per "Content and data architecture" below.
+**Division of responsibility:**
+- **Claude Code** audits assets, maintains `MANIFEST.md`, generates the
+  site's own decorative/presentation images, integrates approved assets
+  into the website, and runs consistency checks. It never generates Sora
+  video and never invents a production artefact.
+- **Codex** generates Sora teaching videos from complete briefs (every
+  brief states teaching purpose, exact scene/action, camera behaviour,
+  duration, aspect ratio, continuity requirements, fixed objective,
+  intended interpretation, and the observable difference students should
+  notice), performs technical QA, and returns files plus metadata. Codex
+  never alters the curriculum or integrates files into the website.
+- **The owner** produces all genuine personal-project evidence the course
+  requires (the week-by-week asset checklist below). Teaching examples are
+  never presented as the owner's work, and the reverse never happens
+  either.
+
+**Generation discipline, unchanged from the placeholder era:** at most one
+initial Sora generation and one diagnosed redirect per asset by default:
+Note A → Take A → diagnosis → Note B → Take B, never a batch of
+speculative takes. A real demonstration is produced only where a lecture
+actually claims one exists (currently: week 1 only — see "Week 1 status"
+below); a week's teaching prose describing "Before It Stops" conceptually
+does not, by itself, obligate a produced asset, exactly as it didn't for
+"Table for One." The site's information architecture makes adding one a
+content change, not a structural one: real assets attach directly to the
+Lecture page they demonstrate, per "Content and data architecture" below.
+
+## Session content depth pass
+
+Lectures and sessions currently exist as a skeleton: a lecture's "Outline"
+is bullet points naming a topic, not prose teaching it, and a session's
+`spec:` states what to produce without always saying how it's checked or
+what social format the workshop activity runs in (solo work, paired
+exchange, group discussion, brainstorm). This section is the approved
+approach for fleshing that out — applied one week at a time, each week's
+implementation approved before it happens, starting with week 1.
+
+- **Lectures**: turn "Outline" bullets into taught prose covering the same
+  points at real depth — the technique being taught doesn't change; where
+  a week's outcomes were only ever implicit, stating them explicitly and
+  measurably (as in week 1) is a clarification of what was already being
+  taught, not a new skill added to the week.
+- **Sessions**: give the workshop a named, timed activity format, and
+  where it fits, a completion criterion checkable by **peer verification**
+  — a classmate who wasn't given the director's note or intent judges the
+  result independently. This isn't a new pattern: week 5's session already
+  requires *"a classmate who has never seen your project can describe your
+  protagonist back to you correctly after reading only your bible entry."*
+  Extending that same shape to earlier weeks where it fits is consistent,
+  not invented.
+- **Decks**: touched only to stay in sync with a session's activity
+  structure when that structure changes — decks remain their own
+  distillation, not a copy of the lecture/session prose (see "Content and
+  data architecture").
+
+### Week 1–2 teaching corrections
+
+The Week 2 worked logline is taught through an initial draft and a revised
+reference sentence: the draft's "must decide whether" leaves the want
+ambiguous; the revision explicitly names Nadia's want to answer, her
+self-restraint after years of estrangement, and the immediate risk of
+missing this call. This clarifies the existing story without changing its
+characters or canonical ending. Lecture, deck, and canonical/served text
+assets use the same revised reference; the original remains labelled as a
+draft for comparison.
+
+Week 2 also models the existing filmability requirement before students
+practise it: a compact progression of observable actions, a visible change,
+one kitchen, Nadia on screen and Theo as the caller, and an estimated
+2–4-minute screen-time plan. Timings are planning estimates, never claimed
+as a completed or tested production. This adds teaching support for the
+existing workshop spec, with no new assessed deliverable.
+
+The Week 1 lecture presents Take A and an observation question before
+revealing Note A and the diagnosis. Native, initially closed disclosures
+then reveal the diagnosis, Take B comparison, and redirect explanation in
+sequence. Existing video files and objectives are retained. The lectures
+index contains student-facing introduction only; the Week 2 lecture does
+not refer students to the inaccessible internal `RESEARCH.md` file.
+
+These corrections are limited to Weeks 1–2 and the lectures index. They
+preserve the Week 3 corrections, Week 1's counterfactual workshop framing,
+all assessment specs, and BIS-W01-WORKSHOP's NOT STARTED status.
+
+### Grounding in real directing pedagogy
+
+`RESEARCH.md` compiles sourced findings from seven academic directing
+programs (AFI, NYU Tisch, USC, UCLA, Columbia, London Film School, NFTS)
+and five named methodologies/masterclasses (Judith Weston, David Mamet,
+Sanford Meisner, MasterClass instructors, Sydney Pollack) — every claim
+sourced or explicitly flagged unverified. The templates and per-week
+mapping below are built from it, fitting the course's real constraint of a
+1.5-hour lecture and a 2-hour workshop each week.
+
+**Lecture and workshop are strictly separate, course-wide.** No lecture
+states a workshop's task, timing, format, or completion criteria — that
+belongs entirely to the workshop's own opening. Every workshop in turn
+opens with its own 5–10 minute recap of the lecture's technique before
+stating its task.
+
+**Lecture template (90 min), same shape every week:**
+1. Hook (5–10 min) — re-anchor to "Before It Stops" and the
+   direct→generate→evaluate→redirect loop.
+2. Learning outcomes (5 min) — state the week's outcomes explicitly before
+   teaching starts.
+3. Core technique, taught not named (35–50 min) — the week's core skill
+   worked through a concrete "Before It Stops" example, using real
+   vocabulary where it fits rather than inventing course-only jargon;
+   includes a real demonstration walkthrough wherever that week's asset
+   exists, placeholder-labeled and never fabricated where it doesn't (see
+   "Real production material, never invented" in `CLAUDE.md`).
+4. Misconception contrast (15 min) — a wrong-way/right-way comparison
+   (week 1's wish-vs-note table is the pattern).
+5. Guided student judgement (10–15 min) — low-stakes, in-lecture judgement
+   practice with no generation involved.
+6. Synthesis (5 min) — recap the outcomes and the technique.
+
+**Workshop template (120 min)**, borrowing the cross-program pattern in
+`RESEARCH.md` (a regular screen-and-critique ritual; two distinct modes —
+rehearsal-based when directing a performer, construction-based when
+building/cutting shots, per Columbia's documented split of "Directing
+Actors" vs. "standard directing exercises"):
+1. Recap and task briefing (5–10 min) — the workshop's own recap of the
+   lecture's technique; states the task, any locked material, format,
+   timing, and completion criteria in full.
+2. Main exercise (70–80 min) — the generate→direct→evaluate→redirect loop
+   applied to that week's task, in rehearsal mode (weeks 1, 3, 7, 8, 11) or
+   construction mode (weeks 4, 6, 9, 10). Where the exercise turns on a
+   locked objective or intended interpretation, that stays fixed across
+   iterations — only the note or construction decision changes between
+   attempts, so a redirect is a diagnosed adjustment, not a second
+   unrelated attempt.
+3. Dailies review (20–25 min) — screen work in pairs/small groups before
+   anything's finalized, modeled on AFI's dailies review, NYU's weekly
+   Master Class, and NFTS's rushes-cinema culture: what was the note → does
+   the room read it unprompted, in their own words, including what it does
+   to their reading of the character's intention → what would you redirect
+   next.
+4. Completion check (10 min) — walk the week's `spec:` bullets as a
+   checklist, peer-verified wherever the criterion is a peer-legibility
+   test (weeks 1 and 5's existing pattern).
+
+**How these four phases get written on the page is a standing rule in
+`CLAUDE.md`, not here:** see "Workshop structure: explicit numbered
+activities" — every workshop writes its phases as titled, timed
+`Activity N` blocks with an Instructions and an Expected output part,
+summing to the workshop's total. The four phases above are *what* each
+activity (or group of activities) must cover; `CLAUDE.md` governs the
+page structure they're written in.
+
+**Per-week technique mapping** (outline level — full prose is written and
+approved one week at a time, per "Plan governance"):
+
+| Wk | Gap in current content | Technique to teach (sourced in `RESEARCH.md`) | Workshop mode + completion angle |
+|---|---|---|---|
+| 1 | Done — see "Week 1 status" below | objective→playable-action→interpretation chain, on a locked scene/objective | rehearsal; genuine redirect (objective fixed, only the note changes) + interpretation-based blind review |
+| 2 | Logline stated, not tested | Mamet's objective/tactic framing: logline must name an objective *and* what's in its way, testably | rehearsal-adjacent; partner states the obstacle back from the logline alone |
+| 3 | Intent note named, not taught | Weston's "moment before" — the note names the antecedent circumstance, not an adjective | rehearsal, worksheet-scaffolded (premise → decisive scene → scene change → five observable beats → screenplay form → director's note); partner reads only the isolated line/action and its note, describes the performance choice(s) it could motivate, then compares against the revealed scene |
+| 4 | Shot list as vocabulary list | Mamet's shot-as-argument — build the list by asking what meaning each cut produces, not coverage | construction; partner reads only the shot list and describes the intended meaning |
+| 5 | Already solid | (keep as-is) | already peer-verified; only add named durations/phases |
+| 6 | Shot list "expanded," no critique ritual | AFI's Comprehensive Review — present the package aloud, defend one cut decision | construction; partner asks 2 questions, director defends |
+| 7 | Anchor→motion, no antecedent framing | Weston's moment-before applied to prompting: describe the state before the beat, not the beat itself | rehearsal; dailies-review screens both takes before selection |
+| 8 | Diagnosis named, not gated by objective | Mamet's objective framing as the diagnostic rubric: does the take fail the character's want, not "look wrong" | rehearsal; group dailies-review of 3 takes before selection |
+| 9 | Assembly + continuity log | AFI dailies-review ritual formalized as the workshop's structure | construction; group screens the cut, continuity log filled from the group's actual confusion points |
+| 10 | Recut, no meaning-of-cut framing | Mamet's shot-as-argument extended to pacing: what does *this* cut point argue that the other doesn't | construction; partner watches both cuts blind and guesses which was "hold" vs. "cut early" |
+| 11 | Line reading + sound pass, two skills blurred | Weston/Meisner-adjacent responsiveness framing for the line reading; separate construction pass for the mix | rehearsal (reading) then construction (mix), now named as two explicit phases |
+| 12 | Screening already matches the ritual | Validate against the AFI/NYU/NFTS pattern explicitly; tighten to a defend-3-decisions interview format (AFI's Comprehensive Review) | already the ritual — mainly formalizing the interview/defense structure |
+
+This mapping is editorial synthesis informed by the research, not a
+literal requirement quoted from any single source — treat the "technique
+to teach" column as this course's adaptation, not a claim that (e.g.) AFI
+teaches "Before It Stops" directly.
+
+**Week 1 status: `content done, workshop blocked on an asset`.** The
+lecture and deck are complete and runnable as-is. The workshop's written
+instructions are complete, but the workshop itself cannot run in class
+until `BIS-W01-WORKSHOP` (below) is produced. The design above is applied
+in `week-01.md`,
+`week-01.deck.mdx`, and `01-getting-started.md`: a single
+instructor-provided locked scene (description, reference, character
+objective, and intended audience interpretation) shared by the whole
+class, so a redirect (Note B) is a diagnosed adjustment to that same
+objective, never a second unrelated note. The lecture's real demonstration
+walkthrough is integrated: a genuine Note A → Take A → diagnosis →
+Note B → Take B pair, generated with `sora-2` and QA'd by Codex (see
+`resources/week-01/materials.md` for the full production/QA record and
+`MANIFEST.md` for its manifest entry), served from
+`public/resources/week-01/`.
+
+The workshop's own locked scene **is** a "Before It Stops" beat — a
+distinct one from the lecture's, so the exercise doesn't just re-solve
+the diagnosis students already watched. **Corrected 2026-09-12: it is an
+explicitly counterfactual rehearsal variation, not the story's canonical
+continuation.** Weeks 2 and 3 establish the canonical ending — Nadia
+answers on the final ring before the call would go to voicemail — so the
+workshop instead asks "what if she hadn't answered?": the call has gone
+unanswered to voicemail, and Nadia is deciding whether to call her
+brother back. Same story, same characters, same table, a deliberate
+fork away from what actually happens, not "a beat further on" in the
+same timeline. (A same-day departure to a real film clip — Cooper
+watching Murph's message in *Interstellar* — stood briefly as an
+approved alternative but was reverted by owner instruction on
+2026-09-11; see "Revision history".)
+
+**Redesigned 2026-09-11 (evening): diagnose-and-redirect on an
+instructor-provided anchor, not two independent student generations.**
+The previous design asked each student to generate Take A and Take B
+themselves from the same locked material, on the claim that only the
+note would differ between them — but two independent text-to-video
+generations cannot reliably hold character, set, composition, props,
+lighting, and timing constant, even with a fixed prompt. (The lecture's
+own real demo pair used `sora-2`'s remix/video-to-video path specifically
+to hold continuity, and its own QA record in `resources/week-01/
+materials.md` still notes a minor continuity drift — reframing — between
+takes; independent generation is strictly worse than that.) The workshop
+now runs on one **instructor-provided** anchor image, locked base prompt,
+fixed generation settings, and a prepared Take A for the voicemail-callback
+beat — students never generate Take A themselves. They watch it blind,
+diagnose one observable gap against the revealed objective and
+interpretation, write their own Note B as a redirect, and either apply it
+via remix/video-to-video (if the class's tool supports it reliably) or
+select and justify the best fit among several instructor-provided Take B
+candidates (if it doesn't) — a `direct → generate → evaluate → redirect`
+loop that assesses diagnostic and redirect judgment, not generation luck.
+This is a new required teaching asset, tracked as `BIS-W01-WORKSHOP` in
+`MANIFEST.md` — **not yet produced** (brief at
+`resources/week-01/workshop-brief.md`); the workshop as written cannot
+actually run in class until it is. See "Revision history".
+
+The workshop stays deliberately **tool-agnostic**: it names no specific
+platform, since the previous attempt to lock in one (Pika, chosen after
+Sora's discontinuation) still left every step describing that one
+platform's UI, which is a maintenance and vendor-lock liability the
+loop itself doesn't need. Whatever generation/remix tool is available to
+a given offering of the course, the instructions hold.
+
+**Week 3 scene-planning scaffold (added 2026-09-12).** The lecture and
+workshop teach Weston's antecedent-circumstance note, but neither one
+taught how to get from a Week 2 premise to a two-page scene in the first
+place — a blank-page problem for anyone who's never written a screenplay.
+Added a taught writing-process sequence to the lecture, before the
+existing real-demonstration walkthrough: premise → decisive scene → scene
+change → five observable beats → screenplay form → director's note,
+worked through "Before It Stops" (want: answer Theo's call; obstacle:
+years of estrangement; beginning state: Nadia maintains the silence;
+ending state: she answers; five observable beats from the phone ringing,
+through her hand reaching toward it and stopping, to her accepting the
+call on the final ring). "Observable" is defined narrowly here —
+something the audience can see or hear — and the sequence deliberately
+stops short of camera, framing, or editing decisions, which stay reserved
+for week 4 so the shot-breakdown workshop still receives an undirected-in-
+that-sense scene. A matching downloadable worksheet walks a student through
+the same sequence for their own film, tracked as `BIS-W03-WORKSHEET` in
+`MANIFEST.md`. This is scaffolding, not a new assessed outcome: the three
+`spec:` bullets in `03-screenplay-workshop.md` are unchanged, and no
+individual worksheet field is separately graded — the worksheet exists to
+help students reach those same three bullets, not to add new ones. The
+workshop's main exercise is restructured around the worksheet's sequence
+(story anchor → scene change → five beats → screenplay conversion →
+director's note), with the existing peer-verification test kept as-is at
+the end and named minutes across all phases summing to the full 120-minute
+session. This is editorial/practical scaffolding, not a new sourced
+pedagogical technique requiring its own `RESEARCH.md` grounding — the
+technique actually being taught and assessed stays Weston's "moment
+before," per the mapping table above.
+
+**Week 4 shot-as-argument pass (added 2026-09-12).** Week 4 was still
+outline-only: `week-04.md` had five topic bullets and no taught prose,
+`04-shot-breakdown.md`'s "In the workshop" was three unstructured
+paragraphs with no timings, and both it and `week-04.deck.mdx` still
+described the closing "Before It Stops" beat with its pre-correction ending
+("the call would go to voicemail, her hand finally moving toward the
+phone") rather than the corrected one from the Week 3 fixes above (she
+accepts on the final ring and says "Hey"). Fixed as part of this pass, not
+as a separate correction, since the stale wording only existed in
+still-unwritten Week 4 content.
+
+`week-04.md` rewritten to the full lecture template: shot vocabulary and
+composition/blocking/camera-movement content from the old outline expanded
+into taught prose; Mamet's "shot as argument" (per the mapping table's row
+4 and `RESEARCH.md`) taught by name — build the list by asking what the
+character wants and whether a given cut shows them getting it, not by
+covering every angle; a real demonstration walkthrough shot-listing the
+corrected five closing beats into five shots, each with a stated purpose
+and a note on the meaning its juxtaposition produces (a genuine authored
+teaching artefact, same status as `week-03.md`'s scene — not a claimed AI
+generation or owner asset, so no new `MANIFEST.md` row); a coverage-
+instinct/argument-instinct misconception table, matching week 1's wish/note
+pattern; and a guided-judgement exercise adapted from Mamet's cut-face/
+cut-fridge "hunger" example in `RESEARCH.md`. Learning outcomes stated
+explicitly for the first time; the technique taught is unchanged from the
+mapping table's row 4.
+
+`04-shot-breakdown.md` restructured into five numbered Activities per
+`CLAUDE.md`'s "Workshop structure: explicit numbered activities" and this
+file's 4-phase workshop template (construction mode): recap and briefing
+(10), build the shot list (40), sketch the thumbnails (35), dailies review
+(25, peer test = partner reads only the shot list and describes each cut's
+intended meaning, per the mapping table's row 4), completion check (10) —
+summing to 120. The exercise itself is unchanged; both `spec:` bullets are
+unchanged. `week-04.deck.mdx`'s closing quote slide corrected to the
+current canonical ending; no other slides changed, since the deck stays its
+own distillation rather than mirroring the new lecture prose or the
+workshop's activity structure.
+
+Week 5 (`05-world-bible-crit.md`) was checked directly as Week 4's
+following neighbour and found in the same pre-depth-pass shape (no numbered
+activities, no named durations) — the mapping table already marks it
+"already solid... only add named durations/phases," so it needs the same
+kind of pass next, not as part of this one. Recorded in
+`handoffs/week-04.md`, not actioned here.
 
 ## Week-by-week asset checklist
 
@@ -475,8 +779,10 @@ straight from what each week's session `spec:` and each assessment's
 literal spec bullet; "Optional/stretch" is a suggested enrichment, marked as
 such, never a spec requirement dressed up as one. **Status is the same for
 every row right now: `required — not started`.** Nothing has been produced
-yet; "Table for One" satisfies none of these rows because it exists only as
-teaching prose, not as a real asset of the owner's own project (see above).
+yet; "Before It Stops" satisfies none of these rows because it is a fixed
+lecture teaching example, not a real asset of the owner's own project (see
+above) — this holds even for week 1, whose real demonstration pair is a
+genuine artefact but not the owner's own required evidence.
 Update each row's status as real material arrives — that's the point of
 this table living in a plan file rather than being said once and forgotten.
 
@@ -614,9 +920,9 @@ incrementally, week by week, as real material arrives, without a
 content-model migration. Assignment 1's and the Final Project's own asset
 rows additionally surface on their existing Assessment pages, since those
 are the graded submissions — noted per-week in the checklist above. This
-keeps "Table for One" swappable for the real project by construction: each
-lecture names its own asset slot, not "the Table for One version of X," and
-there's no second collection to keep in sync with the first.
+keeps "Before It Stops" swappable for the real project by construction: each
+lecture names its own asset slot, not "the Before It Stops version of X,"
+and there's no second collection to keep in sync with the first.
 
 **All twelve lectures get a real deck.** Decks stay outside the content
 graph exactly as today (no `related:` edge — README is explicit about
@@ -773,7 +1079,8 @@ inventing a Lighthouse target that isn't asked for anywhere.
 - All 12 lectures have a completed, real deck, week 1 included.
 - Every **Essential** row in the week-by-week asset checklist above is
   satisfied by the owner's real, produced material. A placeholder, or a
-  curriculum-illustration stand-in (including any "Table for One" prose),
+  curriculum-illustration stand-in (including any "Before It Stops" prose,
+  and including week 1's genuine lecture-demonstration pair),
   never counts as completing an Essential row, no matter how finished it
   looks — the checklist's own "required — not started" status only flips
   to done when the real asset actually exists. Optional/stretch rows are
@@ -791,17 +1098,18 @@ inventing a Lighthouse target that isn't asked for anywhere.
 
 ## Risks
 
-- **Conflating "Table for One" (currently curriculum teaching prose) with the
-  owner's still-undecided real production is the single easiest mistake to
-  make from here on.** Every week's lecture/session text still narrates
-  "Table for One" as its worked example — that's fine for teaching, but the
-  moment any of that prose gets treated as if it were a real asset
-  satisfying a checklist row (e.g. reusing week 3's Del/Mara scene sketch as
-  if it were the owner's actual screenplay), the swap-out promise above
-  breaks. The owner may still choose this subject later, but that requires
-  an explicit creative decision; it cannot happen by default because the
-  placeholder was already present. Mitigation: the checklist above marks
-  every row `required — not started` precisely so curriculum illustration
+- **Conflating "Before It Stops" (a fixed curriculum teaching example) with
+  the owner's still-undecided real production is the single easiest mistake
+  to make from here on.** Every week's lecture/session text narrates
+  "Before It Stops" as its worked example — that's fine for teaching, and
+  week 1 additionally has a genuine produced demonstration pair — but the
+  moment any of that prose or that pair gets treated as if it were a real
+  asset satisfying a checklist row (e.g. reusing week 3's "last ring" scene
+  sketch as if it were the owner's actual screenplay), the swap-out promise
+  above breaks. The owner's own film is a separate, still-undecided choice;
+  it cannot be filled in by default because a teaching example was already
+  present. Mitigation: the checklist above marks every row `required — not
+  started` precisely so curriculum illustration
   can never quietly count as production evidence.
 - **Three index pages plus Home carry template meta-commentary that isn't
   caught by any automated check.** `src/pages/lectures/index.mdx`,
@@ -828,6 +1136,13 @@ several sessions without one. Going forward: update this file when a
 structural decision is made, not just when content is written.
 
 ## Revision history
+
+- **2026-09-12** — Owner authorized the four Week 1–2 corrections recorded
+  in "Week 1–2 teaching corrections": draft-to-revision logline teaching,
+  a filmability walkthrough with explicitly untested timing estimates,
+  progressive disclosure of the Week 1 demonstration, and removal of
+  developer-facing index/research references. Implementation is limited to
+  these weeks and their teaching text assets; no assessment spec changes.
 
 Each entry records a departure from this plan that was proposed, approved,
 and then applied — not routine work that simply followed the plan as
@@ -866,3 +1181,353 @@ written, per "Plan governance" above.
   background-image syntax — decorative deck backgrounds were already listed
   in scope under "Decorative artwork vs. teaching visuals" above, so no
   further plan text was needed to cover it.
+- **2026-09-07** — New "Session content depth pass" section added: lectures
+  move from outline bullets to taught prose, and sessions get a named
+  workshop activity format plus, where it fits, a peer-verification
+  completion criterion (matching the shape already used in week 5's
+  session). Approved to apply one week at a time; week 1 approved first —
+  lecture (`week-01.md`), session (`01-getting-started.md`, third `spec:`
+  bullet added), and deck (`week-01.deck.mdx`, "This week's task" slide)
+  updated accordingly.
+- **2026-09-07** — Week 1's teaching design revised again, grounded in
+  `RESEARCH.md`: lecture and workshop made strictly separate course-wide
+  (the "Bridge to the workshop" step removed from the shared lecture
+  template; workshops now open with their own recap-and-briefing step);
+  both templates above updated to include explicit learning outcomes, a
+  real-demonstration walkthrough slot, and guided student judgement. The
+  workshop is rebuilt around one instructor-provided locked scene
+  (description, reference, objective, and intended audience
+  interpretation) shared by the whole class, so a redirect note adjusts
+  only the playable action/timing/emphasis/degree and never the objective.
+  Blind peer review reworded to require identifying the observable change,
+  its location, and its effect on the partner's reading of the character's
+  intention, not the note's exact wording. Week 1's per-week mapping row
+  set to `in progress`, not `done` — the real Note A/Take A → Note B/Take B
+  demonstration remains required and unproduced. `week-01.md`,
+  `week-01.deck.mdx`, and `01-getting-started.md` updated accordingly;
+  `RESEARCH.md` left as-is per instruction.
+- **2026-09-11** — Owner-approved global substitution: the placeholder
+  running example *"Table for One"* is replaced everywhere by *"Before It
+  Stops"* (protagonist Nadia, brother Theo, on the last night before her
+  late mother's apartment is cleared — full premise in "Structure" above).
+  Explicitly a flavour-text swap, not a curriculum redesign: every learning
+  outcome, weekly sequence, assessment requirement, duration, and template
+  already approved stays unchanged. New `MANIFEST.md` created as the single
+  source of truth for teaching-example asset production (Claude Code /
+  Codex / owner division of responsibility, asset status pipeline,
+  prioritized Sora brief queue), superseding the old "'Table for One' asset
+  plan" section's per-asset detail — that section now states policy only
+  and points at the manifest. Week 1's real Note A → Take A → diagnosis →
+  Note B → Take B demonstration pair (produced by Codex with `sora-2`,
+  QA'd, recorded in `resources/week-01/materials.md`) is integrated into
+  `week-01.md` and `week-01.deck.mdx`, served from
+  `public/resources/week-01/`; Week 1's status flips from `in progress` to
+  `done`. `01-getting-started.md`'s workshop scene changed to a distinct
+  beat from the same story (deciding whether to call back after the call
+  goes to voicemail) so the exercise doesn't rehearse a diagnosis students
+  just watched solved. Weeks 2, 3, 4, 5, 7, 10 and 11's lecture/deck prose
+  re-skinned to the new story on the same throughline "closing scene" (the
+  last ring before the call would go to voicemail, her hand finally
+  moving) that the old plate-slide/Del/Mara scene occupied; weeks 6, 8, 9
+  and 12 were untouched, since they never named the running example.
+  `CLAUDE.md` and `PROCESS.md` left unchanged — their "Table for One"
+  mentions are historical citations of when a rule was formalized or a
+  commit's actual content, not statements of current curriculum content.
+
+- **2026-09-11 (later same day).** `01-getting-started.md`'s workshop
+  scene changed again, superseding the "call back after voicemail" beat
+  recorded above: the workshop now uses a real film clip as its
+  performance reference — Cooper watching adult Murph's recorded message
+  in *Interstellar* — rather than a "Before It Stops" beat. Confirmed with
+  the owner as an intentional edit, not an accident, when it appeared as
+  an unplanned on-disk change mid-session; approved to keep as-is rather
+  than reverting to the voicemail-callback scene. The lecture and deck
+  still teach and demonstrate entirely on "Before It Stops" material —
+  only the workshop's own exercise now draws on a different, real source.
+  See "Week 1 status" above.
+
+- **2026-09-11 (later still).** Reverted by owner instruction: the
+  Interstellar film-clip reference is removed from `01-getting-started.md`.
+  The workshop's locked scene goes back to a "Before It Stops" beat — the
+  call has just gone to voicemail unanswered, and Nadia is deciding
+  whether to call her brother back — distinct from the lecture's
+  reach-and-withdraw beat so the workshop isn't re-solving the diagnosis
+  students just watched. See "Week 1 status" above.
+
+- **2026-09-11 (later still, same day).** Student-facing tool for week
+  1's workshop settled as **Pika**, not `sora-2` (the teaching demo's
+  tool). Checked at the owner's request before writing detailed,
+  tool-specific workshop steps: Sora's consumer product was discontinued
+  April 2026 and its API sunsets 2026-09-24, so it isn't viable for a
+  semester-long student exercise regardless of what the teaching demo
+  used. `01-getting-started.md` rewritten with Pika-specific steps,
+  screenshot placeholders (owner supplies the actual captures, per the
+  "Real production material, never invented" rule — no fabricated UI
+  mockups), and explicit per-person roles for the paired dailies-review
+  step. See "Week 1 status" above.
+
+- **2026-09-11 (evening).** Owner instruction: redesign the workshop
+  around the constraint that two independent text-to-video generations
+  cannot reliably hold a scene's continuity, so "only the note changes
+  between takes" was never actually enforceable by the previous design.
+  Replaced with a diagnose-first structure on one **instructor-provided**
+  anchor (image, locked base prompt, fixed settings, a prepared Take A) —
+  students blind-watch and diagnose Take A, write their own Note B, then
+  either remix it (tool permitting) or select and justify the best fit
+  among several instructor-provided Take B candidates. Also reverted the
+  workshop to **tool-agnostic** instructions — the Pika-specific steps
+  from the previous entry are removed along with their screenshot
+  placeholders, since naming one platform tied the exercise to that
+  platform's UI for no pedagogical benefit once generation moved from
+  "student does it" to "instructor supplies it." `01-getting-started.md`
+  rewritten accordingly; frontmatter `spec:` bullets updated to match the
+  new assessed criteria (a diagnosed observable gap, a genuine Note B
+  redirect, a generated-or-selected Take B with justification, and a
+  partner's independent blind read). New required teaching asset
+  `BIS-W01-WORKSHOP` added to `MANIFEST.md`, status `NOT STARTED` — the
+  workshop cannot run in class until it's produced; brief at
+  `resources/week-01/workshop-brief.md`. See "Week 1 status" above.
+
+- **2026-09-11 (night).** Second week of the "Session content depth pass"
+  applied, per the mapping table's week 2 row. `week-02.md` rewritten from
+  outline bullets into taught prose: explicit learning outcomes, Mamet's
+  objective/tactic framing taught as "a logline is a claim with two
+  testable parts, not a summary," a summary-vs-test misconception contrast,
+  and guided judgement on a logline missing an obstacle — worked through
+  the existing served logline/premise
+  (`/resources/week-02/logline.txt`, `/resources/week-02/premise.txt`,
+  already recorded in `MANIFEST.md` as `BIS-W02-LOGLINE`/`BIS-W02-PREMISE`;
+  no new asset produced). `02-first-review.md` restructured into the
+  approved 120-minute workshop template (recap and briefing, main exercise,
+  dailies review, completion check), rehearsal-adjacent mode per the
+  mapping table; third `spec:` bullet added for the new peer-verification
+  step — a partner who has read only the logline states the obstacle back
+  correctly before seeing the premise. `week-02.deck.mdx`'s "This week's
+  task" slide updated to match the new timing and peer-verification step;
+  no other slide content changed.
+
+- **2026-09-11 (later that night).** More practice material added to week
+  2, ungraded, on top of the depth pass above; the mapping table's week 2
+  row and the `spec:` bullets are unchanged. `week-02.md` gets a new "More
+  loglines to test" section (Jaws, Finding Nemo, Die Hard, each broken into
+  objective/obstacle) between the summary-vs-test contrast and the guided
+  judgement example, using real films' publicly known plots as teaching
+  material — not the "real production material, never invented" rule,
+  which governs this course's own demonstrated work. `02-first-review.md`
+  gets a new ungraded warm-up step ("test a familiar film," 10 min) between
+  the recap and the main exercise, letting students rehearse the
+  objective/obstacle peer-verification mechanic on a film they already know
+  before doing it for real; a longer pick-list (adding Toy Story, The
+  Matrix, Alien, Mad Max: Fury Road, WALL-E) keeps partners from all
+  analysing the same three films the lecture already solved.
+  `week-02.deck.mdx` gets one new slide distilling the three lecture films
+  into title-plus-callout form, and a one-clause update to "This week's
+  task" mentioning the warm-up.
+
+- **2026-09-11 (later still).** Third week of the "Session content depth
+  pass" applied, per the mapping table's week 3 row. `week-03.md` rewritten
+  from outline bullets into taught prose: explicit learning outcomes,
+  Weston's "moment before" taught as "a note names the antecedent
+  circumstance, not an adjective," an adjective-note-vs-antecedent-note
+  misconception contrast, a real-demonstration walkthrough on a new
+  teaching text (`BIS-W03-SCENE` — a short screenplay-format scene playing
+  the Week 2 premise's closing beat, with two intent notes, recorded in
+  `MANIFEST.md` and `resources/week-03/materials.md`), and guided judgement
+  on a raw "play it furious" note. `03-screenplay-workshop.md` restructured
+  into the approved 120-minute workshop template (recap and briefing, main
+  exercise, dailies review, completion check), rehearsal mode per the
+  mapping table; third `spec:` bullet added for the new peer-verification
+  step — a partner who has read only the intent note, not the scene,
+  predicts the performance choice before it's revealed. `week-03.deck.mdx`'s
+  "This week's task" slide updated to match; no other slide content
+  changed. `OWN-W03` and the PLAN.md owner-evidence checklist remain
+  outstanding.
+
+- **2026-09-12.** Four owner-approved corrections to the week 3 depth-pass
+  content and the Week 1 workshop's framing, scoped narrowly — no full
+  curriculum-reviewer pass run.
+  1. `BIS-W03-SCENE`'s two director's notes were result/adjective-laden
+     ("active restraint," "too fast," "not casual," "not confident," "a
+     decision that outran itself"), contradicting the lecture's own
+     teaching point that a note names the antecedent circumstance, not a
+     result. Rewritten to name concrete antecedents instead: the held look
+     is grounded in Nadia having just taped the last box from her mother's
+     kitchen shut, seconds before Theo's name appears; "Hey" is grounded in
+     her hand having already pressed to accept the call before she's
+     registered deciding to. `resources/week-03/scene.txt` (both the
+     canonical and served copies), `resources/week-03/materials.md`,
+     `week-03.md`, and `week-03.deck.mdx`'s margin-note slide all updated to
+     match; `MANIFEST.md`'s `BIS-W03-SCENE` row revised to v1.1.
+  2. `week-03.md` restructured so the scene link and an observation
+     question appear before either note or the intended reading is
+     revealed — students read the scene and form their own interpretation
+     first. The notes and follow-on discussion now sit behind `<details>`/
+     `<summary>` accessible disclosures.
+  3. The week 3 peer-verification design changed: a partner previously read
+     only the note and predicted the performance choice sight of the
+     scene; now the partner sees only the isolated line/action plus its
+     note (not the surrounding scene or the intended interpretation),
+     describes one or more performance choices the circumstance could
+     motivate, and only then is the scene context revealed for comparison
+     against the intended dramatic function. `03-screenplay-workshop.md`'s
+     third `spec:` bullet, dailies review, and completion check rewritten
+     accordingly; `week-03.deck.mdx`'s task slide updated to match. The
+     first two `spec:` bullets (≤2-page scene, ≥1 intent note) are
+     unchanged.
+  4. The Week 1 workshop's locked scene — previously described as "a beat
+     further on" in the same story, implying it was the canonical
+     continuation — is corrected to an explicitly counterfactual rehearsal
+     variation: weeks 2 and 3 establish that Nadia answers the call on the
+     final ring, so the workshop's "call went to voicemail" beat is a
+     deliberate "what if she hadn't answered?" fork, not what actually
+     happens next. "Week 1 status" above, `01-getting-started.md`, and
+     `resources/week-01/workshop-brief.md` reworded accordingly; the
+     workshop's media, generation instructions, objective, and intended
+     interpretation are untouched. `BIS-W01-WORKSHOP` stays `NOT STARTED`
+     pending regeneration and QA under the corrected framing.
+  See `MANIFEST.md`'s Revision history for the matching entry.
+
+- **2026-09-12.** Added the Week 3 scene-planning scaffold described above
+  ("Week 3 scene-planning scaffold" note, this section). `week-03.md`
+  gained a new "From premise to a two-page scene: the writing process"
+  section, inserted after Weston's "moment before" and before "The real
+  demonstration" so the cold-read order is untouched: it teaches
+  premise → decisive scene → scene change → five observable beats →
+  screenplay form → director's note, worked through "Before It Stops"
+  (want: answer Theo's call; obstacle: years of estrangement; beginning
+  state: Nadia maintains the silence; ending state: she answers; the five
+  beats from the phone ringing to her hand moving on the final ring),
+  defines a beat as audience-observable and explicitly excludes shot/
+  camera/edit decisions as week 4's job, and shows the beats converting
+  directly into a slugline/action/dialogue fragment. Learning outcomes
+  left unchanged — the process is taught in service of the existing three
+  outcomes, not as a new one. A new downloadable worksheet,
+  `resources/week-03/scene-planning-worksheet.txt` (served copy at
+  `public/resources/week-03/scene-planning-worksheet.txt`, recorded as
+  `BIS-W03-WORKSHEET` in `MANIFEST.md` and in
+  `resources/week-03/materials.md`), walks a student through the same
+  sequence for their own film; linked from this new lecture section.
+  `03-screenplay-workshop.md` restructured around the worksheet with exact
+  (not ranged) minute values summing to 120: recap and briefing (10), story
+  anchor (10), scene change (10), five observable beats (15), screenplay
+  conversion (25), director's note (10), dailies review (30, unchanged
+  peer-verification design from the 2026-09-12 corrections above), and
+  completion check (10). All three `spec:` bullets are unchanged — the
+  worksheet adds no new graded requirement. `week-03.deck.mdx` gained six
+  new sparse slides (one idea each: the premise-to-scene sequence; choosing
+  the decisive scene; the beginning/end scene change; the five "Before It
+  Stops" beats; converting one beat into screenplay form; the worksheet),
+  inserted after the existing "The margin note" slide and before the
+  "Before It Stops" quote slide; no existing slide content changed. Row 3
+  of the per-week technique-mapping table above updated to name the
+  worksheet-scaffolded sequence and the corrected peer-verification design
+  in one place (it had still described the pre-correction design). Week 2
+  (`week-02.md`, `resources/week-02/premise.txt`) and Week 4
+  (`week-04.md`, `04-shot-breakdown.md`) checked directly and left
+  unchanged — Week 2 already supplies the want/obstacle this section
+  reuses, and Week 4 has no shot-level content pre-empted by it. See
+  `MANIFEST.md`'s Revision history for the matching entry.
+
+- **2026-09-12.** Five corrections to the Week 3 scene-planning scaffold
+  above, made after `resources/week-02/premise.txt` was itself corrected
+  (location: her late mother's apartment kitchen, not just "its kitchen
+  table"; ending: she accepts the call, says "Hey," then listens — not
+  "her hand finally moves toward the phone rather than away").
+  1. **Genuinely blind cold read.** `resources/week-03/scene.txt`
+     previously carried both director's-notes inline, so the lecture's
+     "read the scene before reading any further" instruction wasn't
+     actually blind. Split into a clean `scene.txt` (no notes, linked
+     before the reveal) and a new `resources/week-03/scene-annotated.txt`
+     (both notes reinstated in the margin, linked only after both
+     `<details>` reveals). Both get served copies under
+     `public/resources/week-03/`. `resources/week-03/materials.md`'s
+     `BIS-W03-SCENE` section and `MANIFEST.md`'s matching row rewritten
+     for the two-file split.
+  2. **Worksheet timing, made consistent.** The lecture and deck said to
+     complete the worksheet before the workshop; the workshop said to
+     bring it blank. All three now say the same thing: download and read
+     the worksheet before the workshop, complete it during the workshop
+     on your own Week 2 premise. `week-03.md`, `week-03.deck.mdx`, and
+     `03-screenplay-workshop.md`'s "Before the workshop" section reworded
+     accordingly; the worksheet file itself already matched this and
+     needed no change.
+  3. **"Before It Stops" example synchronized.** `week-03.md`'s opening
+     paragraph, its illustrative screenplay-form code snippet (slugline
+     corrected from "INT. NADIA'S KITCHEN" to "INT. MOTHER'S APARTMENT -
+     KITCHEN"), the "decisive scene" paragraph, and `week-03.deck.mdx`'s
+     "choosing the decisive scene" slide and closing quote slide all
+     updated to the corrected location and ending, including the
+     reach-and-stop beat ("her hand drifts toward it, stops") ahead of
+     acceptance on the final ring. The scaffold note earlier in this
+     section, and `MANIFEST.md`'s `BIS-W03-SCENE` row, reworded the same
+     way. The one dated Revision history entry above that also describes
+     these beats is left untouched, per this file's own rule against
+     silently rewriting history.
+  4. **A subtler result-oriented note, corrected.** `week-03.md`'s "wish
+     for a scene" table paired "Make the ending feel inevitable" with a
+     note describing Nadia's changing belief over the scene — the same
+     result-first failure the section teaches against, just narrated
+     instead of stated as an adjective. Replaced with a concrete
+     antecedent fact already true before the scene starts ("tomorrow the
+     movers empty this kitchen for good"), and the explanation rewritten
+     to say so explicitly, leaving the actual performance open.
+  5. **Workshops written as explicit numbered activities.** New authoring
+     rule added above, in "Workshop template (120 min)": every workshop's
+     "In the workshop" section is written as titled, timed "Activity N"
+     blocks with an Instructions and an Expected output part, applying
+     course-wide going forward. `03-screenplay-workshop.md`'s eight phases
+     restructured into Activities 1–8 on this shape; the exact per-phase
+     minute values (10/10/10/15/25/10/30/10, summing to 120), the three
+     `spec:` bullets, and the existing peer-verification dailies-review
+     design are all unchanged — only the presentation structure changed.
+  See `MANIFEST.md`'s Revision history for the matching entry.
+
+- **2026-09-12 (recurring requirements made durable).** The explicit
+  numbered-activity requirement above had only ever been recorded in this
+  file and in conversation history, and was at risk of being dropped on a
+  future week's workshop for exactly that reason. Two fixes, both to
+  process rather than to any week's taught content:
+  1. The rule itself moved to `CLAUDE.md` ("Workshop structure: explicit
+     numbered activities"), which every session reads as a matter of
+     course — this file's "Workshop template (120 min)" section now
+     points there instead of restating it.
+  2. A new per-week continuity mechanism: `handoffs/TEMPLATE.md` (a
+     shared shape) and one `handoffs/week-NN.md` per week, recording that
+     week's status and open questions only — never a standing rule,
+     which stays in `CLAUDE.md` or a `PLAN.md` template and gets linked
+     to by name. `CLAUDE.md`'s new "Weekly handoff records" section
+     requires reading both `CLAUDE.md` and the relevant handoff before
+     starting work on a week. `handoffs/week-03.md` written as the first
+     instance, checked against the numbered-activity rule (no structural
+     omissions found — Week 3's workshop already had all eight activities
+     titled, timed, and carrying both an Instructions and an Expected
+     output part, summing to 120 minutes).
+  No week's learning outcomes, `spec:` bullets, or taught technique
+  changed. See `MANIFEST.md`'s Revision history for the matching entry.
+
+- **2026-09-12 (Week 4 shot-as-argument pass).** Added the Week 4 design
+  described above ("Week 4 shot-as-argument pass," this section).
+  `week-04.md` rewritten from five outline bullets into the full lecture
+  template (explicit outcomes; shot vocabulary and composition/blocking/
+  camera-movement content expanded into taught prose; Mamet's "shot as
+  argument" taught by name per the mapping table's row 4; a real
+  demonstration shot-listing the five corrected closing beats into five
+  purposeful shots; a coverage-instinct/argument-instinct misconception
+  table; a guided-judgement exercise). `04-shot-breakdown.md` restructured
+  into five numbered Activities (recap and briefing 10, build the shot list
+  40, sketch the thumbnails 35, dailies review 25, completion check 10,
+  summing to 120) per `CLAUDE.md`'s numbered-activity rule; both `spec:`
+  bullets unchanged. Corrected a pre-existing bug found while checking
+  Week 4 against Week 3 (in scope per `CLAUDE.md`'s adjacent-week check):
+  `week-04.md`'s outline and `week-04.deck.mdx`'s closing quote slide still
+  described the "Before It Stops" ending as going to voicemail with her
+  hand "finally moving toward the phone," the pre-correction version from
+  before the Week 3 "Five corrections" entry above — both now read the
+  corrected ending (she accepts on the final ring and says "Hey"). No new
+  `MANIFEST.md` row created — the demonstration shot list is a genuine
+  authored teaching artefact, the same status as `week-03.md`'s scene, not
+  an owner asset or a claimed AI generation. Week 5 checked directly as
+  Week 4's following neighbour and left unchanged — it's next in line for
+  the same kind of pass per the mapping table, not part of this one; see
+  `handoffs/week-04.md`. See `MANIFEST.md`'s Revision history for the
+  matching entry.
