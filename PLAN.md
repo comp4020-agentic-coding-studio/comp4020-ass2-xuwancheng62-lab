@@ -618,7 +618,7 @@ approved one week at a time, per "Plan governance"):
 | 2 | Logline stated, not tested | Mamet's objective/tactic framing: logline must name an objective *and* what's in its way, testably | rehearsal-adjacent; partner states the obstacle back from the logline alone |
 | 3 | Intent note named, not taught | Weston's "moment before" — the note names the antecedent circumstance, not an adjective | rehearsal, worksheet-scaffolded (premise → decisive scene → scene change → five observable beats → screenplay form → director's note); partner reads only the isolated line/action and its note, describes the performance choice(s) it could motivate, then compares against the revealed scene |
 | 4 | Shot list as vocabulary list | Mamet's shot-as-argument — build the list by asking what meaning each cut produces, not coverage | construction; partner reads only the shot list and describes the intended meaning |
-| 5 | Already solid | (keep as-is) | already peer-verified; only add named durations/phases |
+| 5 | Bible fields named but not modelled | Concrete character/location entries, fixed facts versus shot state, diagnosed revision | six timed activities; blind read-back and evidence-based revision; see approved Week 5 depth pass |
 | 6 | Shot list "expanded," no critique ritual | AFI's Comprehensive Review — present the package aloud, defend one cut decision | construction; partner asks 2 questions, director defends |
 | 7 | Anchor→motion, no antecedent framing | Weston's moment-before applied to prompting: describe the state before the beat, not the beat itself | rehearsal; dailies-review screens both takes before selection |
 | 8 | Diagnosis named, not gated by objective | Mamet's objective framing as the diagnostic rubric: does the take fail the character's want, not "look wrong" | rehearsal; group dailies-review of 3 takes before selection |
@@ -770,6 +770,450 @@ activities, no named durations) — the mapping table already marks it
 "already solid... only add named durations/phases," so it needs the same
 kind of pass next, not as part of this one. Recorded in
 `handoffs/week-04.md`, not actioned here.
+
+**Week 4 revision: deck slides, shot 5 staging, guided judgement (added
+2026-09-12).** A review of the pass above found three gaps, fixed here.
+First, `week-04.deck.mdx` had never caught up with the lecture rewrite — it
+named none of Mamet's test, the five-shot worked example, or the guided
+judgement. Three slides added, in the lecture's own sequence: "Mamet's test:
+the shot as argument" (the fridge/hunger example and the want/get-it filter,
+after the composition slide); "Five shots, one purpose each" (a compact
+shot/type/purpose table replacing the old quote slide's role, kept next to
+it); "Guided judgement: which pairing argues something?" (the concealment
+scenario, summarized). The closing quote slide's wording was updated to
+match shot 5's new staging (below), not otherwise changed. Second,
+`week-04.md`'s shot 5 asserted a single close-up covering both her hand
+closing over the phone and her face saying "Hey" without saying how one
+shot holds both; rewritten as one continuous take — camera framed low on
+the tabletop and her hand's approach, tilting up with her hand as it lifts
+the phone to her ear, settling on her face for the line — naming the
+framing, blocking, and camera movement that make it one shot, not two. The
+canonical ending (she accepts on the final ring and says "Hey") is
+unchanged. Third, the guided-judgement exercise declared the medium→wide
+pairing "coverage" without a stated dramatic intention or enough spatial
+detail for that judgement to follow; rewritten with an explicit intention
+(concealment from a housemate visible in the background) and enough framing
+detail that the medium→wide pairing's redundancy and the close-up→insert
+pairing's argument both follow from the scenario, plus an explicit line
+scoping the verdict to this beat's intention rather than to wide shots in
+general (citing shot 1 of the week's own demonstration, a wide chosen to
+argue isolation, as the counter-example). No `spec:` bullet, learning
+outcome, or the running example changed; `04-shot-breakdown.md` was not
+reopened, since none of the three findings targeted it.
+
+**Week 4 teaching diagrams (added 2026-09-12).** Week 4 was content-complete
+in prose but text-only; eight visual teaching assets were added so the
+lecture's claims (shot sizes, five-shot continuity, shot 5's staging,
+composition, angle, blocking/camera movement, the guided-judgement pairings)
+are shown, not just asserted, plus a printable shot-list/storyboard
+template for the workshop. This falls under "Visual direction"'s "Decorative
+artwork vs. teaching visuals, kept strictly separate": these are
+pedagogically accurate, content-specific diagrams, made only where a concept
+needs visual explanation, displayed as themselves rather than restyled into
+the abstract poster system — a different thing from the deferred media
+component family (`Implementation phases` step 3), which is about displaying
+the owner's own real production footage/audio and stays deferred untouched.
+No `MANIFEST.md` asset row was added: these are instructor teaching
+material, not owner-produced evidence, so `OWN-W03`/`OWN-W04` stay `OWNER
+REQUIRED`/TBD.
+
+Seven inline `<svg>` diagrams were added directly into `week-04.md`'s
+markdown (shot-size comparison; the five-shot storyboard; shot 5 staged as
+one continuous take, three stages joined by a single camera-movement arrow;
+composition compared centred vs. edge-of-frame for one named beat; camera
+angle compared eye-level/high/low for the same beat; an overhead
+blocking/camera-movement comparison with a legend distinguishing character
+and camera paths by both stroke style and token shape; and the two guided-
+judgement pairings illustrated under an explicit beat/intention header).
+Each SVG uses the theme's real brand tokens (`var(--at-primary)` etc., with
+literal fallback hexes), carries `role="img"` and a descriptive `aria-label`,
+and sits under a `<figcaption>` with an `.at-tag` "Diagram" marker; an intro
+sentence at the first diagram labels all of them as teaching illustrations,
+not filmed footage. New `.at-diagram-row`/`.at-diagram-row--wide` CSS was
+added to `src/styles/visual-direction.css` for panel layout only — the SVGs
+carry all teaching content. The eighth asset, a printable shot-list/
+storyboard template, follows the Week 3 `resources/` pattern: canonical copy
+at `resources/week-04/shot-list-template.html`, byte-identical served copy
+at `public/resources/week-04/shot-list-template.html`, documented in a new
+`resources/week-04/materials.md`, and linked once from `04-shot-breakdown.md`
+("Before the workshop," one added sentence, the two `spec:` bullets/five
+Activities/120-minute total all unchanged — confirmed by diff) and once from
+`week-04.md`'s closing synthesis paragraph. `week-04.deck.mdx` was
+deliberately not touched — folding these diagrams into slides is a separate,
+later decision about decks generally, not scoped to this pass. `pnpm
+typecheck` and `pnpm build` (axe accessibility + link checks over the
+rendered pages, including the new inline SVGs and the standalone template
+page under `public/`) both passed with 0 errors/violations after one fix: the
+template's bare `<body>` initially tripped axe's landmark-region check and
+was wrapped in `<main>` in both copies. See `MANIFEST.md`'s Revision history
+for the matching entry.
+
+### Week 5 depth pass — approved
+
+Approved by the owner on 2026-09-12 ("ok do it"). The owner subsequently
+confirmed that visual details remain pending while text teaching and templates
+are completed. This pass extends the earlier activity-numbering-only scope;
+worked entries explicitly remain incomplete visual production references.
+
+**Problem addressed.** The prior lecture named character/location bible fields but
+did not model writing or revising an entry. The workshop had a useful blind
+peer check, but no numbered activities or timings. The deck repeated the
+outline. Prior wording promised that identical text produces the same
+person and that references remain unchanged forever; the revision should
+distinguish a continuity specification from a guarantee of model output,
+and stable facts from deliberate, documented revisions.
+
+**Outcome and boundaries.** Teach students to write concrete
+character/location entries and diagnose missing or ambiguous information
+through a partner's independent reading. Preserve both existing workshop
+`spec:` bullets verbatim, dates, teacher, links, and assessment requirements.
+No image generation is required to complete this text-based workshop.
+Owner evidence, including OWN-W05, remains deferred and unfulfilled.
+
+**Lecture (90 minutes).** Recap of Week 4's continuity needs (5); explicit
+outcomes (5); teach and model character fields, location fields, costume/
+prop references and a short visual-style specification (45); vague versus
+repeatable entry comparison (15); guided diagnosis and revision of an
+ambiguous entry (15); synthesis and workshop preparation (5). The worked
+example should actually author entries for Nadia, Theo and the kitchen,
+using established story facts and approved visual references. Explain what
+must remain fixed, what may vary per shot, and how to record an intentional
+revision. Verify any tool-specific claims with primary documentation during
+implementation; avoid promising that repeated wording guarantees identity.
+
+**Workshop (120 minutes).** Keep the existing requirement to bring draft
+entries for every named character and location. Make all activities explicit
+with Instructions and Expected output:
+
+| Activity | Minutes | Expected output |
+|---|---:|---|
+| 1. Recap and inventory | 10 | List of characters/locations and missing draft entries |
+| 2. Make details repeatable | 25 | Revised entries with concrete observable fields |
+| 3. Blind partner read-back | 20 | Partner's written account of the protagonist, before author explanation |
+| 4. Diagnose and revise | 30 | Corrections tied to mismatches, omissions or ambiguities |
+| 5. Dailies review and recheck | 25 | Peer comparison against the revised entry; note reader familiarity if no fresh partner is available |
+| 6. Completion check | 10 | Both existing spec bullets checked, with any remaining gap named |
+
+Activities 2–4 form the 75-minute main exercise. Judge read-back against
+the entry's stated facts, not unspoken author intentions. Distinguish
+reader omission from ambiguous writing before deciding which text to fix.
+
+**Deck and resources.** Synchronize the deck with the approved lecture:
+learning outcomes, entry fields, worked excerpts, contrast, judgement task,
+peer-check process and final checklist. Produce actual authored teaching
+examples and a printable/downloadable character-and-location worksheet,
+with canonical files under `resources/week-05/`, served copies under
+`public/resources/week-05/`, and a materials record. The worksheet should
+include reference/version, fixed facts, allowed variations and peer-feedback
+space as scaffolding, not new assessed requirements. Reference images remain
+optional; choose image formats/tools only if visual assets are subsequently
+requested. Do not fabricate a production test or a demonstrated consistency
+result. Add teaching-asset records only when those assets actually exist.
+
+**Dependencies and unresolved decisions.** CC is currently producing Week 4
+images per the owner. Before authoring Nadia's appearance, wardrobe, phone
+or kitchen details, inspect the accepted Week 4 references and their records;
+unapproved generated details are not automatically story canon. Propose any
+missing facts explicitly rather than inventing a second incompatible world.
+Theo is currently represented by the incoming call in the closing example;
+confirm his required representation from the accepted story material before
+inventing an on-screen design. If the optional reference images are not yet
+accepted, the text structure can be drafted with undecided fields clearly
+identified, without presenting them as finished examples.
+
+**Scope and implementation order.** re-read current files and
+git status; resolve reference-dependent facts; author the lecture and worked
+entries; structure the workshop and worksheet; synchronize slides; verify
+and update the handoff. Content review stays within Weeks 4–6. Week 6's
+current lecture expects the bible in the pre-production package; no Week 6
+edit is proposed. Avoid Week 4 files and global styles. Re-read shared
+PLAN.md/MANIFEST.md immediately before narrowly editing them; preserve CC's
+work and do not treat earlier file snapshots as current.
+
+**Acceptance and verification.** Every required workshop concept is taught
+in the lecture; all character/location entries required by the existing
+spec are accounted for; the worked entry demonstrates how the peer test is
+judged; numbered activities total 120 minutes; slides reflect the approved
+content; downloads resolve and canonical/served copies match. Inspect page,
+deck and printable layout at the prescribed marking viewports. Run
+`pnpm typecheck` and `pnpm build` after implementation; report failures from
+concurrent work separately. Verification results are recorded in `handoffs/week-05.md`; an end-to-end
+120-minute workshop trial remains unperformed.
+
+**Implementation status (2026-09-12).** Approved text/template scope is complete.
+Lecture, six-activity workshop and 15-slide deck are integrated; authored draft
+entries and a three-page printable worksheet have matching served copies.
+Typecheck/build passed; desktop, phone and print QA are recorded in the
+Week 5 handoff. Visual production fields remain pending by owner instruction.
+
+### Weeks 6–12 depth pass — approved
+
+Approved by the owner on 2026-09-12 ("build all the following weeks, I will
+check them when I am back in 2 hours"), extending the same depth-pass scope
+already approved and precedented for Week 5 above to the remaining
+outline-only weeks. The per-week technique/workshop-mode mapping table
+earlier in this section (sourced from `RESEARCH.md`) is the specification
+each week's rewrite follows; this entry records the implementation, not a
+new technique decision.
+
+**Problem addressed.** Weeks 6–12's lectures were `## Outline`-only bullet
+lists with no worked example, misconception contrast, or guided-judgement
+exercise; their sessions described the workshop in unnumbered prose instead
+of the required numbered-activity format; their decks mirrored the
+skeletal outlines. Week 7 additionally still described the pre-correction
+ending ("her hand finally moving toward the phone, [never actually
+answering]"), contradicting the corrected canonical ending already fixed
+in Week 4 (she accepts on the final ring, lifts the phone, and says "Hey").
+
+**Outcome and boundaries.** Every lecture now follows the established
+six-part shape (outcomes, technique, worked example, misconception
+contrast, guided judgement with a `<details>` answer, synthesis); every
+session's "In the workshop" section is rewritten as numbered `Activity N`
+entries summing to exactly 120 minutes, with existing `spec:` frontmatter
+bullets preserved verbatim; every deck is resynchronized to its lecture and
+session. No new story facts were invented — every worked example either
+reuses established canon (the closing beat, the whole-short schedule from
+Week 6, the corrected ending) or is explicitly disclaimed as an authored
+teaching example, never presented as a report of an actual generation,
+consistent with the "Real production material, never invented" rule. No
+week's learning outcomes, spec bullets, or assessment weighting changed.
+
+**Per-week specifics:**
+
+- **Week 6 — Planning before generating.** Technique: the shot list as a
+  dependency schedule, not a wish list. Worked example: a 7-shot whole-short
+  schedule extending Week 4's closing five with two new shots covering the
+  0:00–1:25 segment Week 2 only described in prose; every shot's "depends
+  on" column is read against Week 5's still-pending bible fields. Workshop
+  mode: Comprehensive-Review-style dailies, presenting the schedule aloud
+  and defending one cut (a drafted-then-cut fridge-photo insert, dropped
+  because it repeats the reach-and-stop insert's argument).
+- **Week 7 — From frame to performance.** Technique: Weston's moment-before
+  applied to prompting — a concrete antecedent circumstance, not a mood
+  word. **Also corrects the stale ending text** in both the lecture and
+  deck to match the canonical corrected ending. Workshop mode: rehearsal,
+  with a dailies-review screening of both takes before the note behind
+  each is revealed.
+- **Week 8 — Directing the AI performer.** Technique: Mamet's
+  objective/tactic framing reused as a three-way diagnostic rubric for a
+  failed take (note, reference, or model). Workshop mode: rehearsal, with a
+  group dailies-review of three takes.
+- **Week 9 — Continuity and production.** Technique: AFI's dailies-review
+  ritual formalized as the workshop's own structure — watch cold, log
+  precisely, repair only what's flagged. Workshop mode: construction, with
+  a group-screened continuity log.
+- **Week 10 — Editing and dramatic rhythm.** Technique: Mamet's
+  shot-as-argument extended to cut points and pacing. Workshop mode:
+  construction, with a blind hold-vs-cut-early comparison (a partner
+  reads each cut's argument before being told which is which).
+- **Week 11 — Directing with sound.** Technique: Weston's single-note
+  discipline applied to a voice, plus a Meisner-adjacent responsiveness
+  framing for line reading, explicitly flagged in-lecture as this course's
+  own inference rather than documented Meisner-for-directors pedagogy (per
+  `RESEARCH.md`). Workshop mode: two explicit phases, rehearsal (directing
+  the line) then construction (building the sound pass around it).
+- **Week 12 — Screening, critique, and revision.** Technique: the
+  cross-program screening-and-critique ritual (AFI dailies review, NYU's
+  weekly Master Class, NFTS's rushes cinemas), tightened into a
+  Comprehensive-Review-style defend-three-decisions interview. Workshop
+  mode: cold group screening followed by specific-alternative critique.
+
+**Scope and implementation order.** Re-read each week's current files and
+its immediate neighbours before rewriting; content review stayed within
+each week plus its adjacent weeks, never wider, per the standing
+per-week-check boundary in `CLAUDE.md`. No Week 1–5 file was edited except
+where already covered by the Week 5 entry above.
+
+**Acceptance and verification.** Every lecture's worked example either
+reuses established canon or is explicitly disclaimed; every session's
+activities sum to 120 minutes with `spec:` bullets unchanged; every deck is
+resynchronized. `pnpm typecheck` and `pnpm build` are run after
+implementation, with results recorded in each week's handoff
+(`handoffs/week-06.md` through `handoffs/week-12.md`). An end-to-end
+120-minute workshop trial remains unperformed for all seven weeks, the same
+open item recorded for Week 5.
+
+**Implementation status (2026-09-12).** Lectures, sessions, and decks for
+Weeks 6–12 are rewritten to the approved shape. Week 7's stale ending text
+is corrected. Verification (typecheck/build) and per-week handoffs are the
+remaining steps before this entry can be closed out.
+
+### Week 2 — good-story criterion addition — approved
+
+**Approval basis.** Owner requested, in conversation on 2026-09-13, adding
+a "what makes a good story" discussion to Week 2's workshop, specifically
+that short-form drama needs an emotional hook and should avoid lengthy
+dialogue and abstract internal monologue. When asked whether this should
+be workshop-only or taught first, owner confirmed the fuller scope: teach
+it in the lecture, then discuss/apply it in the workshop — per
+`CLAUDE.md`'s teach → practise → assess rule, since this is a
+disciplinary concept, not tool mechanics.
+
+**Problem addressed.** Week 2's lecture already tests a logline's
+objective/obstacle and a premise's scope, but never states a criterion
+for story *quality* specific to short-form drama — why an emotional hook
+matters, and why lengthy dialogue or abstract internal monologue work
+against a two-to-four-minute film. The existing "Before It Stops" premise
+already avoids both (no dialogue exposition of the estrangement, no
+internal monologue) but the lecture never named that as a deliberate
+choice.
+
+**Approach.** Add a new lecture subsection stating this as a named
+criterion, illustrated by pointing at what the existing "Before It Stops"
+premise already does (and deliberately doesn't do) rather than inventing
+a new example. Add a matching, short discussion point to the workshop's
+existing task, folded into the existing "Write and pair up" activity
+rather than a new timed activity — Week 2's session predates the
+numbered-activity-with-fixed-minutes convention (`CLAUDE.md` → "Workshop
+structure: explicit numbered activities"), and this addition doesn't
+warrant retrofitting that convention on its own.
+
+**Outcome and boundaries.** No `spec:` bullet changes — this is a
+teaching/discussion addition, not a new completion criterion. No change
+to the running example beyond naming, explicitly, a choice "Before It
+Stops" already makes. One new deck slide reflecting the lecture addition;
+no change to the deck's existing structure otherwise.
+
+**Implementation status (2026-09-13).** Lecture, session, and deck
+updated. `pnpm typecheck`/`pnpm build` to be re-run after.
+
+### Week 6 — bible → keyframes → generated shots pass — approved
+
+**Approval basis.** Owner requested, in conversation on 2026-09-13,
+extending Week 6's existing shot-list-as-schedule teaching to explicitly
+name the chain between a locked bible and a generated shot: a bible fixes
+identity; a keyframe translates that identity into one shot's specific
+still (or, for a continuous shot, a starting and an ending still); a
+generated shot adds performance, action, timing, and camera movement on
+top of the keyframe(s). Owner specified the worked example in detail —
+"Before It Stops"'s final continuous tilt (shot 7): a starting keyframe
+low on Nadia's hand and the phone on the table, an ending keyframe with
+the phone at her ear for "Hey," and the directed transition between them
+(she accepts and lifts while the camera tilts up, no cut) — and asked the
+workflow be stated as tool-dependent (some tools take both a start and end
+reference image; some take only one, in which case the end keyframe
+becomes an evaluation target rather than a second input), and that
+matching keyframes not be conflated with a finished shot: the movement
+between them still has to be directed and evaluated separately. Owner also
+asked the stale claim that Nadia, the kitchen, and the phone are all still
+"pending" in Week 5's bible be replaced with the current state — these
+references were generated and integrated into `week-05.md` on 2026-09-13
+(`resources/week-05/materials.md`), with the kitchen's full production
+approval as the one remaining open item.
+
+**Problem addressed.** Week 6 taught the shot list as a dependency
+schedule but stopped one level short of how generation actually works: it
+never named the keyframe as the shot-specific artefact between a bible
+reference and a generated shot, and never said that matching keyframes
+doesn't by itself produce a good shot. Separately, Week 6's citation of
+Week 5's bible had gone stale the moment the Nadia/kitchen/phone
+references were actually generated — continuing to describe them as
+"pending" was no longer accurate and would read as either an error or an
+unresolved dependency that had, in fact, resolved.
+
+**Approach.** Add a new lecture section ("Bible, keyframes, generated
+shots: three different jobs") stating the three-tier chain and the
+matching-isn't-sufficient point, pointing back at Week 5's own
+fixed-identity-versus-changing-state table by name rather than re-deriving
+it. Extend the outcomes list (a fourth outcome for the matching-isn't-
+sufficient judgement) and the misconception table (a fifth row). Replace
+the single "Depends on" table in "The real demonstration" with a table
+tracing keyframe(s) → bible reference(s) → what the generated shot adds
+per shot, giving shot 7 its two keyframes as an authored planning example
+(disclaimed the same way Week 7 disclaims its own worked takes) and adding
+a short paragraph distinguishing narrative order from preparation order
+(shot 1, blocked on the kitchen's pending approval, vs. shot 6, already
+ready, despite coming later in the story). Correct the stale "recorded
+pending" claim to name the current state and the one real open item.
+Revise the workshop's Activities 1, 2, 4, and 5 to practise naming
+keyframes and their bible references and building a preparation list,
+without changing either `spec:` bullet or the 120-minute total. Update the
+deck to match, including new slides for the three-tier chain, the shot-7
+worked example, matching-isn't-sufficient, tool-dependent input, and
+narrative-vs-preparation order.
+
+Two small neighbour syncs are included, since leaving them would make
+Week 6 self-contradicting the moment it changes: Week 7's one sentence
+citing "week 6's schedule" flagging pending references (now false) is
+corrected to reflect current status; `MANIFEST.md`'s `BIS-W05-ENTRIES`
+status cell, still reading "visual design pending," is updated to record
+the 2026-09-13 integration, with a new revision-history line appended
+(the existing 2026-09-12 entry is left as an accurate historical record,
+not rewritten). Week 5's own lecture/session/handoff text is not touched —
+it already states the current state correctly; only Week 6's citation of
+it, and the shared manifest, were stale. `handoffs/week-05.md` is also
+stale (still says no image generation was performed) but fixing it isn't
+necessary for Week 6's correctness and is out of scope for this pass —
+flagged in Week 6's handoff instead.
+
+**Outcome and boundaries.** One new lecture learning outcome added; no
+`spec:` bullet or assessment-weighting change. No new images, video, or
+audio generated — the shot-7 keyframe description is authored planning
+text, the same status as the existing shot list and worked cut. Scope
+limited to Week 6 plus the two minimal Week 7/MANIFEST syncs described
+above; Week 5's own files and `handoffs/week-05.md` are explicitly out of
+scope.
+
+**Implementation status (2026-09-13).** Lecture, session, and deck
+updated; `week-07.md`'s one sentence corrected; `MANIFEST.md` status cell
+and revision history updated. `pnpm typecheck`/`pnpm build` to be re-run
+after.
+
+### Assignment 1 — pending-decision alignment pass — approved
+
+**Approval basis.** Owner flagged, in conversation on 2026-09-13: "a1 has
+the same problems, and can not require voice or something not learned as
+spec" — referring to the raw-filename fix just made in Week 6 as the same
+class of problem (content assuming or requiring something the student was
+never actually given or taught), applied here to a required skill instead
+of a jargon term.
+
+**Problem addressed.** `assignment-1.md` required every bible decision
+"required by the planned shots" to be **resolved**, with no pending
+exception (`spec:` bullet 6), and separately stated "no required decision
+remains pending" outright (`spec:` bullet 10) — directly contradicting
+Week 5's own explicit teaching ("An undecided field should say **pending**,
+with the decision needed to close it") and the course's own worked
+example, which itself leaves Nadia's voice pending throughout Weeks 5–7.
+Section 3's instructions demanded students "resolve the vocal design" for
+any voiced character, and section 5 required "any required pending
+fields" be resolved before submission. No lecture or workshop by week 6
+teaches how to actually select or generate a voice reference — that
+belongs to Week 11 ("Directing with sound," "Directing a voice like a
+face"), which lands after Assignment 1 is due. This was a teach →
+practise → assess violation: the assignment assessed a skill not yet
+taught.
+
+**Approach.** Align A1's language with the pending model Week 5 already
+teaches, rather than inventing a new policy: `spec:` bullets 6 and 10,
+the "Locked" definition, section 3's voice instruction and its
+Nadia/Theo follow-up sentence, section 5's dependency and closing
+paragraphs, the "Work through the package" intro paragraph, and the
+"World and continuity design" marking-criteria row were all revised to
+read "resolved, or explicitly marked pending with the specific decision
+needed to close it" instead of a bare "resolved"/"no pending decision."
+The point that a pending decision blocks a *shot* (production-order
+discipline, taught in Week 6) is kept; only the claim that a pending
+decision blocks *submission* is removed.
+
+**Outcome and boundaries.** Two `spec:` bullets changed in wording only —
+neither adds nor removes a submission requirement, a weight, or a due
+date; they now permit an already-taught state (justified pending) instead
+of silently forbidding it. No change to the four submission sections, the
+30/30/40 marking weights, or Week 5's own text. Most bible fields
+(appearance, costume, props, locations) remain expected to be resolved,
+since the tools to do so are already taught by week 6; only fields tied to
+later-taught skills (voice design, chiefly) are expected to realistically
+land on "pending, justified" for most students — the spec wording doesn't
+carve voice out by name, since the same escape valve should apply to any
+field a student genuinely can't close yet.
+
+**Implementation status (2026-09-13).** `assignment-1.md` updated per the
+above. `pnpm typecheck`: 0 errors/warnings/hints. `pnpm build`: passed — 0
+accessibility violations, no broken internal links, all 12 decks passed
+structural checks. Direct check: `grep` for "resolve the vocal design" and
+"no required decision remains pending" in `assignment-1.md` returns
+nothing.
 
 ## Week-by-week asset checklist
 
@@ -1135,7 +1579,111 @@ PLAN.md" as part of the process that scored well on A1, and this repo went
 several sessions without one. Going forward: update this file when a
 structural decision is made, not just when content is written.
 
+## Assignment 1 — worked guidance and detailed spec
+
+Owner instruction (2026-09-13): use “Before It Stops” to guide students through
+Assignment 1 and make its spec more detailed. Scope: the existing assessment
+page; preserve its deadline, assessment weight and three marking weights.
+
+Problem: the brief names four materials but does not define their required
+fields, submission format, cross-document agreement or production readiness.
+Approach: specify one readable PDF with four named sections; show the existing
+reference logline/premise, screenplay beats and intent, bible entries, and
+five-shot storyboard planning draft alongside instructions for students'
+own films. Expand spec into observable checks for complete screenplay coverage,
+identity versus changing state, unique shot purpose, matching shot IDs,
+framing/movement/action, estimated timing and named production dependencies.
+Explain how the existing 30/30/40 marking categories judge those materials.
+
+Assumptions and limits: the package plans the already-required 2–4 minute final
+film; no arbitrary shot count, new scene count, generated footage, polished
+illustration or additional assessment component is required. Existing course
+examples are authored teaching drafts, not a complete assessed submission or
+owner production evidence. The current five-shot screenplay estimate (24–38 s)
+and pending voice decisions must be stated honestly; do not extend the story
+or invent resolved design facts. Read earlier example resources only to reuse
+them, not as a project-wide curriculum review. Record the outdated Week 6
+seven-shot/pending-visual references in its handoff; do not rewrite the lecture
+or workshop under this assessment-only instruction.
+
+## Weeks 7–8 — second-frame Sora 2 demonstration
+
+Owner instruction (2026-09-13): use the existing Week 1 Take B source frame
+(the second candidate) for Week 7 and retain actual rejected generations for
+Week 8. Model is explicitly `sora-2`, not legacy Sora or `sora-2-pro`.
+
+Use `resources/week-05/images/week1-take-b-source-frame.png` (1280×720):
+Nadia's face, sweater, arms and table phone are visible. Demonstrate a fixed
+medium shot of the incoming call and her resistance with two notes differing
+in the onset of the reach. Keep the scripted outcome and identity fixed.
+The shared antecedent is that she has just finished packing her mother's
+kitchen; do not invent previous missed calls or change sibling history.
+Generate phone and face inserts separately if needed for the owner-approved
+medium → caller insert → face close-up sequence, preserving eyeline and
+ringtone continuity. The first frame and each insert must be checked against
+existing identity/prop references. Legible phone text may be overlaid in
+post-production and must be labelled as such.
+
+Produce and inspect real videos before describing their results. Retain
+original files, prompts, job IDs and actual failures. Week 8 reuses those
+files and logs observable failures, likely cause with uncertainty, next
+instruction and the reason for selection. Do not manufacture failures or
+claim all three causes are demonstrated. The diagnostic classroom comparison
+should disclose prompts/references before inferring causes from appearance.
+Existing learning outcomes/spec, assessment weights and timings remain.
+Update the two lectures/decks/examples to the actual shot and footage once
+available; record unresolved requirements honestly if network/API or output
+quality blocks completion. Do not mark owner evidence as fulfilled merely
+because a teaching demonstration exists. Direct OpenAI access currently needs
+the same local HTTP proxy used by the earlier Week 1 scripts.
+
 ## Revision history
+
+- **2026-09-12** — Owner authorized the Weeks 6–12 depth pass recorded in
+  "Weeks 6–12 depth pass — approved": Weeks 6–12's lectures, sessions, and
+  decks rewritten from outline-only/unnumbered-workshop form to the
+  established depth-pass shape, following the per-week technique mapping
+  table already approved earlier in this section. Includes correcting
+  Week 7's lecture and deck, which still described the pre-correction
+  ending, to match the canonical ending already fixed in Week 4. No
+  learning outcome, spec bullet, or assessment weighting changed.
+- **2026-09-13** — Owner authorized "Week 2 — good-story criterion
+  addition — approved": a new lecture subsection and matching workshop
+  discussion point on why short-form drama favors an emotional hook and
+  observable behaviour over lengthy dialogue or abstract internal
+  monologue, illustrated against the existing "Before It Stops" premise.
+  One new deck slide added. No spec bullet, learning outcome, or
+  assessment weighting changed.
+- **2026-09-13** — Owner authorized "Week 6 — bible → keyframes →
+  generated shots pass — approved": a new lecture section naming the
+  bible → keyframe → generated-shot chain, worked through "Before It
+  Stops"'s shot 7 (start/end keyframes for the final continuous tilt) as
+  an authored planning example; the outcomes list, misconception table,
+  "The real demonstration" table, guided judgement coda, and "What you
+  take to the workshop" all extended to match; the workshop's Activities
+  1, 2, 4, and 5 revised to practise naming keyframes and bible
+  references without changing either `spec:` bullet or the 120-minute
+  total; the deck resynchronized with five new slides. The stale claim
+  that Nadia, the kitchen, and the phone were all still "pending" in
+  Week 5's bible was corrected to the current state (all three generated
+  and integrated 2026-09-13; only the kitchen's full production approval
+  remains open). Two minimal neighbour syncs included: one sentence in
+  Week 7's lecture, and `MANIFEST.md`'s `BIS-W05-ENTRIES` status cell
+  plus a new revision-history line. No learning-outcome removal, spec
+  bullet, or assessment weighting changed; Week 5's own files and
+  `handoffs/week-05.md` left untouched and out of scope.
+- **2026-09-13** — Owner authorized "Assignment 1 — pending-decision
+  alignment pass — approved": `spec:` bullets 6 and 10, the "Locked"
+  definition, section 3's voice instruction, section 5's dependency and
+  closing paragraphs, the package intro paragraph, and the "World and
+  continuity design" marking row all revised so a bible decision may be
+  resolved *or* explicitly marked pending with the decision needed to
+  close it, matching what Week 5 already teaches and the course's own
+  worked example already does for Nadia's voice. Previously, both spec
+  bullets forbade any pending decision outright and section 3 demanded
+  voice be "resolved," which assessed a skill (selecting/generating an
+  actual voice reference) not taught until Week 11. No submission
+  section, marking weight, or due date changed.
 
 - **2026-09-12** — Owner authorized the four Week 1–2 corrections recorded
   in "Week 1–2 teaching corrections": draft-to-revision logline teaching,
@@ -1531,3 +2079,53 @@ written, per "Plan governance" above.
   the same kind of pass per the mapping table, not part of this one; see
   `handoffs/week-04.md`. See `MANIFEST.md`'s Revision history for the
   matching entry.
+
+- **2026-09-12 (Week 4 revision: deck slides, shot 5 staging, guided
+  judgement).** Added the follow-on design described above ("Week 4
+  revision: deck slides, shot 5 staging, guided judgement," this section).
+  `week-04.deck.mdx` gained three slides (Mamet's test, the five-shot
+  table, guided judgement) and an updated closing-quote wording; no other
+  slide changed. `week-04.md`'s shot 5 rewritten as one continuous
+  close-up take with explicit framing, blocking, and a tilt that follows
+  her hand to her face, preserving the canonical ending. The
+  guided-judgement scenario rewritten with a stated concealment intention
+  and enough spatial detail (a housemate visible in the background) for
+  the medium→wide-is-coverage / close-up→insert-is-argument judgement to
+  follow, plus an explicit line scoping that verdict to this beat rather
+  than to wide shots generally. No `spec:` bullet, learning outcome, or the
+  running example changed; `04-shot-breakdown.md` untouched, since none of
+  the three findings targeted it. `pnpm typecheck` and `pnpm build` both
+  passed after the edits. See `MANIFEST.md`'s Revision history for the
+  matching entry.
+
+- **2026-09-12 (Week 4 teaching diagrams).** Added the eight teaching
+  assets described above ("Week 4 teaching diagrams," this section): seven
+  inline SVG diagrams in `week-04.md` (shot sizes, five-shot storyboard,
+  shot 5 staged as one continuous take, composition, camera angle,
+  blocking/camera movement, and the guided-judgement pairings), new
+  `.at-diagram-row`/`.at-diagram-row--wide` CSS in
+  `src/styles/visual-direction.css`, and a printable shot-list/storyboard
+  template (`resources/week-04/shot-list-template.html` +
+  `public/resources/week-04/shot-list-template.html` +
+  `resources/week-04/materials.md`) linked from `week-04.md` and from
+  `04-shot-breakdown.md`'s "Before the workshop" section (one sentence
+  added; two `spec:` bullets, five Activities, and 120-minute total
+  unchanged, confirmed by diff). No `spec:` bullet, learning outcome, or
+  running example changed; no `MANIFEST.md` asset row added;
+  `OWN-W03`/`OWN-W04` untouched. `week-04.deck.mdx` deliberately not
+  touched. `pnpm typecheck` passed clean; `pnpm build` initially failed on
+  one axe "region" violation against the standalone template page (no
+  landmark wrapping its body), fixed by wrapping its content in `<main>` in
+  both the canonical and served copies, then passed with 0
+  errors/violations. See `MANIFEST.md`'s Revision history for the matching
+  entry.
+
+- **2026-09-12 (Week 5 approval).** Owner approved the Week 5 depth pass and explicitly deferred unconfirmed visual design facts. Expanded mapping row 5 to lecture/examples/template/deck work with six workshop activities; existing spec bullets and owner evidence remain unchanged.
+
+- **2026-09-13 (Assignment 1 guidance).** Owner requested “Before It Stops”
+  as the worked example and more detailed assessment spec. Added the scoped
+  plan above before implementation; retain all existing dates and weights.
+
+- **2026-09-13 (Weeks 7–8 real demonstration).** Owner selected the second
+  existing frame for Week 7 and requested rejected footage be used in Week 8.
+  Recorded the scoped Sora 2 production plan before making assets/content.
