@@ -8,7 +8,7 @@ role: tutor
 email: idris.fenn@slop.university
 contact: Ask during workshops, or email when a question cannot wait until the next one.
 photo: ./idris-fenn.avif
-photoAlt: "An abstract geometric composition on warm cream: a tall black rectangle at the left edge, a warm-gold circle overlapping its top right corner, a small muted dark-green rectangle isolated at lower right"
+photoAlt: "A flat-vector meme-cat portrait on a warm cream background: a small curious orange tabby cat face with wide eyes, surrounded by dark green leaves and foliage"
 ---
 
 Idris runs the course's first-review sessions — the workshops where a

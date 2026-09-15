@@ -8,7 +8,7 @@ role: convenor
 email: marisol.quaye@slop.university
 contact: Email for course-level questions; use the weekly workshop for feedback on work.
 photo: ./marisol-quaye.avif
-photoAlt: "An abstract geometric composition on warm cream: a single large black circle at center, a warm-gold trapezoid emerging from behind its lower edge, a small muted dark-green square isolated at upper left, joined by a thin baseline"
+photoAlt: "A flat-vector meme-cat portrait on a warm golden background: a wide-eyed orange tabby cat with a startled, knowing expression, wearing a teal and rust patterned garment"
 ---
 
 Marisol designed this course around a single question: what does directing
