@@ -1,7 +1,7 @@
 # Week 6 handoff — Planning before generating / Assignment 1
 
 Status: content complete
-Last updated: 2026-09-13 (A1 pending-decision alignment pass)
+Last updated: 2026-09-15 (single-scene wording clarification pass)
 
 ## Next action
 
@@ -9,13 +9,14 @@ None outstanding on the pending-decision issue: A1's `spec:` bullets, its
 voice instruction, and the surrounding prose now permit "resolved, or
 pending with the decision needed" throughout, matching Week 5's own
 teaching (see "A1 pending-decision alignment pass — 2026-09-13" below).
-Remaining difference still open: Week 6's schedule (7 shots) vs. the
-current A1 five-shot screenplay draft — A1 already labels the latter a
-method demonstration, not a runtime-complete submission, so this is not an
-error, just an unresolved gap noted for a future pass. Read this file,
-`CLAUDE.md`, and `PLAN.md` → "Week 6 — bible → keyframes → generated shots
-pass — approved" and "Assignment 1 — pending-decision alignment pass —
-approved" first.
+None outstanding on the single-scene/multi-scene wording either — see "A1
+single-scene wording clarified — 2026-09-15" below. Remaining difference
+still open: Week 6's schedule (7 shots) vs. the current A1 five-shot
+screenplay draft — A1 already labels the latter a method demonstration, not
+a runtime-complete submission, so this is not an error, just an unresolved
+gap noted for a future pass. Read this file, `CLAUDE.md`, and `PLAN.md` →
+"Week 6 — bible → keyframes → generated shots pass — approved" and
+"Assignment 1 — pending-decision alignment pass — approved" first.
 
 ## Standing rules that apply
 
@@ -87,6 +88,24 @@ None known. This pass also touched Weeks 7–12 in the same session; no
 other agent is known to be working on these files concurrently.
 
 ## This week's status
+
+2026-09-15 validation (A1 single-scene wording clarification pass):
+- `pnpm typecheck`: 0 errors, warnings, or hints.
+- `pnpm build`: passed — 0 accessibility violations across 49 pages, no
+  broken internal links, all 12 decks passed structural checks.
+- Direct check: re-read both edited passages in context; neither now
+  implies a multi-scene requirement, and the unchanged runtime/
+  completeness checks (line ~99, ~186, ~252, and the rubric row) still
+  read correctly alongside the new wording.
+
+2026-09-15 validation (A1 shot-list scope narrowing pass):
+- `pnpm typecheck`: 0 errors, warnings, or hints.
+- `pnpm build`: passed — 0 accessibility violations across 49 pages, no
+  broken internal links, all 12 decks passed structural checks.
+- Direct check: `grep` for "duration", "sound.*cue", "cut cue" and
+  "cut/sound" against `assignment-1.md` returns no matches.
+- Confirmed sessions 02/04/06 need no edits — none of them ever referenced
+  a per-shot duration or sound/cut-cue field.
 
 2026-09-13 validation (bible → keyframes → generated shots pass):
 - `pnpm typecheck`: 0 errors, warnings, or hints.
@@ -206,3 +225,103 @@ Verification (2026-09-13): `pnpm typecheck` 0 errors/warnings/hints;
 all 12 decks passed structural checks. Direct check: `grep` for "resolve
 the vocal design" and "no required decision remains pending" in
 `assignment-1.md` returns nothing.
+
+## Review items 2/5 correction — 2026-09-13
+
+Owner approved corrections. Week 6 distinguishes planned opening inputs and
+ending targets, fixes action-shot starting states and Nadia/phone dependencies,
+and notes shots 1–2 need expanded geometry approval. End images are not required
+for every shot. Week 8 teaches mismatch, provisional cause and next check;
+review reveals prompt/reference before discussing causes. Prior categorical
+model-failure accounts are superseded. Specs and 120-minute timings unchanged.
+No new generation, assets, full classroom trial or deployment performed.
+
+Validation: `pnpm check` passed: zero type diagnostics, 6 tests passed, no
+accessibility, broken-link or deck-structure violations. Both workshops total
+120 minutes. Google Fonts DNS warnings remain; build completed.
+
+### A1 detailed marking rubric — 2026-09-13
+
+Owner requested a detailed rubric matrix, same treatment first applied to
+the Final Project (see `handoffs/week-12.md`). Added a "Detailed marking
+rubric" section splitting each of the three existing criteria (Story and
+screenplay craft 30%, World and continuity design 30%, Shot planning and
+storyboard 40%) into three dimensions, each with 7–10/5–6/1–4 band
+descriptors, plus the scoring rule (criterion mark = weight × average
+dimension score ÷ 10). See `PLAN.md` → "Assignment 1 — worked guidance and
+detailed spec" → "Detailed rubric matrix" for the approval record. Body
+content only — no criterion name, weight, deadline, or `spec:` bullet
+changed; the existing worked-example walkthrough above it is untouched.
+
+Verification (2026-09-13): `pnpm typecheck` 0 errors/warnings/hints;
+`pnpm build` passed — 0 accessibility violations, no broken internal links,
+all 12 decks passed structural checks.
+
+### A1 shot-list scope narrowed — 2026-09-15
+
+Owner-approved full 12-week coherence review found A1's shot-list spec and
+rubric graded a per-shot **estimated duration** (summed and individually
+justified against the film's 2–4 minute runtime) and **relevant sound or
+cut cues** — neither taught or practised before A1's week 6 due date.
+Per-shot duration-as-pacing is first taught in week 10; cut-as-directorial-
+choice in week 9; sound direction in week 11. No workshop (02, 04, 06)
+practises either field, and the Final Project doesn't already grade this
+at shot-list level. See `PLAN.md` → "Assignment 1 — shot-list scope
+narrowed to already-taught skills — approved" for the full approval
+record.
+
+Fixed: dropped the per-shot duration and sound/cut-cue requirement from
+`assignment-1.md`'s `spec:` bullets, section 4 task instructions, the
+worked example (removed the per-shot duration column and its derived
+total), the marking-criteria summary row, and both affected rubric
+dimensions ("Staging legibility and continuity," "Timing and production
+order"). The whole-film 2–4 minute runtime constraint stays as a holistic
+"does the shot list plausibly cover this runtime" check, not a per-shot-
+summed figure. No deadline, submission format, or marking-category weight
+(40/30/30) changed. Sessions 02/04/06 needed no changes — confirmed none
+of them ever referenced a duration or sound/cut-cue field.
+
+Two other findings from the same review remain open, tracked separately:
+session 02's activity-numbering format (doesn't match every other
+session's `### Activity N` structure) and week 10's "montage and rhythm"
+lecture concept never rehearsed in that week's workshop (already an open
+judgement call in `PLAN.md`).
+
+Verification (2026-09-15): see this file's "This week's status" —
+`pnpm typecheck` and `pnpm build` run after this pass.
+
+### A1 single-scene wording clarified — 2026-09-15
+
+Closed `PLAN.md`'s open "Single-scene practice vs. Assignment 1's
+multi-scene brief language" judgement call, on owner request. Direct
+re-read confirmed the judgement call's own reasoning: nothing in A1's
+marking criteria requires more than one scene (the "Screenplay
+completeness" rubric row grades length/completeness — its worst case is a
+screenplay "fragmentary... only the Week 3 practice scene," not a
+scene-count failure), and nothing taught in weeks 2–6 ever rehearses
+linking multiple scenes together (week 3 explicitly teaches picking *the
+one* decisive scene). The actual problem was two phrases in
+`assignment-1.md` that read as if they assumed multiple scenes when the
+substance never required it.
+
+Fixed: the `spec:` bullet's "with scene headings, observable action..."
+now reads "with a scene heading for each scene it contains, observable
+action..."; section 2's "**Your task:** Include every scene from the
+film's beginning to its ending." now reads "**Your task:** Cover the
+film's beginning to its ending — whether that's one continuous scene or
+several." Both now read correctly whether a student's film has one scene
+or several, without weakening the actual completeness/runtime requirement.
+Left unchanged (already correctly worded around length/completeness, not
+scene count): the runtime-shortfall callout, the "Have you written the
+complete film rather than only the scene practised in Week 3?" check, the
+shot-list runtime check, and the "Screenplay completeness" rubric row. No
+marking weight, criterion, due date, runtime requirement, or rubric band
+changed. This is a trigger-test change (a `spec:` bullet altered) —
+recorded in `PLAN.md`'s Revision history ("2026-09-15 (Assignment 1
+single-scene wording clarified — owner approved)") per the single-record
+rule, not as a new standalone `PLAN.md` section.
+
+This closes the last open item in `PLAN.md`'s "Judgement calls" section.
+
+Verification (2026-09-15): see this file's "This week's status" —
+`pnpm typecheck` and `pnpm build` run after this pass.

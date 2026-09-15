@@ -1,0 +1,87 @@
+{
+  "working_picture": "Week 10 Cut A; provisional choice",
+  "voice_engine": "macOS Samantha; rate A=150, B=105 wpm; actual independent synthesis",
+  "voice_start_seconds": 27.8,
+  "call_start_seconds": 6.067,
+  "call_stop_seconds": 24.1,
+  "music_start_seconds": 17.6,
+  "voice_selection": "A provisionally used for primary pair; technical timing choice, no listening-based performance selection claimed",
+  "alignment_method": "Ending contact sheet at 4fps and 27.3\u201328.9s samples at 10fps; event-aligned ADR, no phoneme-exact lip-sync claim",
+  "original_audio": "Excluded from both versions to avoid duplicate/unverified dialogue and music",
+  "files": [
+    {
+      "file": "sfx-incoming-call-aligned.wav",
+      "duration_seconds": 31.233333333333334,
+      "peak_dbfs": -22.4691372540001,
+      "sha256": "fea3c15675c6d4da6334275816fdea6f3467ab758de08475aa1f71226a01b8a0"
+    },
+    {
+      "file": "music-reach-cue-aligned.wav",
+      "duration_seconds": 31.233333333333334,
+      "peak_dbfs": -25.393811579848823,
+      "sha256": "212525faeaec282427d6ff69cf2fa9f827075dedb6b4abd73eee665d17666cfa"
+    },
+    {
+      "file": "dialogue-only-a.wav",
+      "duration_seconds": 31.233333333333334,
+      "peak_dbfs": -9.897630003167105,
+      "sha256": "a09dbad3546b8503d83429ec43b20f59baed85a7abf9199138cccb07437305d3"
+    },
+    {
+      "file": "full-pass-a.wav",
+      "duration_seconds": 31.233333333333334,
+      "peak_dbfs": -9.11545882749924,
+      "sha256": "29d119a5e50fa44f6c9128f6d5ff502a07ff9523cf25768e06d0bf078a9bd3d6"
+    },
+    {
+      "file": "no-music-control.wav",
+      "duration_seconds": 31.233333333333334,
+      "peak_dbfs": -9.638915240290864,
+      "sha256": "3708697556f5cf22473446860691c976227b497e97ab3b2e8a8b24ab87426d11"
+    },
+    {
+      "file": "dialogue-only-b.wav",
+      "duration_seconds": 31.233333333333334,
+      "peak_dbfs": -10.147219973362809,
+      "sha256": "a0198a25b8e6a8ae627e3c9031c7982219c330a8ed7f30a987f9a98a9fb1e6f4"
+    },
+    {
+      "file": "full-pass-b.wav",
+      "duration_seconds": 31.233333333333334,
+      "peak_dbfs": -8.680612216495678,
+      "sha256": "708391f59807f197d39b8a654796e87d9a42612cf89192207276881a4ae4b7c9"
+    }
+  ],
+  "review_limits": "No auditory or independent audience review. Mouth remains open over multiple frames; event alignment does not establish exact phoneme match.",
+  "video_checks": [
+    {
+      "file": "dialogue-only.mp4",
+      "picture_stream_identical": true,
+      "container_duration": "31.233333",
+      "decoded_audio_peak_dbfs": -12.925952,
+      "decode_check": "passed"
+    },
+    {
+      "file": "full-sound-pass.mp4",
+      "picture_stream_identical": true,
+      "container_duration": "31.233333",
+      "decoded_audio_peak_dbfs": -12.13533,
+      "decode_check": "passed"
+    },
+    {
+      "file": "full-sound-pass-take-b.mp4",
+      "picture_stream_identical": true,
+      "container_duration": "31.233333",
+      "decoded_audio_peak_dbfs": -11.689656,
+      "decode_check": "passed"
+    },
+    {
+      "file": "no-music-control.mp4",
+      "picture_stream_identical": true,
+      "container_duration": "31.233333",
+      "decoded_audio_peak_dbfs": -12.668388,
+      "decode_check": "passed"
+    }
+  ],
+  "picture_stream_sha256": "SHA256=77fb6295839921668df15991b69717cccb6dfe605452cd21ab9939f325bafbc3"
+}

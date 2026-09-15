@@ -1,0 +1,17 @@
+{
+  "id": "video_6aa6248fe0f081919d6a8b22ac6f7a51082a1aba3d407856",
+  "object": "video",
+  "created_at": 1789273231,
+  "status": "completed",
+  "completed_at": 1789273343,
+  "edited_from_video_id": null,
+  "error": null,
+  "expires_at": 1789446143,
+  "extended_from_video_id": null,
+  "model": "sora-2",
+  "progress": 100,
+  "prompt": "Use the supplied image as the exact opening frame. Photorealistic single continuous 8-second fixed medium shot. Preserve the pictured woman's face, short brown bob, oatmeal chunky knit sweater, seated pose, kitchen, warm lighting, wooden table and same black phone. No camera movement, no zoom, no cuts, no new people, no subtitles, no music. She is Nadia, on the last night clearing her late mother's kitchen; her estranged brother Theo calls. She wants contact but holds herself back. The phone stays on the table through this shot. At 0.8 seconds its dark screen softly lights up for an incoming call and a restrained ringtone starts. She looks down toward the phone. No smile, crying, mouth movements or speech. The screen is oblique; do not add floating words or captions. Her right hand makes one small reach, stops clearly short of touching the phone, and remains suspended. No pickup and no answering in this shot. The only intended difference between variants is the onset of the reach. Keep her gaze on the phone, anatomically natural hands, restrained expression and the phone's location fixed. End while the phone is still ringing and her hand still stops short. The ringtone will carry over the later caller-screen and face close-up cuts.\n\nTiming for this take: after she sees the lit phone, begin the right-hand reach at 2.0 seconds, stop 2 centimetres short of the phone by 3.0 seconds, then hold without touching until the end. The earlier reach should read as an impulse toward contact followed by restraint.\n",
+  "remixed_from_video_id": null,
+  "seconds": "8",
+  "size": "1280x720"
+}

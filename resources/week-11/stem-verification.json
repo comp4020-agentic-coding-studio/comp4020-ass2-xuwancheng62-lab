@@ -1,0 +1,41 @@
+{
+  "method": "original procedural synthesis",
+  "files": [
+    {
+      "file": "ambience-kitchen-candidate.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1499200,
+      "duration_seconds": 31.233333333333334,
+      "peak_dbfs": -37.12288969290345,
+      "sha256": "ed5a2cab06c72f5bc3270e23a84a263b30533b5da27898b53e4d84ceff822144"
+    },
+    {
+      "file": "sfx-incoming-call-candidate.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1499200,
+      "duration_seconds": 31.233333333333334,
+      "peak_dbfs": -22.470228164830704,
+      "sha256": "25c7bc08f78022eb97530b2a4ced10611677c69dbfc42b5ee21c3e30b7105747"
+    },
+    {
+      "file": "music-reach-cue-candidate.wav",
+      "sample_rate": 48000,
+      "channels": 1,
+      "frames": 1499200,
+      "duration_seconds": 31.233333333333334,
+      "peak_dbfs": -25.394448789631774,
+      "sha256": "19dc640c4140daa0bb5ec60d6cbe249aba08c3426585b8031d92b667559c38da"
+    }
+  ],
+  "review_limits": "Technical checks only; no listening, locked sound-bible approval, sync-dialogue or audience review.",
+  "audition": {
+    "file": "sound-bed-audition.wav",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_seconds": 31.233333333333334,
+    "peak_dbfs": -21.406259324928275,
+    "sha256": "435a838213fe1db1b7e5ffed6ac1fd28dfc9302458615fed2be4a8e82088e0c4"
+  }
+}

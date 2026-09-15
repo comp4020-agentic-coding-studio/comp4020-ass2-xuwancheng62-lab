@@ -1,0 +1,70 @@
+BEFORE IT STOPS — CHARACTER AND LOCATION BIBLE TEACHING DRAFTS
+Version 0.2 | 2026-09-13 | Authored teaching material
+
+STATUS: Story/action and visual reference fields are recorded below.
+Character and kitchen references derive from Week 1 Take B; the wider kitchen
+geography is an illustrated extension. Voice references remain pending.
+These teaching entries are not owner evidence or reports of peer testing.
+Scope: the closing sequence used in Week 4; recheck for other scenes.
+
+CHARACTER: NADIA
+Representation: on-screen protagonist; Theo's estranged sister.
+Story context: final night before her late mother's apartment is cleared.
+Fixed facts: same person and agreed costume throughout the closing sequence.
+Changing state: holds still; hand reaches toward the phone and stops; accepts
+on the final ring; lifts phone to ear in the continuous final shot; says Hey.
+Age: thirties, as specified in the screenplay.
+Appearance: match the face and build in nadia-week1-reference-v1.png; short
+brown bob tucked behind the ear.
+Wardrobe: oatmeal chunky knit sweater with long sleeves and dark trousers.
+Voice: the line Hey is established; vocal reference/qualities PENDING.
+Reference: Week 4 closing shot list for action; character/costume image:
+/resources/week-05/images/nadia-week1-reference-v1.png.
+Decision needed: select a voice reference for Hey.
+
+CHARACTER: THEO
+Representation: caller identified by THEO CALLING on Nadia's phone.
+Relationship: Nadia's brother, with years of estrangement.
+Fixed facts: same caller identity and display spelling in the incoming call.
+Changing state: incoming call becomes accepted on the final ring.
+On-screen age/build/hair/costume: not applicable to this closing shot list;
+there is no cut to Theo. Reassess if he appears in another scene.
+Voice: no Theo line specified by the current closing shot list. If a response
+is included in the sound design, select a voice reference and record it.
+Reference: closing shot list and caller display image:
+/resources/week-04/images/bis-02-phone-week1-v1.png.
+No second on-screen location is established.
+Decision needed: resolve audible representation before producing any reply.
+
+LOCATION: MOTHER'S APARTMENT — KITCHEN
+Story time: final night before the late mother's apartment is cleared.
+Fixed spatial facts: kitchen table; phone starts on that table; Nadia can
+reach it. Inserts retain the identity of this phone and surface.
+Changing state: phone stays on the table through the reach-and-stop beat,
+then leaves it when Nadia accepts and lifts it to her ear.
+Layout/materials: honey-coloured wooden table; wooden chair on left; cream
+cabinets and dark window behind; boxes by doorway and at far table end.
+Lighting: warm overhead pendant light, dark nighttime window.
+Props: same black smartphone throughout; incoming display THEO CALLING,
+changing to an accepted call in the final shot.
+Visual style: subdued amber light, cream cabinetry and natural wood texture.
+Location reference: /resources/week-05/images/kitchen-week1-reference-v1.png.
+Phone reference: /resources/week-04/images/bis-02-phone-week1-v1.png.
+Preserve identity and geography while allowing the planned table-to-ear lift.
+
+WORKED REVISION: IDENTITY VERSUS POSITION
+Draft: Her phone is nearby. Keep it in the same place.
+Problem: nearby leaves the surface unclear; same place contradicts the lift.
+Revision: Use the same phone throughout. It rests on the kitchen table during
+the incoming call and reach-and-stop beat. In the final shot, Nadia accepts,
+lifts it from the table to her ear and says Hey. Preserve phone identity
+while its position changes.
+Expected read-back: one phone; table before acceptance; ear after the lift.
+This is an authored worked answer, not an account of an actual peer test.
+
+USING THESE DRAFTS
+Do not copy pending fields into your own completed submission. Resolve the
+facts needed to describe your protagonist correctly. The blind reader sees
+only your entry and its attached references, not your unspoken intentions.
+When a fact changes deliberately, date/version the entry and name affected
+shots. Optional reference images do not add a workshop grading requirement.

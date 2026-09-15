@@ -1,14 +1,9 @@
 # Process overview
 
-Written by you, for a reader: how you got from the brief to the harness and
-agentic workflow behind this submission. Markers read this file and follow its
-citations; they don't trawl the repo for evidence you didn't point at.
-
-This file is the shape; the course site's
-[assessment page](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#what-you-submit)
-is the requirement, and its
-[word counts](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/topics/assessment/#word-counts)
-cover every deliverable.
+Updated 2026-09-13. This account distinguishes implemented changes from
+classroom outcomes that have not been tested. The later decisions below
+are supported by current files and working records; some are still
+uncommitted and are not presented as published commit evidence.
 
 ## What I built
 
@@ -16,8 +11,8 @@ cover every deliverable.
 where AI stands in for cast and crew, on top of the fixed `astro-theme-slop`
 starter. The discipline being taught is directing — shot construction,
 performance direction, editorial judgement, sound design — with generation
-as the rehearsal medium, not the subject. One running example, "Table for
-One," threads every week so the storyboard, bible and shot list built in
+as the rehearsal medium, not the subject. The running example, "Before It Stops," replaced the original "Table for
+One" and threads the teaching material so the storyboard, bible and shot list built in
 week 4 are still legible in week 12's finished cut, and two assessments
 (a pre-production package, a finished film) keep the structure legible
 against that same thesis.
@@ -85,31 +80,119 @@ only, and extending it to eleven more decks wasn't part of that approval.
 `astromotion`'s structural check across all 12 decks, and the `spec/`
 suite) is how I know the result holds together mechanically; the
 curriculum-reviewer pass is how I know it holds together as a course, and
-a further full pass — lectures, sessions, assessments, decks and the real
-operational demonstrations together — is still owed once those real
-production assets exist, per `PLAN.md`'s "Process" section.
+a further full content review can only run with my explicit approval,
+under [CLAUDE.md](CLAUDE.md). The earlier reviewer findings describe the
+skeleton at that time, not a verification of all subsequent changes.
 
-What `PLAN.md` calls out as still genuinely open, and not something I
-resolved by writing more curriculum prose instead: no real production
-asset exists yet for any week's checklist row (`PLAN.md`'s "Table for One"
-asset plan is explicit that the running example is teaching prose, not
-production evidence, until the site owner actually directs, generates and
-selects the real takes), and the reusable media component family that
-would display those assets doesn't exist yet either — both deferred on
-purpose rather than built against a guess at what the real footage will
-need.
+## Turning examples into workable activities
 
-Screenshots are welcome where one carries the point better than a sentence does.
-Commit the file to this repo and link it with a **relative** path, which is what
-makes it render on GitHub: `![alt text](docs/before.png)`. Images don't count
-towards the word count and don't replace the citation.
+Reading the course as a beginner exposed a gap that structural tests did
+not catch: I could see what a finished screenplay should look like, but
+still did not know how to start one. I asked for a fill-in template. The
+Week 3 revision added a sequence from premise to decisive scene, scene
+change, five observable beats, screenplay form and a director's note.
+The [worksheet](resources/week-03/scene-planning-worksheet.txt) is scaffolding,
+not a separately graded product. A follow-up correction synchronized the
+[lecture](src/content/lectures/week-03.md),
+[session](src/content/sessions/03-screenplay-workshop.md) and
+[deck](src/decks/week-03.deck.mdx): download and read before class, fill in
+during the workshop. This was my own reading feedback, not a student trial.
 
-## Before you ship
+Week 1 revealed a different constraint. Independent AI generations changed
+more than the directing note, making an A/B comparison difficult to interpret.
+I first chose an instructor-provided anchor and Take A with prepared Take B
+candidates. That reduced student generation variability but increased
+production preparation. On 13 September I chose a smaller exercise: retain
+the existing imperfect Take A, diagnose one observable performance problem,
+write a playable redirect, get peer feedback and revise. The
+[session](src/content/sessions/01-getting-started.md) now has six activities
+totalling 120 minutes; no workshop Take B is required. The
+[brief](resources/week-01/workshop-brief.md) records the boundary: peer review
+checks the written note, not improvement in an unproduced performance.
+The lecture's real A/B demonstration remains unchanged. Take A's original
+production QA failures remain in [generation-settings.txt](resources/week-01/generation-settings.txt);
+using it as a diagnosis clip does not turn it into approved production footage.
+The revised session passed typechecking, and hashes confirmed the original
+and served web video were unchanged. No classroom trial was performed.
 
-`pnpm check:evidence` verifies that this comment is gone, that your citations
-resolve to real commits, that a crit week's reflection entry is in
-`reflections/`, and that your `CLAUDE.md` is there. It checks that your account
-is traceable, not that it is good: that is the marker's call.
+## Keeping assessment and student language usable
 
-Images aren't checked: unlike a citation whose SHA doesn't resolve, a broken
-image is visible the moment this file is rendered on GitHub.
+My screenshot review of Week 6 identified internal asset identifiers in
+student-facing prose. The agent replaced them with descriptive labels linking
+to the corresponding images. The resource filenames stayed stable. The
+[Week 6 handoff](handoffs/week-06.md) records the change and build checks.
+This separated traceability for maintainers from instructions students can act on.
+
+I also challenged Assignment 1's demand that every bible decision, including
+voice, be resolved. Week 5 explicitly teaches marking unresolved fields as
+pending with the decision needed to close them; voice direction comes later.
+After approval, the agent changed the relevant assessment spec and prose to
+accept resolved decisions or explicit pending decisions. A pending decision
+can still block a shot without blocking submission. The
+[assessment](src/content/assessments/assignment-1.md),
+[approval record](PLAN.md) and [handoff](handoffs/week-06.md) preserve this
+reasoning and the recorded type/build verification.
+
+These two changes followed different paths under the trigger test in
+[CLAUDE.md](CLAUDE.md): descriptive labels were an implementation fix;
+changing assessment requirements required a proposed plan and my approval.
+The size of a text edit did not determine its decision-making significance.
+
+## Managing agents and durable records
+
+Repeated full-course checks added cost and revisited known findings. I limited
+automatic content review to the target week and its immediate neighbours;
+a wider review requires my approval. Build and type checks remain separate.
+This rule is implemented in [CLAUDE.md](CLAUDE.md), but I have no timing data
+that would establish a quantified efficiency gain.
+
+I also reported that clearing CC's context between weeks could lose decisions,
+while Codex handled cross-week tasks. A missing numbered-activity requirement
+prompted a split between durable authoring rules in CLAUDE.md and short
+week-specific [handoffs](handoffs/TEMPLATE.md). Those files now exist, but
+their existence alone does not demonstrate successful cross-session recovery.
+
+The asset audit in this conversation exposed the same limitation in another
+form: [MANIFEST.md](MANIFEST.md) still said the Week 1 workshop was NOT STARTED,
+although an anchor, prompts, settings and Take A existed and the clip was
+embedded in the page. QA failures were recorded elsewhere. The agent first
+repeated the manifest's status, then checked files, technical metadata and
+hashes and corrected it to BLOCKED. After my approved scope reduction, it
+became INTEGRATED for the written-note exercise. The revision history keeps
+both transitions. This establishes a missed synchronization step; it does
+not identify which earlier session or agent caused it.
+
+## Producing evidence instead of hypothetical examples
+
+For Week 9 I supplied Jimeng footage; Codex generated a phone insert and
+assembled five shots into a 31.233333-second sequence. An attempted Sora
+shot 3 was blocked by generation review and was not claimed as delivered.
+A real continuity problem replaced the hypothetical example: the opening
+of shot 4 showed a dark phone after the preceding lit-screen shot. A first
+0.6-second trim still entered on darkness; a 1.3-second trim was checked
+against the new entry frame. Originals were preserved, and accepted rough-cut
+differences remained explicit in the [continuity log](resources/week-09/continuity-log-v1.md)
+and [materials record](resources/week-09/materials.md).
+
+For Week 10 I requested a second cut and approved its teaching use. Cut A
+retains the assembly; Cut B shortens only shot 3's reaction from about six
+to two seconds, reducing the sequence from about 31.23 to 27.27 seconds.
+The [comparison](resources/week-10/comparison.md) and
+[verification](resources/week-10/verification.json) record the controlled
+picture change. Audio follows the trim, so this is not an experiment that
+isolates sound. Neither example establishes audience response or learning
+improvement. Their handoffs record successful mechanical checks, which
+verify integration rather than emotional effect.
+
+## Verification and remaining limits
+
+The project now contains real teaching media; the old claim that no production
+assets exist is obsolete. My separate personal-film checklist was paused and
+removed, as recorded in MANIFEST.md; teaching examples are not evidence of
+my own completed film. Kitchen production approval and independent listening
+or audience review remain limited where the asset records say so.
+
+[Working notes](PROCESS-REFLECTION-NOTES.md) preserve the original observations
+and suggestions. [Reflection draft](REFLECTION.md) develops the lessons from
+them. Neither substitutes for a learner trial, a full authorized content
+review, or final evidence review before submission.

@@ -34,9 +34,10 @@ takes 45, comparison 15, judgement practice 15, synthesis 5.
 ## The anchor frame is a locked starting point, not a fresh guess
 
 Generate the anchor image straight from the character and location bible
-entries locked in Assignment 1 — the same references a shot's storyboard
-frame already points to — rather than writing a new description of the
-scene from memory. A fresh description drifts; a generation built from the
+entries in your locked pre-production package — Assignment 1's, or your
+pivot plan's if you've since switched stories — the same references a
+shot's storyboard frame already points to — rather than writing a new
+description of the scene from memory. A fresh description drifts; a generation built from the
 locked reference has something to be checked against. The anchor is
 generated from whichever bible reference(s) that shot needs; where one is
 still pending — today, only the kitchen's full production approval —
@@ -136,11 +137,12 @@ would fix it.
 
 "More dramatic" describes a mood, not a circumstance — it gives the take
 nothing specific to play, the same failure as a script's bare "(beat)."
-A working antecedent names a fact: *she tried Theo's number herself last
-week and it went unanswered.* That circumstance gives a performer, or a
-model directed toward performance, something concrete to carry into the
-reach — a longer stillness motivated by a specific prior refusal, not a
-vaguer instruction to seem more torn.
+A working antecedent names a fact: *she sealed the last box from her
+mother's kitchen only seconds before the phone lit up.* That circumstance
+gives a performer, or a model directed toward performance, something
+concrete to carry into the reach — a longer stillness motivated by the
+specific task just interrupted, not a vaguer instruction to seem more
+torn.
 
 </details>
 

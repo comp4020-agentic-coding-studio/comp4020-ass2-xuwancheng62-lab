@@ -1,0 +1,23 @@
+{
+  "id": "video_6aa64d6efdc881938476206bc24766970dfcf1a9929a86b1",
+  "object": "video",
+  "created_at": 1789283695,
+  "status": "completed",
+  "completed_at": 1789283767,
+  "edited_from_video_id": null,
+  "error": null,
+  "expires_at": 1789456567,
+  "extended_from_video_id": null,
+  "model": "sora-2",
+  "progress": 100,
+  "prompt": "Use the supplied image as the exact opening frame. One continuous locked-off close-up of the black smartphone lying face-up on the wooden kitchen table, receiving an incoming call. Throughout the shot, the phone repeatedly vibrates in short pulses: its body visibly trembles against the wood and shifts a few millimetres across the tabletop, with tiny changes in angle caused by the vibration. Keep this movement subtle but clearly visible, with the phone staying flat on the table and fully in frame. Each visible vibration pulse produces a clearly audible dry buzzing and light rattling sound from the phone contacting the wooden table. The vibration sound is the main sound, synchronized with the phone movement. No melodic ringtone, music, speech or voices. Preserve the reference phone, warm lighting and table. The screen stays lit with THEO CALLING readable and the incoming-call interface unchanged. No hands, pickup, answering, camera movement, zoom or cuts.\n",
+  "remixed_from_video_id": null,
+  "seconds": "4",
+  "size": "1280x720",
+  "production_review": {
+    "status": "usable",
+    "reviewer": "owner",
+    "reviewed_on": "2026-09-13",
+    "note": "Owner accepted this version for shot 02. Selected production file: shot-02-sora2-v2.mp4."
+  }
+}

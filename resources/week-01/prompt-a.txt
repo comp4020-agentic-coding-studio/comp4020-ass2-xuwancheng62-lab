@@ -1,0 +1,19 @@
+Create a single continuous 8-second cinematic shot in landscape format.
+
+Scene:
+A woman in her late twenties sits alone at a small kitchen table at night. She has a short dark bob and wears a plain oatmeal-coloured sweater. A smartphone rests on the table beside her right hand. The room is modest and quiet, lit by one warm overhead lamp, with a dark window in the background.
+
+Camera:
+Static medium close-up from a three-quarter angle at seated eye level. The woman's face, right hand, and the phone must remain visible throughout the shot. No camera movement, no zoom, no cuts, and no change of framing.
+
+Action:
+The phone vibrates once. She looks toward it. Her right hand begins to move toward the phone, stops before touching it, and slowly withdraws. She remains seated and does not answer.
+
+Directorial intention:
+The audience should understand that she wants to answer the call but consciously prevents herself from doing so. Her restraint should read as a difficult choice, not indifference.
+
+Continuity constraints:
+One character only. Keep her identity, clothing, hairstyle, position, lighting, set, props, composition, and camera angle consistent for the entire shot. The phone must remain in the same position. No dialogue, no visible text, no subtitles, no music, and no additional people.
+
+Audio:
+Quiet kitchen room tone and one subtle phone vibration only.

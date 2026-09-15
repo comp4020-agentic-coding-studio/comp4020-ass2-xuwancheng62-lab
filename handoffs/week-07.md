@@ -155,3 +155,54 @@ that no motion comparison footage exists.
 Validation: `pnpm check` passed: 0 type diagnostics, 6 tests passed, no
 accessibility, broken-link or deck-structure violations. Google Fonts DNS
 warnings persist. Website files updated locally; no deployment performed.
+
+## Approved corrections — 2026-09-13
+
+Owner approved review items 1/3/4. Week 5 reference status and version 0.2
+records synchronised; kitchen extended geometry approval and voice pending.
+Week 7 workshop now uses one fixed antecedent and two performance directions,
+with original spec and timings preserved. Week 8 records Sora contact failure
+and Jimeng hover improvement plus response-delay failure; no causal repair,
+independent completed selection or audio verification claimed. Earlier status
+accounts are historical where superseded. Items 2/5 remain unmodified.
+
+Validation for this correction: `pnpm check` passed (0 type diagnostics,
+6 tests, no accessibility/broken-link/deck violations). Workshops remain
+120 minutes. Google Fonts DNS warnings persist. No deployment performed.
+
+## Guided-judgement antecedent bug fixed — 2026-09-13
+
+Found while checking Weeks 7–8 content together: the guided-judgement
+`<details>` answer ("Make her hesitation more dramatic") proposed the fix
+antecedent "she tried Theo's number herself last week and it went
+unanswered" — inventing a prior missed call, directly contradicting this
+same file's own "without adding earlier missed calls to the story" line,
+Week 8's "No earlier missed call is added to the story," and the owner's
+recorded instruction in `PLAN.md` → "Weeks 7–8 — second-frame Sora 2
+demonstration" ("do not invent previous missed calls or change sibling
+history"). Replaced with an antecedent grounded in the already-established
+circumstance instead: "she sealed the last box from her mother's kitchen
+only seconds before the phone lit up." No other text in this example
+changed; the diagnosis's teaching point (a concrete fact vs. a mood word)
+is unaffected. Nothing else found wrong in Weeks 7–8 content — sessions
+both sum to 120 minutes, both `spec:` bullets per week are unchanged,
+decks match their lectures, and every embedded resource file
+(`anchor.png`, `jimeng-take-a.mp4`, `jimeng-take-b.mp4`,
+`rejected-take-b.mp4`) exists on disk.
+
+## One-sentence sync — story-switch option, 2026-09-13
+
+Owner approved letting a Final Project student finish with a different
+story than Assignment 1's, rather than requiring continuation — see
+`PLAN.md` → "Final Project — weighted criteria and walkthrough" →
+"Story-switch option" and `handoffs/week-12.md`. Consequential wording fix
+here only: "The anchor frame is a locked starting point, not a fresh
+guess" previously said to generate from "the character and location bible
+entries locked in Assignment 1"; now reads "in your locked pre-production
+package — Assignment 1's, or your pivot plan's if you've since switched
+stories." Nothing else in this week's lecture, session, or deck changed;
+this week's own `spec:` bullets and Activities are untouched.
+
+Verification: `pnpm typecheck` 0 errors/warnings/hints; `pnpm build`
+passed — 0 accessibility violations, no broken internal links, all 12
+decks passed structural checks.

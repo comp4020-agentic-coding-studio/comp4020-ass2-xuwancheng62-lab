@@ -1,0 +1,23 @@
+Tool: Jimeng (即梦)
+Mode: Image-to-video
+Reference image: anchor.png
+Duration: 8 seconds
+Aspect ratio: 16:9
+Resolution: 1280x720 (measured from Jimeng export)
+Camera movement: No separate UI control used; locked-camera instruction is in the prompt
+Motion strength: No separate UI control used
+Audio: Off in the prompt; remove the generated audio track during web conversion
+Seed: Not exposed
+Web delivery conversion: constant 24 fps, H.264 High Level 4.0, yuv420p, keyframe every 2 seconds, metadata removed, audio removed, fast-start enabled
+
+Continuity rule:
+Use the same Jimeng model/version, reference image, duration, aspect ratio, resolution or quality tier, camera setting, motion strength, and seed for Take A and every Take B candidate. Record the selected model/version and resolution below exactly as shown in Jimeng before the first generation, then keep them unchanged.
+
+Selected model/version: Jimeng / Seedance; exact version not exposed in the generation record available to Codex
+Selected resolution/quality: 1280x720 export
+
+Take A generation history (factual record of what was measured from the delivered files, kept here per the QA record convention — not a substitute for the fields above):
+
+- v1 — jimeng-2026-09-11-2788-...mp4 (delivered first). Measured: H.264, 1280x720, 16:9, AAC audio (mean -52.6dB / max -36.0dB), duration 5.088s. QA: FAILED — never performs the press-call/lower-phone/exhale beat from note-a-prompt.txt; screen lights and stays lit almost immediately, and Nadia's expression trends toward alarm rather than a calm exhale.
+- v2 — jimeng-2026-09-11-6243-...mp4 (delivered second, 2026-09-11). Measured: H.264, 1280x720, 16:9, AAC audio (mean -51.6dB / max -25.3dB), duration 8.096s. QA: FAILED — screen correctly stays dark for the first ~3.5-4s (thumb hovering, staring reads correctly as the pre-call pause), but from ~6s to the end Nadia is visibly speaking (mouth open and moving), which violates base-prompt.txt's locked "No dialogue, lip-sync, audible speech" line, and the phone is never lowered — the "lowers the phone slightly and exhales" beat from note-a-prompt.txt does not occur.
+- v2's own filename ("生成一个8秒的单一连续固定镜头。0–1.5秒，Nadia缓慢抬起手中的....") describes a longer, timed multi-beat shot list, not the single-sentence note recorded in note-a-prompt.txt below. That fuller prompt was not captured anywhere Claude Code can read (not in the filename in full, not embedded in the file's own metadata — checked via ffprobe, only internal Jimeng/Dreamina job IDs are present). **Owner: please paste the exact prompt text actually used for v2 into note-a-prompt.txt (or a new file) so this record is accurate** — Claude Code will not reconstruct or guess at it.

@@ -19,7 +19,9 @@ related:
 
 ## Before the workshop
 
-Bring the scene and intent note from week 3.
+Bring the scene and intent note from week 3. Optionally download the
+[shot list and storyboard template](/resources/week-04/shot-list-template.html)
+to fill in during the workshop instead of ruling your own grid.
 
 ## In the workshop
 

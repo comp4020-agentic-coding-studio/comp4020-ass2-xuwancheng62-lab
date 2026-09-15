@@ -68,14 +68,14 @@ kind of decision:
 
 This is the same fixed-identity-versus-changing-state split week 5 taught
 for a bible entry, one level further down. Two keyframes for the *same*
-shot can — and, for a continuous shot, must — differ from each other in
+shot can differ from each other in
 pose, prop position, and framing, while both still have to match the same
 fixed bible identity. A keyframe changing Nadia's face or costume between
 its start and end state is a continuity break; a keyframe changing where
 her hand is relative to the phone is the entire point of having two of
 them.
 
-Matching both keyframes is necessary, not sufficient. A generated take can
+Matching the planned keyframe states is necessary, not sufficient. A generated take can
 land exactly on its starting still and exactly on its ending still and
 still fail as a shot, because the movement connecting them — how the
 performance is timed, what the camera does while it happens — is a
@@ -93,7 +93,7 @@ resulting take against — a target for judging the take, not a second input
 every tool consumes. Check what a given tool actually supports before
 assuming either shape.
 
-## The real demonstration: the whole short as a schedule
+## Worked planning example: the whole short as a schedule
 
 Week 2's premise estimated three segments for "Before It Stops": clearing
 the kitchen and settling at the table (0:00–1:25), the phone ringing while
@@ -104,19 +104,28 @@ sequencing everything as one schedule:
 
 | # | Shot | Keyframe(s) | Bible reference(s) the keyframe(s) need | What the generated shot directs beyond the keyframe(s) |
 |---|---|---|---|---|
-| 1 | Wide — she tapes the last box shut among the half-packed kitchen, sets it on the stack by the door | One: wide framing on the sealed box and the stack by the door | Kitchen reference | The taping and setting-down action, timed |
-| 2 | Medium — she crosses to the table and sits, phone resting nearby | One: medium framing, seated at the table, phone on the table | Kitchen + Nadia references | The crossing and sitting motion leading into the held frame |
-| 3 | Wide — the figure at the kitchen table, phone lighting up beside her | One: wide framing, phone lit | Kitchen + Nadia + phone references | The phone's light-up timing against her stillness |
-| 4 | Insert — the phone screen reads THEO CALLING | One: tight insert on the lit screen | Phone reference | Screen/ring timing, the held camera |
-| 5 | Close-up — her face, still | One: close framing, restrained expression | Nadia reference | Held stillness, breath, minimal motion |
-| 6 | Insert — her fingers reach toward the phone and stop short of it | One: hand mid-reach, the air gap held | Nadia + phone references | The reach's speed and the stop, timed |
-| 7 | Close-up, continuous — camera tilts up as she accepts on the final ring, lifts the phone to her ear, and says "Hey" | Two: **start** — low framing on her hand and the phone, still on the table; **end** — the phone at her ear as she says "Hey" | start: Nadia + kitchen + phone references; end: Nadia + phone references | The accept-and-lift performance, its timing, and the camera's upward tilt connecting the two keyframes without a cut |
+| 1 | Wide — she tapes the last box shut among the half-packed kitchen, sets it on the stack by the door | **Start/input:** Nadia beside the unsealed box, tape ready; **end/target:** sealed box on the stack by the door | Kitchen + Nadia references | The taping and setting-down action, timed |
+| 2 | Medium — she crosses to the table and sits, phone resting nearby | **Start/input:** Nadia standing before crossing to the table; **end/target:** seated, phone on the table | Kitchen + Nadia + phone references | The crossing and sitting motion leading into the held frame |
+| 3 | Wide — the figure at the kitchen table, phone lighting up beside her | **Start/input:** Nadia seated, phone screen dark; **end/target:** same wide framing, screen lit | Kitchen + Nadia + phone references | The phone's light-up timing against her stillness |
+| 4 | Insert — the phone screen reads THEO CALLING | **Start/input:** tight insert on the lit caller screen; **end/target:** same held display | Phone reference | Screen/ring timing, the held camera |
+| 5 | Close-up — her face, still | **Start/input:** close framing, restrained expression; **end/target:** same held pose | Nadia reference | Held stillness, breath, minimal motion |
+| 6 | Insert — her fingers reach toward the phone and stop short of it | **Start/input:** hand resting short of the phone; **end/target:** hand extended, stopping gap visible | Nadia + phone references | The reach's speed and the stop, timed |
+| 7 | Close-up, continuous — camera tilts up as she accepts on the final ring, lifts the phone to her ear, and says "Hey" | **Start/input:** low framing on her hand and the phone, still on the table; **end/target:** the phone at her ear as she says "Hey" | start: Nadia + kitchen + phone references; end: Nadia + phone references | The accept-and-lift performance, its timing, and the camera's upward tilt connecting the two keyframes without a cut |
 
-Shots 3–7 are week 4's closing five, unchanged, renumbered into their place
+Shots 3–7 retain week 4's closing actions, renumbered into their place
 in the whole sequence. Shots 1–2 shot-list the opening segment that week 2
 only described in prose. Shot 7's keyframe pair is an authored planning
 example illustrating the dependency chain, the same status as the rest of
 this schedule — not a report of an actual generation.
+
+The start/input column describes the state before the action; the end/target
+column describes the state to evaluate afterwards. A seated image cannot
+serve as the opening frame for a crossing-and-sitting action, and an already
+lit screen cannot demonstrate the light-up transition from darkness. For a
+held shot, the start and end states may be the same. A target state does not
+require a separately generated end image for every shot: prepare one where
+it helps planning or the tool supports it. The tool may consume only the
+start image. These are planned states, not newly generated assets.
 
 Read the "Bible reference(s)" column against week 5's bible as it actually
 stands today, not as an unresolved wish list. Week 5 now embeds an image
@@ -130,8 +139,10 @@ dependency is still genuinely open — the kitchen reference's full geometry
 beyond what's pictured is inferred, and its production approval is still
 pending. That's the schedule doing its job either way: before this pass it
 would have shown you six shots waiting on the same handful of undecided
-references; now it shows you one shot (1) still waiting on one open
-decision, and the rest ready to prepare.
+references; the full-room actions in shots 1–2 still need that approval, including
+the crossing route in shot 2. Other frames can be prepared where the
+existing pictured geography is sufficient; check each framing before
+calling it ready.
 
 Narrative order and preparation order are not the same list. Shot 1 comes
 first on screen, but its keyframe needs the kitchen at a level of finished

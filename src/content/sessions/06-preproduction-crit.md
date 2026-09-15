@@ -28,8 +28,8 @@ text entries.
 ### Activity 1 — Recap and inventory (10 min)
 
 **Instructions:** State the lecture's chain: bible fixes identity, a
-keyframe fixes one shot's specific still (or, for a continuous shot, its
-start and end stills), and the generated shot adds performance, action,
+keyframe fixes a shot's specific state, with opening inputs distinguished
+from ending evaluation targets, and the generated shot adds performance, action,
 timing, and camera movement on top. Lay out your current shot list and
 storyboard and mark which shots are new since week 4, each shot's
 keyframe(s), which bible reference each keyframe needs, and whether that
@@ -43,9 +43,11 @@ dependency status.
 
 **Instructions:** Work individually. Extend your storyboard so it covers
 the whole short, first frame to last, not only its most dramatic scene.
-For each shot, name its keyframe(s) — one for most shots, a start/end pair
-for a shot built as one continuous take without a cut — and the bible
-reference(s) each keyframe draws on. Then build a **preparation list**
+For each shot, name its opening state and ending target, and the bible
+reference(s) each draws on. Label the opening image as the generation input;
+label any end image as an evaluation target or a supported tool input.
+For an action shot, start before the action happens. For a held shot, the
+states may match. A separate end image is not required for every shot. Then build a **preparation list**
 separate from the shot list's own narrative order: sequence keyframes by
 which ones' bible references are actually resolved, not by where the shot
 falls in the story. Where a reference is still pending, mark the keyframe

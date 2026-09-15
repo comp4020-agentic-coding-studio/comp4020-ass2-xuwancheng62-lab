@@ -1,0 +1,20 @@
+{
+  "id": "video_6aa650aed420819391a25318e8a3800902637b5e79d8e82a",
+  "object": "video",
+  "created_at": 1789284527,
+  "status": "failed",
+  "completed_at": null,
+  "edited_from_video_id": null,
+  "error": {
+    "code": "moderation_blocked",
+    "message": "Your request was blocked by our moderation system."
+  },
+  "expires_at": null,
+  "extended_from_video_id": null,
+  "model": "sora-2",
+  "progress": 0,
+  "prompt": "Use the supplied image as the exact opening frame. One continuous locked-off close-up of Nadia in the kitchen at night. She remains seated and quietly watches the phone offscreen to her lower right throughout. Only natural subtle breathing and occasional blinking; her gaze stays on the same offscreen phone. She wants to answer but hesitates, expressed through restrained stillness. Preserve the exact woman, short brown bob, oatmeal knitted sweater, warm kitchen lighting, background and framing from the reference. No reaching, head turns, smile, tears, speech or lip movements. No camera movement, zoom, cuts or new objects. No ringtone, music or voices.\n",
+  "remixed_from_video_id": null,
+  "seconds": "8",
+  "size": "1280x720"
+}

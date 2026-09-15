@@ -20,11 +20,11 @@ spec:
     package version and four clearly labelled submission sections
   - the logline identifies the protagonist, their want, the obstacle and what
     is at stake; the premise states the situation, visible conflict and ending
-  - the package plans a complete two-to-four-minute short; its estimated shot
-    durations total two to four minutes and are justified by the planned action
-  - the screenplay covers the whole short from beginning to end, with scene
-    headings, observable action, formatted dialogue where used and director's
-    intent notes tied to specific beats
+  - the package plans a complete two-to-four-minute short, with a shot list
+    detailed enough that a reader can judge it fits that runtime
+  - the screenplay covers the whole short from beginning to end, with a
+    scene heading for each scene it contains, observable action, formatted
+    dialogue where used and director's intent notes tied to specific beats
   - the bible covers every character, location, costume and story-relevant
     prop used by the screenplay and shots, separating fixed identity from
     changing action or state
@@ -35,7 +35,7 @@ spec:
   - the shot list covers every screenplay beat in screen order, with a unique
     shot ID, scene or beat reference and a purpose beyond covering the action
   - every shot specifies framing, camera angle, camera movement or fixed
-    position, subject action, estimated duration and relevant sound or cut cues
+    position and subject action
   - the storyboard uses the same IDs and order as the shot list, with at least
     one legible staging thumbnail per shot and additional stages for movement
     that cannot be understood from one frame
@@ -133,8 +133,9 @@ them an action to stage.
 
 ### 2. Write the whole screenplay and explain your intent
 
-**Your task:** Include every scene from the film's beginning to its ending.
-Use scene headings naming interior/exterior, location and time of day;
+**Your task:** Cover the film's beginning to its ending — whether that's one
+continuous scene or several. Use scene headings naming interior/exterior,
+location and time of day;
 observable action; and character cues and dialogue where needed. A silent
 film does not need dialogue added to satisfy the format. Add intent notes
 that name the relevant beat, the intended audience reading and the action or
@@ -217,20 +218,20 @@ the lift” preserves identity while allowing the action.
 
 **Your task:** List shots in **screen order**, using unique IDs shared with
 the storyboard. For each shot, record its scene/beat, distinct purpose,
-framing, angle, fixed camera or movement, subject action, estimated duration,
-sound/cut cues and dependencies. Your drawings should show subject placement,
-important props, eyelines and movement where relevant. Stick figures and
-arrows are enough if another reader can stage the shot.
+framing, angle, fixed camera or movement, subject action and dependencies.
+Your drawings should show subject placement, important props, eyelines and
+movement where relevant. Stick figures and arrows are enough if another
+reader can stage the shot.
 
 The current single-scene teaching draft uses five shots:
 
-| ID | Framing/action | What this shot contributes | Planning estimate |
-|---|---|---|---|
-| 01 | Fixed eye-level wide: Nadia seals the last box, settles, phone lights up | Establish the imminent departure surrounding her decision | 8–12 s |
-| 02 | Static phone insert: **THEO CALLING**, no hand touching it | Identify the estranged brother as the caller | 2–3 s |
-| 03 | Fixed face close-up: she looks toward the phone and stays still | Make her withholding a response visible | 5–8 s |
-| 04 | Static hand/phone insert: reach, stop short of contact | Turn hesitation into an interrupted attempt at contact | 3–5 s |
-| 05 | One continuous shot: accept and grasp, tilt up with the lift, “Hey,” listen | Complete the choice of contact while leaving its outcome unresolved | 6–10 s |
+| ID | Framing/action | What this shot contributes |
+|---|---|---|
+| 01 | Fixed eye-level wide: Nadia seals the last box, settles, phone lights up | Establish the imminent departure surrounding her decision |
+| 02 | Static phone insert: **THEO CALLING**, no hand touching it | Identify the estranged brother as the caller |
+| 03 | Fixed face close-up: she looks toward the phone and stays still | Make her withholding a response visible |
+| 04 | Static hand/phone insert: reach, stop short of contact | Turn hesitation into an interrupted attempt at contact |
+| 05 | One continuous shot: accept and grasp, tilt up with the lift, “Hey,” listen | Complete the choice of contact while leaving its outcome unresolved |
 
 This table summarises the example. In your own package, expand each row
 with the full required shot fields and a matching storyboard thumbnail.
@@ -248,10 +249,10 @@ Keep the hand, phone position and eyeline consistent across shots 03–05.
 The ringtone continues until acceptance, then stops.
 
 **Check your work:** Match every screenplay beat to a shot ID. Match every
-shot ID to its storyboard. Add estimated durations and show a total of
-120–240 seconds for your own full film; explain the action or performance
-that occupies that time. There is no minimum number of shots. The example's
-24–38 second estimate is a scope gap, not a reason to stretch the ringtone.
+shot ID to its storyboard. Taken together, does your shot list plausibly
+cover a 120–240 second film? There is no minimum number of shots. The
+example's short screenplay is a scope gap, not a reason to stretch the
+ringtone.
 
 ### 5. Check dependencies and assemble the final package
 
@@ -286,8 +287,42 @@ what must be present; these criteria judge how well the decisions work.
 |---|---|
 | **Story and screenplay craft — 30%** | A clear want, obstacle and stakes; a filmable change expressed through action; a complete, feasible screenplay; specific intent notes; agreement between story descriptions and ending |
 | **World and continuity design — 30%** | Concrete repeatable identities and geography; design choices resolved where possible and honestly, specifically justified where pending; usable labelled references where relied on; a clear distinction between fixed facts and planned state changes |
-| **Shot planning and storyboard — 40%** | Complete beat coverage; shots with distinct contributions; readable staging and movement; coherent continuity and cut/sound cues; justified timing and a dependency-aware production order |
+| **Shot planning and storyboard — 40%** | Complete beat coverage; shots with distinct contributions; readable staging and movement; coherent continuity; a runtime the shot list plausibly supports and a dependency-aware production order |
 
 A complete package lets the reader stage your choices without filling in
 missing decisions. Strong work also makes clear why those choices serve the
-film: why this action, this frame, this duration and this ending.
+film: why this action, this frame and this ending.
+
+## Detailed marking rubric
+
+Each criterion above splits into three dimensions. Each dimension is scored
+out of 10; a criterion's mark is its weight scaled by the average of its
+three dimension scores (for example, three dimension scores of 8, 7 and 9 —
+average 8 — earn 40 × 8/10 = 32 of the 40 marks available for Shot planning
+and storyboard). The bands below describe what earns each range; a score
+can fall between bands where a piece of work only partly matches a
+description.
+
+### Story and screenplay craft (30%)
+
+| Dimension | 7–10 | 5–6 | 1–4 |
+|---|---|---|---|
+| Want, obstacle and stakes | The logline, premise and screenplay all play out a specific want, a concrete obstacle and an immediate stake in observable action, not narration | Want, obstacle and stakes are present but at least one is vague, or only partly visible in the screenplay's actual beats | Want, obstacle or stakes are missing, generic, or contradicted by what the screenplay actually shows |
+| Screenplay completeness | The screenplay covers the whole film beginning to end, correctly formatted (headings, observable action, dialogue where used), with a runtime estimate the described action justifies | The screenplay is mostly complete and correctly formatted, but one scene or beat is thin or missing, or the runtime doesn't match the action described | The screenplay is fragmentary (for example, only the Week 3 practice scene), misformatted, or its runtime is unjustified or padded |
+| Director's intent notes | Every note names a concrete antecedent circumstance or visible action tied to a specific beat, not a mood word or a prescribed result | Most notes are specific, but one or two lapse into result-oriented adjectives ("more dramatic") or aren't tied to a specific beat | Notes are missing, generic, or describe an emotional result rather than a directable action or circumstance |
+
+### World and continuity design (30%)
+
+| Dimension | 7–10 | 5–6 | 1–4 |
+|---|---|---|---|
+| Repeatable identity | Every character, location and story-relevant prop has an entry with concrete, reproducible detail, cleanly separated from changing action or state | Entries exist for most elements, but at least one lacks enough concrete detail to reproduce, or mixes fixed identity with changing state | Entries are missing for elements the screenplay or shots actually use, or are too vague to reproduce ("a woman in her thirties," nothing further) |
+| Resolved vs. pending decisions | Every bible decision the shots need is either resolved or explicitly marked pending with the exact decision still needed; references are labelled and versioned | Most decisions are resolved or clearly pending, but one field is blank, unlabelled, or pending without saying what would close it | Decisions are left unresolved without being marked pending, or references are unlabelled and unversioned, leaving a reader unable to tell what's settled |
+| Cross-document continuity | Story, ending, character identity, prop state and spatial continuity agree exactly across the logline, premise, screenplay, bible, shot list and storyboard | One inconsistency exists between documents (a prop's state, a location detail) that a careful reader would need to reconcile | Multiple contradictions exist across the documents, or a major element — the ending, the protagonist's identity — disagrees between sections |
+
+### Shot planning and storyboard (40%)
+
+| Dimension | 7–10 | 5–6 | 1–4 |
+|---|---|---|---|
+| Beat coverage and shot purpose | Every screenplay beat maps to a shot ID in screen order, and each shot's stated purpose is distinct from every other shot's | Coverage is mostly complete, but one beat lacks a shot, or two shots share the same stated purpose | Shots skip significant beats, or most shots share a generic purpose ("cover the action") rather than a distinct contribution |
+| Staging legibility and continuity | Every shot specifies framing, angle, movement and subject action; storyboard thumbnails share matching IDs, are legible enough to stage without guessing, and add extra stages where one frame can't show the movement | Most shots are fully specified and storyboarded, but one or two thumbnails are unclear, missing a needed extra stage, or a field is missing | Several shots lack a storyboard thumbnail, fields are missing across most shots, or the drawings don't show enough to stage the shot |
+| Timing and production order | The shot list, taken as a whole, plausibly covers the required 2–4 minute runtime; a production order names each shot's dependencies and correctly flags any shot blocked by a pending decision | The shot list's overall runtime is close to plausible for 2–4 minutes, and a production order exists but misses a dependency or doesn't correctly flag one blocked shot | The shot list's runtime is implausible or clearly padded to reach the range; there is no production order, or dependencies aren't tracked at all |

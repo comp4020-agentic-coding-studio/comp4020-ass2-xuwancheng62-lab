@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "file": "cut-a-hold.mp4",
+      "duration_seconds": 31.233333,
+      "sha256": "b11d4d6214ed3a385e42d6ef2e0b1aa231f12d7fd738d624512732796970035c"
+    },
+    {
+      "file": "cut-b-early.mp4",
+      "duration_seconds": 27.266667,
+      "sha256": "c076c6e412848178cf041be2e8ec382c9726b86590362c50018a3fcf84e82fd5"
+    }
+  ],
+  "only_edit_change": [
+    [
+      "03",
+      "duration_seconds",
+      6.0666667,
+      2.0666667
+    ]
+  ],
+  "decode_check": "cut-b-early.mp4 fully decoded without error",
+  "visual_check": "cut to shot 04 sampled; phone lit",
+  "review_limits": "No full playback, listening or independent audience review."
+}

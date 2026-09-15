@@ -1,0 +1,17 @@
+{
+  "id": "video_6aa64b643d508193bbf2740662cfe7940dc12a6f2c3425fd",
+  "object": "video",
+  "created_at": 1789283172,
+  "status": "completed",
+  "completed_at": 1789283241,
+  "edited_from_video_id": null,
+  "error": null,
+  "expires_at": 1789456041,
+  "extended_from_video_id": null,
+  "model": "sora-2",
+  "progress": 100,
+  "prompt": "Use the supplied image as the exact opening frame. A single continuous fixed close-up of the black smartphone lying face-up on the wooden kitchen table. The incoming-call screen remains lit with the exact text THEO CALLING clearly legible and unchanged throughout. The phone vibrates subtly against the table, staying in the same place and orientation. Preserve the reference phone design, table texture, warm nighttime lighting and framing. No hands or people enter the frame. No camera movement, zoom, cuts, answering or pickup. No ringtone, music, voices or other sound.\n",
+  "remixed_from_video_id": null,
+  "seconds": "4",
+  "size": "1280x720"
+}

@@ -24,10 +24,59 @@ to work on today.
 
 ## In the workshop
 
-Generate an anchor image for your chosen shot straight from your bible
-entries. Animate it. Then write one performance note — a timing change, a
-held look, a delayed gesture — and generate a second take from that note
-alone.
+### Activity 1 — Recap and shot selection (10 min)
+
+**Instructions:** State the lecture's distinction between a moment-before —
+a concrete antecedent — and a mood word with nothing to play. Pick one shot
+from your Assignment 1 shot list to animate today, and confirm every bible
+reference it needs is locked, not pending.
+
+**Expected output:** One chosen shot, with its references confirmed ready.
+
+### Activity 2 — Write the moment before (20 min)
+
+**Instructions:** For your shot's central beat, write one concrete
+moment-before and keep it fixed for both takes. Check whether it names a
+fact rather than a mood; rewrite any mood-only note. Then write directions
+A and B that vary exactly one performance choice — for example, when the
+reach begins — while preserving the same scripted action and endpoint.
+
+**Expected output:** One shared moment-before and two performance directions,
+with the single intended difference named.
+
+### Activity 3 — Generate the anchor and two takes (60 min)
+
+**Instructions:** Generate an anchor image for your shot straight from your
+locked bible entries. Animate it once under each performance direction, keeping the shared
+moment-before and
+every other variable — framing, the scripted outcome, the reference images —
+identical between the two takes.
+
+**Expected output:** One anchor image and two motion takes that differ only
+in the directed beat.
+
+### Activity 4 — Dailies-review screening (20 min)
+
+**Instructions:** In pairs, screen both takes for your partner before saying
+which performance direction drove which take. Your partner names, in the language of
+performance — timing, a look, a gesture — what they think changed between
+the takes. Compare that against the single performance difference you directed, the way
+AFI's dailies review has fellows read a take before being told what it was
+meant to do. Swap roles and repeat for your partner's takes.
+
+**Expected output:** A performance-language description of the difference
+between the two takes, given independently by your partner, checked against
+your own note.
+
+### Activity 5 — Completion check (10 min)
+
+**Instructions:** Walk the two spec bullets together. Does your anchor image
+match your bible? Do the two takes differ in exactly one directed
+performance beat? Can you name that difference in the language of
+performance rather than in prompt or tool terms?
+
+**Expected output:** Both spec bullets verified, or a named gap and what
+would close it.
 
 ## Afterwards
 
