@@ -1,9 +1,10 @@
 # Process overview
 
-Updated 2026-09-13. This account distinguishes implemented changes from
-classroom outcomes that have not been tested. The later decisions below
-are supported by current files and working records; some are still
-uncommitted and are not presented as published commit evidence.
+Updated 2026-09-15. This account distinguishes implemented changes from
+classroom outcomes that have not been tested. Every decision below is
+supported by current files and, as of
+[`38a8340`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-xuwancheng62-lab/commit/38a83405f6d127f4ebb67af1c8e73b11d07c72ef),
+published commit evidence rather than working-copy state alone.
 
 ## What I built
 
@@ -63,8 +64,9 @@ workshop's job). I clarified that rule rather than restructuring content
 around a false alarm; `PLAN.md`'s "Judgement calls" section records the
 reasoning for both dismissals, and two genuinely open judgement calls —
 single-scene practice against Assignment 1's multi-scene brief language,
-and montage lectured but never separately rehearsed — are recorded there
-rather than silently resolved either way.
+and montage lectured but never separately rehearsed — were recorded there
+rather than silently resolved either way, until both were closed on
+2026-09-15; see "Closing the two remaining judgement calls" below.
 
 The one piece of that skeleton still real-content-shaped rather than
 finished was the slide decks: only week 1 had one, written by hand before
@@ -83,6 +85,25 @@ curriculum-reviewer pass is how I know it holds together as a course, and
 a further full content review can only run with my explicit approval,
 under [CLAUDE.md](CLAUDE.md). The earlier reviewer findings describe the
 skeleton at that time, not a verification of all subsequent changes.
+
+## Grounding technique in real pedagogy, not invented method
+
+`CLAUDE.md`'s "real production material, never invented" rule governs
+demonstration assets; I held the curriculum's *teaching content* to the
+same bar. Before writing week 4's shot-construction material, I compiled
+[`RESEARCH.md`](RESEARCH.md): sourced notes across seven film-directing
+programs and five named directing methodologies, every claim either linked
+or explicitly flagged unverified
+([`0f2b284`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-xuwancheng62-lab/commit/0f2b284920b9fb225ed65492f9e3bdcce6ccba63)).
+Week 4's depth pass then teaches Mamet's "shot as argument" by name, cited
+to *On Directing Film*, rather than a plausible-sounding technique I made
+up to fill a lecture slot
+([`7054ea7`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-xuwancheng62-lab/commit/7054ea7b2f818e61677155b52c5e6d49d49a96a8)).
+The research pass also surfaced a cross-program pattern — a recurring
+screen-and-critique ritual (AFI's dailies review, NYU's weekly Master
+Class, NFTS's rushes cinemas) — that the course's own dailies-review and
+recut-lab sessions independently converge on, which is closer to a check
+against real practice than proof the course "does it right."
 
 ## Turning examples into workable activities
 
@@ -138,6 +159,46 @@ These two changes followed different paths under the trigger test in
 changing assessment requirements required a proposed plan and my approval.
 The size of a text edit did not determine its decision-making significance.
 
+## Closing the two remaining judgement calls
+
+`PLAN.md`'s "Judgement calls" section had carried two subjective findings
+from the coherence review as open by choice since the 12-week skeleton was
+built: whether montage — lectured in week 10 but never separately
+rehearsed — was a legitimate scope cut or an actual gap, and whether the
+single-scene running example adequately covered Assignment 1's brief
+language, which reads as if it could ask for more than one scene. On
+2026-09-15 I was asked to close both rather than leave them open
+indefinitely
+([`38a8340`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-xuwancheng62-lab/commit/38a83405f6d127f4ebb67af1c8e73b11d07c72ef)).
+
+Montage closed as a real gap: `10-recut-lab.md`'s second required cut now
+has to be a repeat-or-reorder decision, not a second duration variant, so
+the workshop actually rehearses the technique the lecture names. The
+single-scene question closed the other way. Re-reading Assignment 1's
+actual marking rubric — not just its descriptive prose — showed the
+"Screenplay completeness" dimension grades length and runtime
+justification, never scene count, and its worst-band example is about a
+screenplay being *too short*, not about how many scenes it has. Nothing
+taught in weeks 2–6 ever rehearses linking multiple scenes together, so
+requiring one would have created a new teach→practise→assess gap to close
+an ambiguity that turned out to be wording, not substance. I reworded the
+two phrases that read as if they assumed multiple scenes ("scene
+headings," "include every scene") rather than expanding the assignment's
+scope. See `PLAN.md` → "Judgement calls" and `handoffs/week-06.md`,
+`handoffs/week-10.md` for the full reasoning and verification.
+
+Both are `spec:`-bullet changes, so both went through the trigger test
+despite being small edits — consistent with the two-track rule from the
+Week 6 pending-decision pass above. A third change from the same session,
+`02-first-review.md`'s move to numbered activities, went the other way on
+purpose: nothing about what students do or are assessed on changed, only
+how the workshop's existing phases are presented, which
+`CLAUDE.md`'s own numbered-activity rule says is presentation, not a
+planning decision — so it was implemented directly, with the reasoning
+recorded in `handoffs/week-02.md` rather than `PLAN.md`. Telling these
+apart on wording alone is the harder judgement call than either individual
+fix.
+
 ## Managing agents and durable records
 
 Repeated full-course checks added cost and revisited known findings. I limited
@@ -162,6 +223,25 @@ became INTEGRATED for the written-note exercise. The revision history keeps
 both transitions. This establishes a missed synchronization step; it does
 not identify which earlier session or agent caused it.
 
+A related gap surfaced on 2026-09-15: a large amount of already-verified
+work — every week's content, the production assets under `resources/`, and
+the plan/process records themselves — had accumulated across many sessions
+without ever being committed. Asked to commit, I checked scope rather than
+guessing: a file-level `git diff --stat` showed heavily-shared files like
+`PLAN.md` carried thousands of unrelated lines beyond that session's own
+edits, so there was no clean way to commit "just this session's work" at
+the file level. I raised that ambiguity rather than picking a scope myself,
+was told to commit everything currently modified, and did — after scanning
+staged content for secrets, confirming two untracked directories were real
+production assets rather than junk, and deliberately excluding three
+scratch files that declared themselves disposable in their own source
+comments
+([`38a8340`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-xuwancheng62-lab/commit/38a83405f6d127f4ebb67af1c8e73b11d07c72ef)).
+The commit itself is honest about what it is: one very large catch-up, not
+evidence that the work was done incrementally. Letting real, already-checked
+work sit uncommitted for this long is itself the failure worth naming, not
+just its resolution.
+
 ## Producing evidence instead of hypothetical examples
 
 For Week 9 I supplied Jimeng footage; Codex generated a phone insert and
@@ -184,6 +264,45 @@ isolates sound. Neither example establishes audience response or learning
 improvement. Their handoffs record successful mechanical checks, which
 verify integration rather than emotional effect.
 
+## Reflection
+
+**What was the breakthrough that moved the work forward?** Reading the
+course in the order a student would use it, not just checking whether the
+required content existed, surfaced gaps structural tests couldn't. At the
+screenplay stage I could see the expected result but not how to start
+writing it, which led to Week 3's fill-in worksheet (premise → decisive
+scene → scene change → five observable beats → screenplay form →
+director's note). Week 1 forced a related rethink: independent A/B
+generations varied identity, setting and action enough to obscure the
+directing note itself, so the workshop narrowed to diagnosing and
+redirecting the existing take rather than generating a new one — a real
+trade against verifying an improved performance in class, not a free
+simplification. Compiling [`RESEARCH.md`](RESEARCH.md) before writing Week
+4 was the same instinct applied to teaching content rather than student
+support: asking whether "shot as argument" was real practice, sourced to
+Mamet, before asking whether it was well explained. Closing the two
+remaining judgement calls on 2026-09-15 changed how "flagged as ambiguous,
+revisit later" gets treated: re-reading Assignment 1's actual marking
+rubric, rather than trusting an earlier summary of it, showed the
+single-scene question was never about scene count at all — the wording
+was assuming something the grading never required.
+
+**What did this work change about who I want to be as a developer?** I
+want to build around actual use and evidence, not a passing build. Week
+6's internal asset identifiers were technically accurate but unusable by a
+student; Assignment 1's "resolve every decision" language sounded complete
+but outran what Week 5 actually taught. A green build and valid links
+answer a different question than "can a student act on this" or "is this
+a fair ask" — those still need a human reading it. I also want explicit
+decision boundaries for the agents I work with: wording and link fixes can
+proceed directly, but what's taught or assessed needs a proposal and my
+approval first. That boundary trades completeness for cost, not a
+guarantee of whole-course coherence — local review can still miss distant
+dependencies. And letting real, already-checked work sit uncommitted
+across many sessions until one large catch-up commit is a lesson of its
+own: I want committing to be routine at the end of a finished unit of
+work, not a separate task reconstructed from memory later.
+
 ## Verification and remaining limits
 
 The project now contains real teaching media; the old claim that no production
@@ -193,6 +312,6 @@ my own completed film. Kitchen production approval and independent listening
 or audience review remain limited where the asset records say so.
 
 [Working notes](PROCESS-REFLECTION-NOTES.md) preserve the original observations
-and suggestions. [Reflection draft](REFLECTION.md) develops the lessons from
+and suggestions; the "Reflection" section above develops the lessons from
 them. Neither substitutes for a learner trial, a full authorized content
 review, or final evidence review before submission.

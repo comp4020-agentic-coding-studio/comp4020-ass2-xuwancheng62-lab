@@ -67,8 +67,11 @@ because their decisions are still in force or their status is not yet
 closed:
 
 - "Week 1 status" (inside "Grounding in real directing pedagogy") —
-  `BIS-W01-WORKSHOP` remains `NOT STARTED` in `MANIFEST.md`, so the
-  workshop's design is still load-bearing, not merely historical.
+  `BIS-W01-WORKSHOP` moved to `INTEGRATED` in `MANIFEST.md` on 2026-09-13
+  (owner-approved written-redirect scope), after this reorganisation was
+  approved the same day; the section stays unarchived because it's the
+  live record of that approved workshop design, not because the asset is
+  still outstanding.
 - "Weeks 7–8 — second-frame Sora 2 demonstration" — real production and
   verification are still in progress per `handoffs/week-07.md` and
   `handoffs/week-08.md` ("verification gaps remain" / "generation paused
@@ -282,8 +285,6 @@ follow-up pass)"](PLAN-ARCHIVE.md#judgement-calls--dismissed-findings-2026-09-04
 
 ## Open questions / not yet done
 
-- Whether to revisit either of the two open judgement calls above before
-  shipping.
 - The full curriculum-reviewer pass described under "Process" above is
   pending until the real operational demonstrations exist (lectures,
   sessions, assessments and all 12 decks are now written and committed);
@@ -715,8 +716,7 @@ sub-passes"](PLAN-ARCHIVE.md#grounding-in-real-directing-pedagogy--completed-sub
 Approved 2026-09-12; implemented and verified per `handoffs/week-05.md`
 (text/template scope complete — lecture, six-activity workshop, and
 15-slide deck; visual production fields remain pending by owner
-instruction, tracked live under "Week 1 status" above and in
-`MANIFEST.md`). Full text moved to [PLAN-ARCHIVE.md → "Week 5 depth pass —
+instruction, tracked live in `MANIFEST.md`). Full text moved to [PLAN-ARCHIVE.md → "Week 5 depth pass —
 approved"](PLAN-ARCHIVE.md#week-5-depth-pass--approved).
 
 ### Weeks 6–12 depth pass — approved
