@@ -130,11 +130,11 @@ start image. These are planned states, not newly generated assets.
 Read the "Bible reference(s)" column against week 5's bible as it actually
 stands today, not as an unresolved wish list. Week 5 now embeds an image
 for each of these: [Nadia's appearance
-reference](/resources/week-05/images/nadia-week1-reference-v1.png), [the
+reference](/resources/week-05/images/nadia-week1-reference-v1.webp), [the
 kitchen's layout and lighting
-reference](/resources/week-05/images/kitchen-week1-reference-v1.png), and
+reference](/resources/week-05/images/kitchen-week1-reference-v1.webp), and
 the phone's appearance (carried over from week 4's [phone
-reference](/resources/week-04/images/bis-02-phone-week1-v1.png)). One
+reference](/resources/week-04/images/bis-02-phone-week1-v1.webp)). One
 dependency is still genuinely open — the kitchen reference's full geometry
 beyond what's pictured is inferred, and its production approval is still
 pending. That's the schedule doing its job either way: before this pass it

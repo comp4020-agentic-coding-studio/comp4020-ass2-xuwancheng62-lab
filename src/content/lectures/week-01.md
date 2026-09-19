@@ -98,7 +98,7 @@ Watch Take A before opening the notes below. Write down what she does,
 where the action changes, and what her behaviour makes you think she
 wants. Keep that first reading so you can compare it with the diagnosis.
 
-<video src="../../resources/week-01/take-a.mp4" controls width="100%"></video>
+<video src="../../resources/week-01/take-a.mp4" controls preload="metadata" playsinline width="100%"></video>
 
 <details>
 <summary>Reveal Note A and the diagnosis</summary>
@@ -126,7 +126,7 @@ Watch Take B before revealing its note. Name the observable differences
 from Take A — when the reach begins, where it stops, and how she withdraws.
 Do those differences change your reading of her intention?
 
-<video src="../../resources/week-01/take-b.mp4" controls width="100%"></video>
+<video src="../../resources/week-01/take-b.mp4" controls preload="metadata" playsinline width="100%"></video>
 
 </details>
 

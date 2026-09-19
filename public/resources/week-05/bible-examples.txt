@@ -19,7 +19,7 @@ brown bob tucked behind the ear.
 Wardrobe: oatmeal chunky knit sweater with long sleeves and dark trousers.
 Voice: the line Hey is established; vocal reference/qualities PENDING.
 Reference: Week 4 closing shot list for action; character/costume image:
-/resources/week-05/images/nadia-week1-reference-v1.png.
+/resources/week-05/images/nadia-week1-reference-v1.webp.
 Decision needed: select a voice reference for Hey.
 
 CHARACTER: THEO
@@ -32,7 +32,7 @@ there is no cut to Theo. Reassess if he appears in another scene.
 Voice: no Theo line specified by the current closing shot list. If a response
 is included in the sound design, select a voice reference and record it.
 Reference: closing shot list and caller display image:
-/resources/week-04/images/bis-02-phone-week1-v1.png.
+/resources/week-04/images/bis-02-phone-week1-v1.webp.
 No second on-screen location is established.
 Decision needed: resolve audible representation before producing any reply.
 
@@ -48,8 +48,8 @@ Lighting: warm overhead pendant light, dark nighttime window.
 Props: same black smartphone throughout; incoming display THEO CALLING,
 changing to an accepted call in the final shot.
 Visual style: subdued amber light, cream cabinetry and natural wood texture.
-Location reference: /resources/week-05/images/kitchen-week1-reference-v1.png.
-Phone reference: /resources/week-04/images/bis-02-phone-week1-v1.png.
+Location reference: /resources/week-05/images/kitchen-week1-reference-v1.webp.
+Phone reference: /resources/week-04/images/bis-02-phone-week1-v1.webp.
 Preserve identity and geography while allowing the planned table-to-ear lift.
 
 WORKED REVISION: IDENTITY VERSUS POSITION

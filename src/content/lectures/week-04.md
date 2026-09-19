@@ -51,19 +51,19 @@ test.*
 
 ### Wide — place and distance
 
-![A seated woman, her entire chair and table, and the surrounding kitchen and packing boxes.](/resources/week-04/images/size-wide-v2.png)
+![A seated woman, her entire chair and table, and the surrounding kitchen and packing boxes.](/resources/week-04/images/size-wide-v2.webp)
 
 ### Medium — body language
 
-![A woman shown from the waist up holding a box at the kitchen table.](/resources/week-04/images/size-medium.png)
+![A woman shown from the waist up holding a box at the kitchen table.](/resources/week-04/images/size-medium.webp)
 
 ### Close-up — facial detail
 
-![Tight framing of the woman’s face, with only a small part of the collar visible.](/resources/week-04/images/size-closeup-v2.png)
+![Tight framing of the woman’s face, with only a small part of the collar visible.](/resources/week-04/images/size-closeup-v2.webp)
 
 ### Insert — a specific detail
 
-![A close detail of hands resting on a smartphone on a tabletop.](/resources/week-04/images/size-insert.png)
+![A close detail of hands resting on a smartphone on a tabletop.](/resources/week-04/images/size-insert.webp)
 
 *AI-generated teaching illustrations of shot categories. The actions and
 room details vary between examples; these are not continuity-matched frames
@@ -289,25 +289,25 @@ verified continuous take; unseen room details were inferred.
 
 ### Shot 1 — Wide: alone with the decision
 
-![Wide storyboard frame: Nadia, with a short brown bob and oatmeal knit sweater, sits alone at the wooden kitchen table beside the incoming phone call and packing boxes.](/resources/week-04/images/bis-01-wide-week1-v1.png)
+![Wide storyboard frame: Nadia, with a short brown bob and oatmeal knit sweater, sits alone at the wooden kitchen table beside the incoming phone call and packing boxes.](/resources/week-04/images/bis-01-wide-week1-v1.webp)
 
 Establish how alone she is with this decision.
 
 ### Shot 2 — Insert: the caller's identity
 
-![Phone insert storyboard frame: the black phone lies on the wooden table and its incoming-call screen reads THEO CALLING.](/resources/week-04/images/bis-02-phone-week1-v1.png)
+![Phone insert storyboard frame: the black phone lies on the wooden table and its incoming-call screen reads THEO CALLING.](/resources/week-04/images/bis-02-phone-week1-v1.webp)
 
 Give the audience the same single fact she has.
 
 ### Shot 3 — Close-up: holding herself back
 
-![Facial close-up storyboard frame: Nadia looks down, lips closed, with a restrained expression under the same warm kitchen light.](/resources/week-04/images/bis-03-face-week1-v1.png)
+![Facial close-up storyboard frame: Nadia looks down, lips closed, with a restrained expression under the same warm kitchen light.](/resources/week-04/images/bis-03-face-week1-v1.webp)
 
 Show her holding herself back, not deciding yet.
 
 ### Shot 4 — Insert: the unfinished reach
 
-![Hand insert storyboard frame: Nadia's oatmeal sweater cuff and right hand approach the incoming-call phone, with a visible air gap between her fingers and the phone.](/resources/week-04/images/bis-04-reach-week1-v1.png)
+![Hand insert storyboard frame: Nadia's oatmeal sweater cuff and right hand approach the incoming-call phone, with a visible air gap between her fingers and the phone.](/resources/week-04/images/bis-04-reach-week1-v1.webp)
 
 Make the hesitation itself the visible event: the fingers stop short of the phone.
 
@@ -315,11 +315,11 @@ Make the hesitation itself the visible event: the fingers stop short of the phon
 
 **Start of the lift — frame low on the hand and phone:**
 
-![Start-stage storyboard frame of shot 5: Nadia grips and begins lifting the single black phone above the wooden table after accepting the call.](/resources/week-04/images/bis-05-start-week1-v1.png)
+![Start-stage storyboard frame of shot 5: Nadia grips and begins lifting the single black phone above the wooden table after accepting the call.](/resources/week-04/images/bis-05-start-week1-v1.webp)
 
 **Camera tilts upward, following the lift → no cut → settles on her face:**
 
-![End-stage storyboard frame of the same shot 5: Nadia holds the black phone to her ear, lips slightly parted for Hey, in the same warm kitchen.](/resources/week-04/images/bis-05-end-week1-v1.png)
+![End-stage storyboard frame of the same shot 5: Nadia holds the black phone to her ear, lips slightly parted for Hey, in the same warm kitchen.](/resources/week-04/images/bis-05-end-week1-v1.webp)
 
 These are two illustrated stages of **one continuous shot**, not two shots.
 The camera starts low on the tabletop and approaching hand, follows the
@@ -364,22 +364,22 @@ reading a text." Two candidate shot pairings:
 
 ### Pairing 1 — Medium → Wide
 
-![Medium shot: the seated character reads her phone while a housemate washes dishes behind her.](/resources/week-04/images/pair-1-medium-v2.png)
+![Medium shot: the seated character reads her phone while a housemate washes dishes behind her.](/resources/week-04/images/pair-1-medium-v2.webp)
 
 **Cut to:**
 
-![Wide shot of the same kitchen: the character sits at the table with her hand on the phone while the housemate remains at the sink.](/resources/week-04/images/pair-1-wide-v2.png)
+![Wide shot of the same kitchen: the character sits at the table with her hand on the phone while the housemate remains at the sink.](/resources/week-04/images/pair-1-wide-v2.webp)
 
 The wide keeps the housemate and room visible, but makes the phone action
 small within the frame.
 
 ### Pairing 2 — Close-up → Insert
 
-![Close-up: the same character looks down at her phone, with the housemate outside the frame.](/resources/week-04/images/pair-2-closeup-v2.png)
+![Close-up: the same character looks down at her phone, with the housemate outside the frame.](/resources/week-04/images/pair-2-closeup-v2.webp)
 
 **Cut to:**
 
-![Insert: fingers linger on the back of the phone lying screen-down on the wooden table; the rear camera is visible.](/resources/week-04/images/pair-2-insert-v2.png)
+![Insert: fingers linger on the back of the phone lying screen-down on the wooden table; the rear camera is visible.](/resources/week-04/images/pair-2-insert-v2.webp)
 
 The insert makes the hidden screen and lingering fingers the main information.
 

@@ -70,7 +70,7 @@ through when her right hand begins moving, keeping the outcome fixed.
 
 ## The real starting frame and planned comparison
 
-![Nadia sits at the kitchen table with her face, sweater, hands and dark-screen phone visible in the same medium frame.](/resources/week-07/anchor.png)
+![Nadia sits at the kitchen table with her face, sweater, hands and dark-screen phone visible in the same medium frame.](/resources/week-07/anchor.webp)
 
 This existing frame was extracted from Week 1 Take B and reused as the
 input to the motion requests. It is not a newly generated Week 7 image.

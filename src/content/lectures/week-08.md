@@ -72,7 +72,7 @@ This is an actual `sora-2` output generated from the Week 7 medium starting
 frame on 13 September 2026. The original file is retained without a simulated
 failure or a repaired replacement presented as if already generated.
 
-<video src="../../resources/week-08/rejected-take-b.mp4" controls width="100%" aria-label="Rejected Sora 2 take: Nadia reaches and contacts the phone instead of stopping short"></video>
+<video src="../../resources/week-08/rejected-take-b.mp4" controls preload="metadata" playsinline width="100%" aria-label="Rejected Sora 2 take: Nadia reaches and contacts the phone instead of stopping short"></video>
 
 **Objective:** Nadia wants contact with Theo but holds herself back.
 **Tactic in this beat:** an attempted reach that she stops before contact.

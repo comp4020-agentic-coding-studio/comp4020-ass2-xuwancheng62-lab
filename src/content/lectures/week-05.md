@@ -107,7 +107,7 @@ each shot’s action to change. Voice references remain to be selected.
 
 ### Nadia — the person and the action
 
-![Nadia character reference derived from Week 1 Take B: short brown bob, oatmeal chunky knit sweater and dark trousers, with a restrained expression.](/resources/week-05/images/nadia-week1-reference-v1.png)
+![Nadia character reference derived from Week 1 Take B: short brown bob, oatmeal chunky knit sweater and dark trousers, with a restrained expression.](/resources/week-05/images/nadia-week1-reference-v1.webp)
 
 Nadia is the on-screen protagonist receiving Theo's call. In the closing
 sequence she remains still, reaches toward the phone and stops, then accepts
@@ -123,7 +123,7 @@ all prompts would make the later acceptance impossible to direct clearly.
 
 ### Theo — represented by the call
 
-![Theo is represented by the incoming call: the black phone on the wooden kitchen table displays THEO CALLING.](/resources/week-04/images/bis-02-phone-week1-v1.png)
+![Theo is represented by the incoming call: the black phone on the wooden kitchen table displays THEO CALLING.](/resources/week-04/images/bis-02-phone-week1-v1.webp)
 
 Theo is Nadia's estranged brother, identified on the phone as **THEO CALLING**.
 The closing shot list does not cut to him. An entry must preserve that
@@ -135,7 +135,7 @@ this closing sequence. Recheck the entry if another scene shows him.
 
 ### Kitchen — preserve the geography of the decision
 
-![Expanded kitchen reference derived from Week 1 Take B: honey-coloured wooden table, black phone beside the left chair, cream cabinets, dark window, warm pendant light and packing boxes.](/resources/week-05/images/kitchen-week1-reference-v1.png)
+![Expanded kitchen reference derived from Week 1 Take B: honey-coloured wooden table, black phone beside the left chair, cream cabinets, dark window, warm pendant light and packing boxes.](/resources/week-05/images/kitchen-week1-reference-v1.webp)
 
 The setting is her late mother's apartment kitchen on the final night before
 it is cleared. The phone starts on the table; Nadia can reach it. The insert
