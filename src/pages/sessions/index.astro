@@ -3,6 +3,7 @@ import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import SessionsGrid from "../../components/SessionsGrid.astro";
 import heroImage from "../../assets/images/hero-sessions.avif";
 import { sessionLabels, siteConfig } from "../../site-config";
+import { withBase } from "astro-theme-university/url";
 ---
 
 <ContentLayout
@@ -16,6 +17,12 @@ import { sessionLabels, siteConfig } from "../../site-config";
     Each workshop turns that week's directing technique into a practical step
     on your own short film. Check what to prepare before class, then follow the
     activities and expected outputs for the week.
+  </p>
+  <p>
+    <strong>Follow one complete production:</strong>{" "}
+    <a href={withBase("/production-guide/the-last-one/")}>
+      <cite>The Last One</cite> — a week-by-week practical guide built from a real short-film workflow
+    </a>.
   </p>
   <SessionsGrid />
 </ContentLayout>

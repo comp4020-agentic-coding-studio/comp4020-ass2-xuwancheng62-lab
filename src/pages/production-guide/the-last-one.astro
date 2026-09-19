@@ -1,0 +1,294 @@
+---
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
+import heroImage from "../../assets/images/hero-sessions.avif";
+import { siteConfig } from "../../site-config";
+
+const asset = (path: string) => withBase(`/resources/the-last-one/${path}`);
+---
+
+<ContentLayout
+  title="Production walkthrough: The Last One"
+  description="A real production record showing how one AI short film moved from directing brief and screenplay to references, generated shots, rough cuts, sound and a final scoped cut."
+  heroImage={heroImage}
+  heroImageAlt="An abstract geometric composition on warm cream: two large overlapping warm-gold and black circles at center-left crossed by a thin black frame, a small muted dark-green square isolated at upper right"
+  {...siteConfig}
+>
+  <p class="guide-intro">
+    <strong>The Last One</strong> is a real production walkthrough, not a model
+    answer. It follows the same direct → write → visualise → plan → generate →
+    evaluate → redirect → edit → sound sequence used in the workshops. The
+    production was originally planned as 47 shots, then deliberately scoped to
+    the 21 shots that could be completed in the available time. Nothing below
+    stands in for work that was not made.
+  </p>
+
+  <nav class="stage-nav" aria-label="Production stages">
+    <ol>
+      <li><a href="#week-1">Direct</a></li>
+      <li><a href="#week-2">Write</a></li>
+      <li><a href="#week-4">Plan</a></li>
+      <li><a href="#week-5">Visualise</a></li>
+      <li><a href="#week-7">Generate</a></li>
+      <li><a href="#week-8">Evaluate</a></li>
+      <li><a href="#week-9">Assemble</a></li>
+      <li><a href="#week-10">Edit</a></li>
+      <li><a href="#week-11">Sound</a></li>
+      <li><a href="#week-12">Review</a></li>
+    </ol>
+  </nav>
+
+  <section id="week-1">
+    <p class="at-tag">Week 1 · Direct</p>
+    <h2>Start with an intention, not a tool</h2>
+    <p>
+      The directing brief was deliberately simple: the first minute must read
+      as a serious post-apocalyptic film, while the comedy arrives from an
+      ordinary delivery rider entering that world without changing his everyday
+      behaviour. Performances stay restrained; the joke comes from the collision
+      between those two realities.
+    </p>
+    <div class="workshop-step"><p><strong>Action:</strong> Write one sentence describing the audience's initial reading, then one sentence naming what later changes that reading.</p><p><strong>Output:</strong> A fixed tonal intention that every shot, performance and sound decision can be judged against.</p></div>
+  </section>
+
+  <section id="week-2">
+    <p class="at-tag">Week 2 · Story</p>
+    <h2>Reduce the idea to observable pressure</h2>
+    <p>
+      A survivor believes he and Lucky are the last living beings. A knock at
+      the bunker promises human contact, but the visitor is a delivery rider
+      completing an absurdly late order. The practical story question is not
+      “is the apocalypse real?” but “how long can the film preserve the
+      survivor's belief before ordinary life breaks it?”
+    </p>
+    <div class="workshop-step"><p><strong>Action:</strong> Name the protagonist's belief, the event that challenges it and the immediate change the audience should observe.</p><p><strong>Output:</strong> A one-paragraph premise that can be staged without explanatory narration.</p></div>
+  </section>
+
+  <section id="week-3">
+    <p class="at-tag">Week 3 · Screenplay</p>
+    <h2>Write what a camera and microphone can record</h2>
+    <p>
+      The screenplay turns the premise into actions: the survivor searches,
+      marks the last area on a map, shares food with Lucky, hears a knock and
+      approaches the door. Dialogue is withheld until the visual pattern is
+      established, so “your delivery” can interrupt a serious performance
+      instead of announcing the joke early.
+    </p>
+    <blockquote>
+      <p>“The survivor eats a spoonful of chickpeas and forces himself to chew. ‘No delivery either.’ The moment he finishes, a heavy knock lands on the iron door.”</p>
+    </blockquote>
+    <p>
+      This excerpt does three jobs without explaining the theme: it establishes
+      deprivation, plants the delivery idea in dialogue, and turns the knock
+      into both suspense and setup.
+    </p>
+    <p><a href={asset("docs/screenplay.md")}>Read the working screenplay</a>.</p>
+    <div class="workshop-step"><p><strong>Action:</strong> Underline every sentence that cannot be shown or heard, then rewrite it as behaviour, staging or dialogue.</p><p><strong>Output:</strong> A directable scene whose tonal turn happens through an observable event.</p></div>
+  </section>
+
+  <section id="week-4">
+    <p class="at-tag">Week 4 · Shot design</p>
+    <h2>Give every shot one job</h2>
+    <p>
+      The production plan grew to 47 shots. Each row names duration, action,
+      sound and asset status, while the first 21 became the completed production
+      scope. The plan also records removed material rather than quietly
+      renumbering it, so the reason for every gap remains visible.
+    </p>
+    <blockquote>
+      <p><strong>Shot 14 · 8 seconds:</strong> Close on the survivor. His rifle lowers and his eyes fill with hope. “Three years… I finally—” is interrupted from outside: “Order ending 3721? Your delivery.”</p>
+    </blockquote>
+    <p>
+      The row identifies the visible change, exact interruption and intended
+      duration. It can therefore guide generation, editing and later review;
+      “the reveal shot” would not be specific enough.
+    </p>
+    <p><a href={asset("docs/shot-list.md")}>Open the complete shot list</a>.</p>
+    <div class="workshop-step"><p><strong>Action:</strong> For each beat, state what changes between the first and last frame and why that change deserves its own shot.</p><p><strong>Output:</strong> A numbered list with framing, action, sound, duration and a single dramatic purpose per shot.</p></div>
+  </section>
+
+  <section id="week-5">
+    <p class="at-tag">Week 5 · World bible</p>
+    <h2>Lock identity before asking for motion</h2>
+    <p>
+      Character sheets lock the survivor, Lucky and the rider. Location
+      references lock the bunker interior, its exterior and the abandoned
+      village. These images describe repeatable identity; individual keyframes
+      are still free to change pose, expression and camera position.
+    </p>
+    <div class="reference-grid">
+      <figure><img src={asset("images/main-character-reference.webp")} alt="Reference sheet for the survivor, showing his face, clothing, red scarf and equipment" loading="lazy" /><figcaption>Survivor</figcaption></figure>
+      <figure><img src={asset("images/lucky-reference.webp")} alt="Reference sheet for Lucky, a yellow-and-white dog with upright ears and a worn red collar" loading="lazy" /><figcaption>Lucky</figcaption></figure>
+      <figure><img src={asset("images/delivery-rider-reference.webp")} alt="Reference sheet for the delivery rider in a yellow helmet and uniform" loading="lazy" /><figcaption>Delivery rider</figcaption></figure>
+      <figure><img src={asset("images/bunker-interior-reference.webp")} alt="Reference sheet for the bunker interior with map, radio, table, shelves and iron door" loading="lazy" /><figcaption>Bunker interior</figcaption></figure>
+      <figure><img src={asset("images/bunker-exterior-reference.webp")} alt="Reference sheet for the bunker exterior, road and surrounding mountains" loading="lazy" /><figcaption>Bunker exterior</figcaption></figure>
+      <figure><img src={asset("images/abandoned-village-reference.webp")} alt="Reference sheet for the abandoned village and surrounding wasteland" loading="lazy" /><figcaption>Abandoned village</figcaption></figure>
+    </div>
+    <div class="workshop-step"><p><strong>Action:</strong> Separate fixed identity from changing shot state. Label every reference and version.</p><p><strong>Output:</strong> A small, approved reference set that another person could use without inventing missing details.</p></div>
+  </section>
+
+  <section id="week-6">
+    <p class="at-tag">Week 6 · Production order</p>
+    <h2>Generate in dependency order</h2>
+    <p>
+      The project did not treat 47 rows as 47 independent requests. Character
+      and location references came first; a shot's approved keyframe preceded
+      its motion pass; and a previous shot's final frame was used where an
+      action or screen direction needed to continue. Text on phones and other
+      fragile interface details were reserved for post-production.
+    </p>
+    <div class="dependency-flow" aria-label="Production dependency order">
+      <div><span>1</span><strong>Lock identity</strong><small>Character and location sheets</small></div>
+      <div><span>2</span><strong>Compose the anchor</strong><small>One approved keyframe</small></div>
+      <div><span>3</span><strong>Direct motion</strong><small>Action, timing and camera response</small></div>
+      <div><span>4</span><strong>Inspect the take</strong><small>Continuity, anatomy, performance and sound</small></div>
+      <div><span>5</span><strong>Pass continuity forward</strong><small>Use the approved end frame for the next dependency</small></div>
+    </div>
+    <h3>How the order worked in practice</h3>
+    <ul>
+      <li><strong>Shots 12–14:</strong> the closed iron door and screen direction were locked before the rider was revealed.</li>
+      <li><strong>Shots 15–16:</strong> the end of the survivor's reaction became the start condition for opening the door.</li>
+      <li><strong>Shots 20–21:</strong> the three-character doorway composition was preserved while the dramatic focus moved from the rider to Lucky.</li>
+      <li><strong>Phone text:</strong> the device stayed in the rider's hand, but readable interface text was deferred to post-production.</li>
+    </ul>
+    <div class="workshop-step"><p><strong>Action:</strong> Mark each shot's dependencies, then move blocked shots later instead of generating around an unresolved reference.</p><p><strong>Output:</strong> A production order that explains why one shot must exist before another can begin.</p></div>
+  </section>
+
+  <section id="week-7">
+    <p class="at-tag">Week 7 · Anchor to motion</p>
+    <h2>Direct one visible action from a locked frame</h2>
+    <p>
+      Shot 20 begins from a three-character doorway composition. The direction
+      asks the survivor to grab the rider's shoulders urgently without turning
+      the action into an attack, while the rider retains the phone and bag and
+      Lucky stays present below them.
+    </p>
+    <div class="media-pair">
+      <figure><img src={asset("images/shot-20-keyframe.webp")} alt="Shot 20 keyframe: the survivor grips the delivery rider's shoulders at the bunker doorway while Lucky watches" loading="lazy" /><figcaption><span class="at-tag">Anchor</span> Shot 20 approved keyframe</figcaption></figure>
+      <figure><video src={asset("videos/shot-20.mp4")} controls preload="metadata" playsinline aria-label="Generated Shot 20 in which the survivor asks the rider how many people remain"></video><figcaption><span class="at-tag">Motion</span> Generated result</figcaption></figure>
+    </div>
+    <div class="example-grid">
+      <article>
+        <p class="at-tag">Example A · performance</p>
+        <h3>Urgency without aggression</h3>
+        <p>“He grips the rider's shoulders urgently, but does not shake, strike or threaten him. The rider keeps hold of the phone and delivery bag.”</p>
+        <p><strong>Why it works:</strong> the note names both the desired action and the nearest unwanted interpretation.</p>
+      </article>
+      <article>
+        <p class="at-tag">Example B · camera</p>
+        <h3>Movement caused by attention</h3>
+        <p>“When the survivor turns toward Lucky, the camera follows slightly later with a restrained horizontal adjustment of about 10–15 degrees.”</p>
+        <p><strong>Why it works:</strong> the camera has a dramatic cause, direction and limit.</p>
+      </article>
+      <article>
+        <p class="at-tag">Example C · continuity</p>
+        <h3>Protect what is already approved</h3>
+        <p>“Keep the rider at the doorway, Lucky between both men, the phone in the rider's right hand, and the delivery bag on the same side.”</p>
+        <p><strong>Why it works:</strong> continuity constraints are concrete enough to inspect in the result.</p>
+      </article>
+    </div>
+    <p><a href={asset("docs/prompt-library.md")}>Read the production prompt library</a>.</p>
+    <div class="workshop-step"><p><strong>Action:</strong> Describe timing, physical action and what must remain unchanged. Avoid mood-only direction.</p><p><strong>Output:</strong> One motion request whose success can be judged from visible behaviour.</p></div>
+  </section>
+
+  <section id="week-8">
+    <p class="at-tag">Week 8 · Evaluate and redirect</p>
+    <h2>Change the diagnosed failure, not the whole shot</h2>
+    <p>
+      Shot 21's first keyframe did not make the survivor–Lucky interaction
+      legible enough. The revision changed only that relationship: the survivor
+      pets Lucky's head and Lucky turns to meet his gaze. The rider, doorway,
+      costumes, props, scale and light remained locked.
+    </p>
+    <div class="media-pair">
+      <figure><img src={asset("images/shot-21-keyframe.webp")} alt="Revised Shot 21 keyframe: the survivor pets Lucky's head and Lucky looks up at him while the rider remains at the doorway" loading="lazy" /><figcaption><span class="at-tag at-tag--selected">Selected</span> Revised interaction</figcaption></figure>
+      <figure><video src={asset("videos/shot-21.mp4")} controls preload="metadata" playsinline aria-label="Generated Shot 21 in which the survivor turns to Lucky after learning other people remain"></video><figcaption><span class="at-tag">Result</span> Produced take</figcaption></figure>
+    </div>
+    <div class="workshop-step"><p><strong>Action:</strong> Name the observable mismatch, preserve everything that already works and rewrite only the failing action.</p><p><strong>Output:</strong> A revision note precise enough to compare the next result against the previous one.</p></div>
+  </section>
+
+  <section id="week-9">
+    <p class="at-tag">Week 9 · Assembly</p>
+    <h2>Let the sequence reveal continuity problems</h2>
+    <p>
+      The first assembly retained every available clip and used hard cuts. It
+      exposed repeated dialogue at shot boundaries: “who?” appeared twice, and
+      the delivery number was repeated across adjacent clips. Those are edit
+      and continuity findings produced by the assembly, not faults invented in
+      advance.
+    </p>
+    <p><a href={asset("docs/rough-cut-notes.md")}>Read the rough-cut record</a>.</p>
+    <div class="workshop-step"><p><strong>Action:</strong> Watch the assembly unattended and log each break by shot number before proposing a repair.</p><p><strong>Output:</strong> A continuity log separating what will be fixed from what will be deliberately accepted.</p></div>
+  </section>
+
+  <section id="week-10">
+    <p class="at-tag">Week 10 · Edit</p>
+    <h2>Make the second cut answer a specific diagnosis</h2>
+    <p>
+      Rough Cut v02 trims about 0.9 seconds from the start of Shot 13, keeps the
+      first delivery-number line and replaces the repeated dialogue under Shots
+      15–16 with an environmental bed. Compare versions for those exact
+      decisions rather than asking which one merely “feels better.”
+    </p>
+    <div class="media-pair">
+      <figure><video src={asset("videos/rough-cut-v01.mp4")} controls preload="metadata" playsinline aria-label="The Last One rough cut version one, retaining the original shot boundaries"></video><figcaption><span class="at-tag at-tag--rejected">Before</span> Rough Cut v01</figcaption></figure>
+      <figure><video src={asset("videos/rough-cut-v02.mp4")} controls preload="metadata" playsinline aria-label="The Last One rough cut version two, with repeated dialogue removed"></video><figcaption><span class="at-tag at-tag--selected">After</span> Rough Cut v02</figcaption></figure>
+    </div>
+    <div class="workshop-step"><p><strong>Action:</strong> Make one cut that removes repetition, then state what information or pause the shorter version preserves.</p><p><strong>Output:</strong> Two reviewable edits and a sentence identifying their exact difference.</p></div>
+  </section>
+
+  <section id="week-11">
+    <p class="at-tag">Week 11 · Sound</p>
+    <h2>Use sound to protect the tonal turn</h2>
+    <p>
+      The opening gained an interrupted emergency broadcast, radio filtering
+      and a restrained post-apocalyptic music bed. The music stops after the
+      final knock so the ordinary delivery dialogue arrives without an
+      emotional instruction underneath it. English subtitles were prepared as
+      a separate SRT and a burned-in review export rather than generated inside
+      the image.
+    </p>
+    <div class="workshop-step"><p><strong>Action:</strong> Identify where music makes a claim, where it should yield to dialogue and which sounds must remain editable as separate layers.</p><p><strong>Output:</strong> A sound pass whose cue timing can be defended beat by beat.</p></div>
+  </section>
+
+  <section id="week-12">
+    <p class="at-tag">Week 12 · Review and scope</p>
+    <h2>Finish the version that can be finished honestly</h2>
+    <p>
+      Time did not allow Shots 22–47 to be produced. The final scoped cut ends
+      at Shot 21 rather than filling the unmade second half with placeholders or
+      presenting planned material as completed work. That constraint becomes a
+      production decision: preserve one coherent, reviewable chain from brief
+      to final sound instead of hiding an unfinished expansion.
+    </p>
+    <figure class="final-cut">
+      <video src={asset("videos/final-cut-v01.mp4")} controls preload="metadata" playsinline aria-label="Final scoped cut of The Last One, covering Shots 1 through 21 with broadcast, music, dialogue and sound"></video>
+      <figcaption><span class="at-tag at-tag--selected">Final scoped cut</span> Shots 1–21 · 1 minute 26 seconds</figcaption>
+    </figure>
+    <div class="workshop-step"><p><strong>Action:</strong> State what is complete, what was removed and why the remaining scope still demonstrates the intended directing process.</p><p><strong>Output:</strong> A clearly versioned export and an honest record of the production boundary.</p></div>
+  </section>
+</ContentLayout>
+
+<style>
+  section { scroll-margin-top: 2rem; }
+  .guide-intro { font-size: 1.1rem; }
+  .stage-nav ol { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; list-style: none; }
+  .stage-nav a { display: inline-block; padding: 0.35rem 0.7rem; border: 1px solid var(--at-border); border-radius: 999px; }
+  .reference-grid, .media-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--at-spacing-lg, 1.5rem); margin-block: var(--at-spacing-lg, 1.5rem); }
+  figure { min-width: 0; margin: 0; }
+  figure img, figure video { display: block; width: 100%; height: auto; border: 1px solid var(--at-border); border-radius: var(--at-border-radius); background: #000; }
+  figcaption { margin-top: 0.5rem; color: var(--at-text-secondary); font-size: var(--at-font-size-sm); }
+  .workshop-step { margin-block: var(--at-spacing-lg, 1.5rem); padding: var(--at-spacing-md, 1rem); border-left: 0.25rem solid var(--at-primary); background: var(--at-bg-alt); }
+  .workshop-step p { margin-block: 0.35rem; }
+  blockquote { margin-block: var(--at-spacing-lg, 1.5rem); padding: 0.25rem 1rem; border-left: 0.25rem solid var(--at-primary); color: var(--at-text-secondary); }
+  .dependency-flow { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.75rem; margin-block: var(--at-spacing-lg, 1.5rem); }
+  .dependency-flow div, .example-grid article { padding: 1rem; border: 1px solid var(--at-border); border-radius: var(--at-border-radius); background: var(--at-bg-alt); }
+  .dependency-flow span { display: block; width: 1.8rem; margin-bottom: 0.65rem; border-radius: 999px; text-align: center; background: var(--at-primary); color: var(--at-bg); font-weight: 700; }
+  .dependency-flow strong, .dependency-flow small { display: block; }
+  .dependency-flow small { margin-top: 0.35rem; color: var(--at-text-secondary); }
+  .example-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-block: var(--at-spacing-lg, 1.5rem); }
+  .example-grid h3 { margin-top: 0.5rem; }
+  .final-cut { margin-block: var(--at-spacing-lg, 1.5rem); }
+  @media (max-width: 60rem) { .dependency-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); } .example-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 48rem) { .reference-grid, .media-pair, .dependency-flow { grid-template-columns: 1fr; } }
+</style>

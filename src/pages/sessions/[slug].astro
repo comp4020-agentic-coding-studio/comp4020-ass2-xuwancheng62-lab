@@ -7,6 +7,7 @@ import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import TeachingTeam from "../../components/TeachingTeam.astro";
 import { formatCourseDate } from "../../lib/dates";
 import { graphCollections, sessionLabels, siteConfig } from "../../site-config";
+import { withBase } from "astro-theme-university/url";
 
 export async function getStaticPaths() {
   const sessions = await getPublishedCollection("sessions");
@@ -23,6 +24,12 @@ const { Content } = await render(session);
   {...siteConfig}
 >
   <p><strong>{formatCourseDate(session.data.date)}</strong></p>
+  <p>
+    <strong>Production walkthrough:</strong>{" "}
+    <a href={withBase(`/production-guide/the-last-one/#week-${session.data.week}`)}>
+      See how <cite>The Last One</cite> carried out this stage in a real production
+    </a>.
+  </p>
   <Content />
   <SpecList spec={session.data.spec}>
     What you bring to the session. Written so a reader can tell whether it has

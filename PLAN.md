@@ -296,7 +296,8 @@ follow-up pass)"](PLAN-ARCHIVE.md#judgement-calls--dismissed-findings-2026-09-04
 
 What exists today: Home (`/`), Lectures (index + `[slug]`), Workshops (index +
 `[slug]`), Assessments (index + `[slug]`), People (index only), Policies (one
-flat `.mdx` page), plus `/decks/week-01/` outside the content graph entirely
+flat `.mdx` page), a standalone real-production walkthrough at
+`/production-guide/the-last-one/`, plus `/decks/week-01/` outside the content graph entirely
 (decks carry no `related:` edge — README is explicit about this — so they're
 linked by hand from a lecture page). Nav (`src/site-config.ts`) lists exactly
 these five sections. That's the whole IA; nothing structural needs inventing,
@@ -313,11 +314,13 @@ twelve weeks — is currently only visible by reading lecture pages in order.
 A skimming visitor sees five disconnected listings, not a progression. Home
 closes that gap: its body (currently starter placeholder anyway, so no extra
 IA cost) carries a concise statement of the thesis, linking through to the
-Lectures index/pages. There is no dedicated case-study page and no new nav
-entry — the real per-week production material lives on the Lecture pages
-themselves (see "Content and data architecture" and the week-by-week
-checklist below), so Home's job is orientation, not a walk-through of the
-running example.
+Lectures index/pages. There is no new nav entry. The owner-approved standalone
+production walkthrough documents how *The Last One* followed the course
+workflow and is linked from the Workshop index and every Workshop page at the
+matching weekly anchor. It is a making guide, not an assessment exemplar or
+additional assignment. The page states the real scope plainly: 47 shots were
+planned, production currently ends at Shot 21, and Shots 22–47 remain
+unproduced rather than appearing as placeholders.
 
 **Should have: a real production-progression visualisation on Home, not
 just prose.** A TEXT → SCRIPT → STORYBOARD → IMAGE → MOTION → EDIT → SOUND →

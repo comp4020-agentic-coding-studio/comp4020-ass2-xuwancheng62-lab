@@ -16,6 +16,64 @@
   --at-transition-note: 0.25s ease;
 }
 
+/* Keep the course chrome on one line after the sixth navigation item was
+   added. The supplied horizontal lockup competes with the links even at
+   common desktop widths. Pair the crest with a compact two-line wordmark from
+   tablet widths upward; phones retain the crest alone. The image's alt text
+   continues to expose the complete institution name to assistive technology. */
+.at-nav-brand:has(.at-nav-logo-compact) .at-nav-logo-full {
+  display: none;
+}
+
+.at-nav-logo-compact {
+  display: block;
+}
+
+@media (width >= 640px) {
+  .at-nav-inner {
+    flex-wrap: nowrap;
+  }
+
+  .at-nav-brand {
+    flex: 0 0 auto;
+  }
+
+  .at-nav-links {
+    min-width: 0;
+  }
+
+  .at-search-trigger {
+    flex: 0 0 auto;
+  }
+}
+
+@media (width >= 1100px) {
+  .at-nav-logo-compact {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+  }
+
+  .at-nav-logo-compact::after {
+    content: "Slop\A University";
+    display: block;
+    padding-inline-start: 0.65rem;
+    border-inline-start: 1px solid var(--at-primary);
+    color: var(--at-text);
+    font-size: 0.9rem;
+    font-weight: 650;
+    line-height: 0.95;
+    letter-spacing: -0.015em;
+    white-space: pre;
+  }
+}
+
+@media (width >= 640px) {
+  .at-nav-inner {
+    column-gap: var(--at-spacing-sm);
+  }
+}
+
 /* Director's Notes / selection rationale read in a distinct, quieter
    register from the primary content they annotate. The theme's own
    blockquote treatment (accent-dash rule, muted colour, light weight,
